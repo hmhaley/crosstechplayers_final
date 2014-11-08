@@ -1,0 +1,186 @@
+<%= form_for @organization do |f| %>
+
+<div class="wrapper_div">
+	<div class="center_div">
+		<table>
+			<thead>
+			<tr class="row_odd">
+				<th colspan="2"><h1>ADD a NEW Enabler "Organization"</h1></th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+            <td>Organization Name:</td>
+            <td><%= f.text_field :name %></td>
+         </tr>
+         <tr>
+            <td>Type of Organization:</td>
+            <td><%= f.text_field :type %></td>
+         </tr>
+         <tr>
+            <td>Website url:</td>
+            <td><%= f.text_field :web_url %></td>
+         </tr>
+         <tr>
+            <td>Company Description</td>
+            <td><%= f.text_field :description %>
+            </td>
+            </tr>
+         <tr>
+            <td>Notes </td>
+            <td><%= f.text_field :notes %>
+            </td>
+            </tr>
+         <tr>
+            <td>Org's Vision</td>
+            <td><%= f.text_field :vision %>
+            </td>
+            </tr>
+         <tr>
+            <td>Org's Mission</td>
+            <td><%= f.text_field :mission %>
+            </td>
+            </tr>
+         <tr>
+            <td>Org's Goals</td>
+            <td><%= f.text_field :goals %>
+            </td>
+            </tr>
+         <tr>
+            <td>Org's Values</td>
+            <td><%= f.text_field :values %>
+            </td>
+            </tr>
+         <tr>
+            <td>Org's Motto or Tagline</td>
+            <td><%= f.text_field :motto %>
+            </td>
+            </tr>
+         <tr>
+            <td>Is this a Parent Company or the subsidiary(child) of another company?</td>
+            <td><%= f.text_field :parent_or_child %>
+            </td>
+            </tr>
+         <tr>
+            <td>Size of Org, in Revenue</td>
+            <td><%= f.text_field :size_revenue %>
+            </td>
+            </tr>
+         <tr>
+            <td>Date Size by Revenue was last Updated</td>
+            <td><%= f.datetime_field :size_revenue_date_last_updated %>
+            </td>
+         <tr>
+            <td>Size of Org, by Number of Employees</td>
+            <td><%= f.text_field :size_employees %>
+            </td>
+            </tr>
+         <tr>
+            <td>Date that Size by Employees was last Updated</td>
+            <td><%= f.datetime_field :size_employees_date_last_updated %>
+            </td>
+         <tr>
+            <td>Headquarters Address Street</td>
+            <td><%= f.text_field :hq_address_street %>
+            </td>
+            </tr>
+         <tr>
+            <td>Headquarters Address City</td>
+            <td><%= f.text_field :hq_address_city %>
+            </td>
+            </tr>
+         <tr>
+            <td>Headquarters Address State</td>
+            <td><%= f.text_field :hq_address_state %>
+            </td>
+            </tr>
+         <tr>
+            <td>Headquarters Address Zip</td>
+            <td><%= f.text_field :hq_address_zip %>
+            </td>
+            </tr>
+         <tr>
+            <td>Headquarters Telephone</td>
+            <td><%= f.text_field :hq_tel %>
+            </td>
+            </tr>
+         <tr>
+            <td>Headquarters Email</td>
+            <td><%= f.text_field :hq_email %>
+            </td>
+            </tr>
+         <tr>
+            <td>Date Org was Founded</td>
+            <td><%= f.datetime_field :date_org_founded %>
+            </td>
+         <tr>
+            <td>Region in which the Org is Headquartered</td>
+            <td><%= f.text_field :region_headquartered_in %>
+            </td>
+            </tr>
+<!-- should I have major deals here, since I will have a deals model and a connection through the relationship? -->
+         <tr>
+            <td>Major Deals the Org has Been Involved In</td>
+            <td><%= f.text_field :major_deals %>
+            </td>
+            </tr>
+         <tr>
+            <td>Twitter url:</td>
+            <td><%= f.text_field :social_twitter %>
+            </td>
+            </tr>
+         <tr>
+            <td>Linked-In url:</td>
+            <td><%= f.text_field :social_linkedin %>
+            </td>
+            </tr>
+         <tr>
+            <td>Facebook url:</td>
+            <td><%= f.text_field :social_facebook %>
+            </td>
+            </tr>
+         <tr>
+            <td>Google+ url:</td>
+            <td><%= f.text_field :social_googleplus %>
+            </td>
+            </tr>
+         <tr>
+            <td>YouTube url:</td>
+            <td><%= f.text_field :social_youtube %>
+            </td>
+            </tr>
+         <tr>
+            <td>Preferred/Dominant/Most Utilized Social Media Platform</td>
+            <td><%= f.text_field :social_platform_dominant %>
+            </td>
+            </tr>
+         <tr>
+            <td>Org Tech Classification</td>
+            <td><%= f.text_field :company_classification_type %>
+            </td>
+            </tr>
+         <tr>
+            <td>Org Size, Structured</td>
+            <td><%= f.text_field :company_size_structured %>
+            </td>
+            </tr>
+         <tr>
+            <td>Org Special Designations</td>
+            <td><%= f.text_field :company_special_designations %></td>
+         </tr>
+         <tr>
+            <td>CrossTech Constituent Type</td>
+            <td><%= f.text_field :ct_constituency_type %>
+            </td>
+         </tr>
+         <tr>
+            <td>Date this Org's Record was last Updated</td>
+            <td><%= f.datetime_field :date_last_updated %>
+            </td>
+         </tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+
+<% end %>
