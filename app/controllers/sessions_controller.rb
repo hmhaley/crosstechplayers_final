@@ -11,6 +11,7 @@ skip_before_filter :authorize
         # then see if user authenticates
         if user && user.authenticate(params[:password])
             # sets the cookie to the browser
+            
             session[:user_id] = user.id
             redirect_to root_path, notice: "Logged in!"
         else
@@ -25,4 +26,6 @@ skip_before_filter :authorize
         reset_session
         redirect_to root_path, notice: "Logged out!"
     end
+
+    
 end

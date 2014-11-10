@@ -4,7 +4,6 @@ class UsersController < ApplicationController
 skip_before_filter :authorize
 
 	def index
-		@users = User.all
 	end
 
 	def show
@@ -18,7 +17,7 @@ skip_before_filter :authorize
 	def create
 		@user = User.new(use_user_params)
 		if @user.save
-      session[:user_id] =@user.id
+      session[:user_id] = @user.id
 			redirect_to root_path,
 			notice: 'User was successfully created, and you will now be directed to the organizations.'
 		else

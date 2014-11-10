@@ -1,10 +1,9 @@
 class User
   include Mongoid::Document
+  
   include ActiveModel::SecurePassword
-
-  has_secure_password
-
-  validates_uniqueness_of :username
+  #include ZeroOidFix
+  
 
   field :username, type: String
   field :password_digest, type: String
@@ -53,5 +52,11 @@ class User
   field :date_last_updated, type: DateTime
 
   has_many :org_ena_join_tables
-  
+
+  has_secure_password
+
+  # attr_accessible :username, :password, :password_confirmation
+ 
 end
+
+

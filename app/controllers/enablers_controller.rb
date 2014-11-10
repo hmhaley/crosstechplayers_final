@@ -46,11 +46,11 @@ skip_before_filter :authorize
 
 private
 
-	def make_sure_logged_in
-		if !current_user
-		redirect_to new_session_path
-		end
-	end
+	# def make_sure_logged_in
+	# 	if !current_user
+	# 	redirect_to new_session_path
+	# 	end
+	# end
 
 	def ena_user_params
       params.require(:enabler).permit(

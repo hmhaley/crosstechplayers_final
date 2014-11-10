@@ -3188,3 +3188,3264 @@ Processing by UsersController#new as HTML
   Rendered users/_form_new_edit.html.erb (3.8ms)
   Rendered users/new.html.erb within layouts/application (4.8ms)
 Completed 200 OK in 75ms (Views: 73.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 07:59:43 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 204ms (Views: 180.2ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-10 07:59:43 -0800
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2014-11-10 07:59:43 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-10 07:59:43 -0800
+
+
+Started GET "/assets/enablers.css?body=1" for 127.0.0.1 at 2014-11-10 07:59:43 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-10 07:59:43 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-10 07:59:43 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-10 07:59:43 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-10 07:59:43 -0800
+
+
+Started GET "/assets/enablers.js?body=1" for 127.0.0.1 at 2014-11-10 07:59:43 -0800
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2014-11-10 07:59:43 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-10 07:59:43 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-10 07:59:43 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-10 07:59:43 -0800
+
+
+Started GET "/login" for 127.0.0.1 at 2014-11-10 07:59:49 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 75ms (Views: 73.1ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-11-10 07:59:56 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sccT01OMlANSayZ9xH0cZy5BxmkJ98iZ3Mti6qucrCE=", "username"=>"hmh1", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.1450ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"$query"=>{"username"=>"hmh1"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.7140ms
+Redirected to http://localhost:3000/
+Completed 302 Found in 90ms
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 07:59:56 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.2ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>{"$oid"=>BSON::ObjectId('5460d5ea4d61720d20020000')}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 2.6220ms
+Completed 500 Internal Server Error in 75ms
+
+ActionView::Template::Error (The operation: #<Moped::Protocol::Query
+  @length=96
+  @request_id=3
+  @response_to=0
+  @op_code=2004
+  @flags=[]
+  @full_collection_name="crosstechplayers_development.users"
+  @skip=0
+  @limit=0
+  @selector={"_id"=>{"$oid"=>BSON::ObjectId('5460d5ea4d61720d20020000')}}
+  @fields=nil>
+failed with error 17287: "Can't canonicalize query: BadValue unknown operator: $oid"
+
+See https://github.com/mongodb/mongo/blob/master/docs/errors.md
+for details about this error.):
+     9: <body>
+    10: 	<div id="container">
+    11:       <div id="user_header">
+    12:    <% if current_user %>
+    13:       Logged in as Username: <%= current_user.username %>.
+    14:       <%= link_to "Log Out", logout_path("current") %>
+    15:     <% else %>
+  app/controllers/application_controller.rb:11:in `current_user'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__400690515264754778_70153346397340'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 08:21:59 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (2.7ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.2540ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>{"$oid"=>BSON::ObjectId('5460d5ea4d61720d20020000')}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.0300ms
+Completed 500 Internal Server Error in 205ms
+
+ActionView::Template::Error (The operation: #<Moped::Protocol::Query
+  @length=96
+  @request_id=2
+  @response_to=0
+  @op_code=2004
+  @flags=[]
+  @full_collection_name="crosstechplayers_development.users"
+  @skip=0
+  @limit=0
+  @selector={"_id"=>{"$oid"=>BSON::ObjectId('5460d5ea4d61720d20020000')}}
+  @fields=nil>
+failed with error 17287: "Can't canonicalize query: BadValue unknown operator: $oid"
+
+See https://github.com/mongodb/mongo/blob/master/docs/errors.md
+for details about this error.):
+     9: <body>
+    10: 	<div id="container">
+    11:       <div id="user_header">
+    12:    <% if current_user %>
+    13:       Logged in as Username: <%= current_user.username %>.
+    14:       <%= link_to "Log Out", logout_path("current") %>
+    15:     <% else %>
+  app/controllers/application_controller.rb:11:in `current_user'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__96092342774424380_70177724107360'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (14.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 08:22:04 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.2ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>{"$oid"=>BSON::ObjectId('5460d5ea4d61720d20020000')}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8380ms
+Completed 500 Internal Server Error in 76ms
+
+ActionView::Template::Error (The operation: #<Moped::Protocol::Query
+  @length=96
+  @request_id=3
+  @response_to=0
+  @op_code=2004
+  @flags=[]
+  @full_collection_name="crosstechplayers_development.users"
+  @skip=0
+  @limit=0
+  @selector={"_id"=>{"$oid"=>BSON::ObjectId('5460d5ea4d61720d20020000')}}
+  @fields=nil>
+failed with error 17287: "Can't canonicalize query: BadValue unknown operator: $oid"
+
+See https://github.com/mongodb/mongo/blob/master/docs/errors.md
+for details about this error.):
+     9: <body>
+    10: 	<div id="container">
+    11:       <div id="user_header">
+    12:    <% if current_user %>
+    13:       Logged in as Username: <%= current_user.username %>.
+    14:       <%= link_to "Log Out", logout_path("current") %>
+    15:     <% else %>
+  app/controllers/application_controller.rb:11:in `current_user'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__96092342774424380_70177724107360'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 08:23:09 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (2.5ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.2480ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>{"$oid"=>BSON::ObjectId('5460d5ea4d61720d20020000')}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.0810ms
+Completed 500 Internal Server Error in 214ms
+
+ActionView::Template::Error (The operation: #<Moped::Protocol::Query
+  @length=96
+  @request_id=2
+  @response_to=0
+  @op_code=2004
+  @flags=[]
+  @full_collection_name="crosstechplayers_development.users"
+  @skip=0
+  @limit=0
+  @selector={"_id"=>{"$oid"=>BSON::ObjectId('5460d5ea4d61720d20020000')}}
+  @fields=nil>
+failed with error 17287: "Can't canonicalize query: BadValue unknown operator: $oid"
+
+See https://github.com/mongodb/mongo/blob/master/docs/errors.md
+for details about this error.):
+     9: <body>
+    10: 	<div id="container">
+    11:       <div id="user_header">
+    12:    <% if current_user %>
+    13:       Logged in as Username: <%= current_user.username %>.
+    14:       <%= link_to "Log Out", logout_path("current") %>
+    15:     <% else %>
+  app/controllers/application_controller.rb:11:in `current_user'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__2449520190899203068_70362017777940'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (16.4ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-11-10 08:27:43 -0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (31.9ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.4810ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>{"$oid"=>BSON::ObjectId('5460d5ea4d61720d20020000')}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8380ms
+Completed 500 Internal Server Error in 111ms
+
+ActionView::Template::Error (The operation: #<Moped::Protocol::Query
+  @length=96
+  @request_id=4
+  @response_to=0
+  @op_code=2004
+  @flags=[]
+  @full_collection_name="crosstechplayers_development.users"
+  @skip=0
+  @limit=0
+  @selector={"_id"=>{"$oid"=>BSON::ObjectId('5460d5ea4d61720d20020000')}}
+  @fields=nil>
+failed with error 17287: "Can't canonicalize query: BadValue unknown operator: $oid"
+
+See https://github.com/mongodb/mongo/blob/master/docs/errors.md
+for details about this error.):
+     9: <body>
+    10: 	<div id="container">
+    11:       <div id="user_header">
+    12:    <% if current_user %>
+    13:       Logged in as Username: <%= current_user.username %>.
+    14:       <%= link_to "Log Out", logout_path %>
+    15:     <% else %>
+  app/controllers/application_controller.rb:11:in `current_user'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__2449520190899203068_70362016810240'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.8ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-11-10 08:28:21 -0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (4.6ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.5040ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>{"$oid"=>BSON::ObjectId('5460d5ea4d61720d20020000')}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.9890ms
+Completed 500 Internal Server Error in 84ms
+
+ActionView::Template::Error (The operation: #<Moped::Protocol::Query
+  @length=96
+  @request_id=6
+  @response_to=0
+  @op_code=2004
+  @flags=[]
+  @full_collection_name="crosstechplayers_development.users"
+  @skip=0
+  @limit=0
+  @selector={"_id"=>{"$oid"=>BSON::ObjectId('5460d5ea4d61720d20020000')}}
+  @fields=nil>
+failed with error 17287: "Can't canonicalize query: BadValue unknown operator: $oid"
+
+See https://github.com/mongodb/mongo/blob/master/docs/errors.md
+for details about this error.):
+     9: <body>
+    10: 	<div id="container">
+    11:       <div id="user_header">
+    12:    <% if current_user %>
+    13:       Logged in as Username: <%= current_user.username %>.
+    14:       <%= link_to "Log Out", logout_path %>
+    15:     <% else %>
+  app/controllers/application_controller.rb:11:in `current_user'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__2449520190899203068_70362016810240'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.2ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-11-10 08:29:05 -0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (24.5ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.0350ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>{"$oid"=>BSON::ObjectId('5460d5ea4d61720d20020000')}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.9820ms
+Completed 500 Internal Server Error in 231ms
+
+ActionView::Template::Error (The operation: #<Moped::Protocol::Query
+  @length=96
+  @request_id=2
+  @response_to=0
+  @op_code=2004
+  @flags=[]
+  @full_collection_name="crosstechplayers_development.users"
+  @skip=0
+  @limit=0
+  @selector={"_id"=>{"$oid"=>BSON::ObjectId('5460d5ea4d61720d20020000')}}
+  @fields=nil>
+failed with error 17287: "Can't canonicalize query: BadValue unknown operator: $oid"
+
+See https://github.com/mongodb/mongo/blob/master/docs/errors.md
+for details about this error.):
+     9: <body>
+    10: 	<div id="container">
+    11:       <div id="user_header">
+    12:    <% if current_user %>
+    13:       Logged in as Username: <%= current_user.username %>.
+    14:       <%= link_to "Log Out", logout_path %>
+    15:     <% else %>
+  app/controllers/application_controller.rb:11:in `current_user'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___3642729705361163594_70121239983780'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (12.8ms)
+
+
+Started GET "/enablers" for 127.0.0.1 at 2014-11-10 08:29:10 -0800
+Processing by EnablersController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=enablers selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.0790ms
+  Rendered enablers/index.html.erb within layouts/application (3.3ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>{"$oid"=>BSON::ObjectId('5460d5ea4d61720d20020000')}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.9230ms
+Completed 500 Internal Server Error in 92ms
+
+ActionView::Template::Error (The operation: #<Moped::Protocol::Query
+  @length=96
+  @request_id=4
+  @response_to=0
+  @op_code=2004
+  @flags=[]
+  @full_collection_name="crosstechplayers_development.users"
+  @skip=0
+  @limit=0
+  @selector={"_id"=>{"$oid"=>BSON::ObjectId('5460d5ea4d61720d20020000')}}
+  @fields=nil>
+failed with error 17287: "Can't canonicalize query: BadValue unknown operator: $oid"
+
+See https://github.com/mongodb/mongo/blob/master/docs/errors.md
+for details about this error.):
+     9: <body>
+    10: 	<div id="container">
+    11:       <div id="user_header">
+    12:    <% if current_user %>
+    13:       Logged in as Username: <%= current_user.username %>.
+    14:       <%= link_to "Log Out", logout_path %>
+    15:     <% else %>
+  app/controllers/application_controller.rb:11:in `current_user'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___3642729705361163594_70121239983780'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.8ms)
+
+
+Started GET "/enablers" for 127.0.0.1 at 2014-11-10 08:37:35 -0800
+Processing by EnablersController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.4650ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=enablers selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4600ms
+  Rendered enablers/index.html.erb within layouts/application (2.1ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>{"$oid"=>BSON::ObjectId('5460d5ea4d61720d20020000')}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.9300ms
+Completed 500 Internal Server Error in 87ms
+
+ActionView::Template::Error (The operation: #<Moped::Protocol::Query
+  @length=96
+  @request_id=7
+  @response_to=0
+  @op_code=2004
+  @flags=[]
+  @full_collection_name="crosstechplayers_development.users"
+  @skip=0
+  @limit=0
+  @selector={"_id"=>{"$oid"=>BSON::ObjectId('5460d5ea4d61720d20020000')}}
+  @fields=nil>
+failed with error 17287: "Can't canonicalize query: BadValue unknown operator: $oid"
+
+See https://github.com/mongodb/mongo/blob/master/docs/errors.md
+for details about this error.):
+     9: <body>
+    10: 	<div id="container">
+    11:       <div id="user_header">
+    12:    <% if current_user %>
+    13:       Logged in as Username: <%= current_user.username %>.
+    14:       <%= link_to "Log Out", logout_path %>
+    15:     <% else %>
+  app/controllers/application_controller.rb:11:in `current_user'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___3642729705361163594_70121239983780'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (14.8ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-11-10 08:38:20 -0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (19.3ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.0740ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>{"$oid"=>BSON::ObjectId('5460d5ea4d61720d20020000')}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8400ms
+Completed 500 Internal Server Error in 174ms
+
+ActionView::Template::Error (The operation: #<Moped::Protocol::Query
+  @length=96
+  @request_id=2
+  @response_to=0
+  @op_code=2004
+  @flags=[]
+  @full_collection_name="crosstechplayers_development.users"
+  @skip=0
+  @limit=0
+  @selector={"_id"=>{"$oid"=>BSON::ObjectId('5460d5ea4d61720d20020000')}}
+  @fields=nil>
+failed with error 17287: "Can't canonicalize query: BadValue unknown operator: $oid"
+
+See https://github.com/mongodb/mongo/blob/master/docs/errors.md
+for details about this error.):
+     9: <body>
+    10: 	<div id="container">
+    11:       <div id="user_header">
+    12:    <% if current_user %>
+    13:       Logged in as Username: <%= current_user.username %>.
+    14:       <%= link_to "Log Out", logout_path %>
+    15:     <% else %>
+  app/controllers/application_controller.rb:11:in `current_user'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__1765823287024231059_70247206673980'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (12.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 08:48:10 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 213ms
+
+ActionView::Template::Error (undefined method `attr_accessible' for User:Class):
+     9: <body>
+    10: 	<div id="container">
+    11:       <div id="user_header">
+    12:    <% if current_user %>
+    13:       Logged in as Username: <%= current_user.username %>.
+    14:       <%= link_to "Log Out", logout_path %>
+    15:     <% else %>
+  app/models/user.rb:55:in `<class:User>'
+  app/models/user.rb:1:in `<top (required)>'
+  app/controllers/application_controller.rb:11:in `current_user'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__3770650800584130227_70295181054360'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (15.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 08:49:23 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.2ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.1280ms
+  MOPED: Retrying connection attempt 1 more time(s). runtime: n/a
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.8530ms
+Completed 500 Internal Server Error in 333ms
+
+ActionView::Template::Error (Could not connect to a primary node for replica set #<Moped::Cluster:70295182903580 @seeds=[<Moped::Node resolved_address="127.0.0.1:27017">]>):
+     9: <body>
+    10: 	<div id="container">
+    11:       <div id="user_header">
+    12:    <% if current_user %>
+    13:       Logged in as Username: <%= current_user.username %>.
+    14:       <%= link_to "Log Out", logout_path %>
+    15:     <% else %>
+  app/controllers/application_controller.rb:11:in `current_user'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__3770650800584130227_70295181054360'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (15.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 08:50:06 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (2.1ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.9800ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>{"$oid"=>BSON::ObjectId('5460d5ea4d61720d20020000')}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8480ms
+Completed 500 Internal Server Error in 206ms
+
+ActionView::Template::Error (The operation: #<Moped::Protocol::Query
+  @length=96
+  @request_id=2
+  @response_to=0
+  @op_code=2004
+  @flags=[]
+  @full_collection_name="crosstechplayers_development.users"
+  @skip=0
+  @limit=0
+  @selector={"_id"=>{"$oid"=>BSON::ObjectId('5460d5ea4d61720d20020000')}}
+  @fields=nil>
+failed with error 17287: "Can't canonicalize query: BadValue unknown operator: $oid"
+
+See https://github.com/mongodb/mongo/blob/master/docs/errors.md
+for details about this error.):
+     9: <body>
+    10: 	<div id="container">
+    11:       <div id="user_header">
+    12:    <% if current_user %>
+    13:       Logged in as Username: <%= current_user.username %>.
+    14:       <%= link_to "Log Out", logout_path %>
+    15:     <% else %>
+  app/controllers/application_controller.rb:11:in `current_user'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__329336283963848673_70294902063000'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 08:50:49 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (1.3ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.0310ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>{"$oid"=>BSON::ObjectId('5460d5ea4d61720d20020000')}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.9300ms
+Completed 500 Internal Server Error in 162ms
+
+ActionView::Template::Error (The operation: #<Moped::Protocol::Query
+  @length=96
+  @request_id=2
+  @response_to=0
+  @op_code=2004
+  @flags=[]
+  @full_collection_name="crosstechplayers_development.users"
+  @skip=0
+  @limit=0
+  @selector={"_id"=>{"$oid"=>BSON::ObjectId('5460d5ea4d61720d20020000')}}
+  @fields=nil>
+failed with error 17287: "Can't canonicalize query: BadValue unknown operator: $oid"
+
+See https://github.com/mongodb/mongo/blob/master/docs/errors.md
+for details about this error.):
+     9: <body>
+    10: 	<div id="container">
+    11:       <div id="user_header">
+    12:    <% if current_user %>
+    13:       Logged in as Username: <%= current_user.username %>.
+    14:       <%= link_to "Log Out", logout_path %>
+    15:     <% else %>
+  app/controllers/application_controller.rb:11:in `current_user'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__3049498531276357608_70215593693940'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 09:20:18 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.4ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.4750ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>{"$oid"=>BSON::ObjectId('5460d5ea4d61720d20020000')}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7970ms
+Completed 500 Internal Server Error in 98ms
+
+ActionView::Template::Error (The operation: #<Moped::Protocol::Query
+  @length=96
+  @request_id=4
+  @response_to=0
+  @op_code=2004
+  @flags=[]
+  @full_collection_name="crosstechplayers_development.users"
+  @skip=0
+  @limit=0
+  @selector={"_id"=>{"$oid"=>BSON::ObjectId('5460d5ea4d61720d20020000')}}
+  @fields=nil>
+failed with error 17287: "Can't canonicalize query: BadValue unknown operator: $oid"
+
+See https://github.com/mongodb/mongo/blob/master/docs/errors.md
+for details about this error.):
+     9: <body>
+    10: 	<div id="container">
+    11:       <div id="user_header">
+    12:    <% if current_user %>
+    13:       Logged in as Username: <%= current_user.username %>.
+    14:       <%= link_to "Log Out", logout_path %>
+    15:     <% else %>
+  app/controllers/application_controller.rb:11:in `current_user'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__3049498531276357608_70215593693940'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (15.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 09:20:36 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (1.9ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.0100ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>{"$oid"=>BSON::ObjectId('5460d5ea4d61720d20020000')}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8330ms
+Completed 500 Internal Server Error in 223ms
+
+ActionView::Template::Error (The operation: #<Moped::Protocol::Query
+  @length=96
+  @request_id=2
+  @response_to=0
+  @op_code=2004
+  @flags=[]
+  @full_collection_name="crosstechplayers_development.users"
+  @skip=0
+  @limit=0
+  @selector={"_id"=>{"$oid"=>BSON::ObjectId('5460d5ea4d61720d20020000')}}
+  @fields=nil>
+failed with error 17287: "Can't canonicalize query: BadValue unknown operator: $oid"
+
+See https://github.com/mongodb/mongo/blob/master/docs/errors.md
+for details about this error.):
+     9: <body>
+    10: 	<div id="container">
+    11:       <div id="user_header">
+    12:    <% if current_user %>
+    13:       Logged in as Username: <%= current_user.username %>.
+    14:       <%= link_to "Log Out", logout_path %>
+    15:     <% else %>
+  app/controllers/application_controller.rb:11:in `current_user'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___126029220271784687_70344158704220'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (14.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 09:21:33 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.2ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.5280ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>{"$oid"=>BSON::ObjectId('5460d5ea4d61720d20020000')}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8250ms
+Completed 500 Internal Server Error in 86ms
+
+ActionView::Template::Error (The operation: #<Moped::Protocol::Query
+  @length=96
+  @request_id=4
+  @response_to=0
+  @op_code=2004
+  @flags=[]
+  @full_collection_name="crosstechplayers_development.users"
+  @skip=0
+  @limit=0
+  @selector={"_id"=>{"$oid"=>BSON::ObjectId('5460d5ea4d61720d20020000')}}
+  @fields=nil>
+failed with error 17287: "Can't canonicalize query: BadValue unknown operator: $oid"
+
+See https://github.com/mongodb/mongo/blob/master/docs/errors.md
+for details about this error.):
+     9: <body>
+    10: 	<div id="container">
+    11:       <div id="user_header">
+    12:    <% if current_user %>
+    13:       Logged in as Username: <%= current_user.username %>.
+    14:       <%= link_to "Log Out", logout_path %>
+    15:     <% else %>
+  app/controllers/application_controller.rb:11:in `current_user'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___126029220271784687_70344158704220'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 09:22:29 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 72ms (Views: 71.0ms)
+
+
+Started GET "/assets/enablers.css?body=1" for 127.0.0.1 at 2014-11-10 09:22:29 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-10 09:22:29 -0800
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2014-11-10 09:22:29 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-10 09:22:29 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-10 09:22:29 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-10 09:22:29 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-10 09:22:29 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-10 09:22:29 -0800
+
+
+Started GET "/assets/enablers.js?body=1" for 127.0.0.1 at 2014-11-10 09:22:29 -0800
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2014-11-10 09:22:29 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-10 09:22:29 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-10 09:22:29 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-10 09:22:29 -0800
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-11-10 09:22:59 -0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (36.3ms)
+Completed 200 OK in 117ms (Views: 105.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-11-10 09:25:03 -0800
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sccT01OMlANSayZ9xH0cZy5BxmkJ98iZ3Mti6qucrCE=", "user"=>{"username"=>"hmh2", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "ct_user_type"=>"web-self-registered", "is_admin"=>"false", "prefix"=>"Mr.", "firstname"=>"Martin", "lastname"=>"Haley", "suffix"=>"Suffix", "jobtitle"=>"job Title", "org"=>"VMG", "email"=>"mhaley@vmgstrategies.com", "altemail"=>"hmhaley@yahoo.com", "mobiletel"=>"7039069400", "officetel"=>"7033375200", "hometel"=>"7034251945", "fax"=>"7034251945", "indiv_web_url"=>"linkedin", "indiv_description"=>"bio", "work_address_street"=>"1069 west broad st", "work_address_city"=>"Falls Church", "work_address_state"=>"VA", "work_address_zip"=>"22015", "home_address_street"=>"home street", "home_address_city"=>"home city", "home_address_state"=>"home state", "home_address_zip"=>"home zip", "social_twitter"=>"twitter", "social_linkedin"=>"linked", "social_facebook"=>"faceb", "social_googleplus"=>"goog", "social_youtube"=>"yout", "social_pinterest"=>"pint", "social_instagram"=>"insta", "social_flickr"=>"flickr", "social_blog"=>"myblog.com", "social_platform_dominant"=>"twitter", "gender"=>"male", "ethnicity"=>"race doesn't exist", "country_of_origin"=>"USA", "staff_notes"=>"", "indiv_notes"=>"questions", "date_last_updated"=>"2014-11-10 09:22:59 -0800"}, "commit"=>"Submit"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.6760ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"username"=>"hmh2"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 2.5110ms
+  MOPED: 127.0.0.1:27017 INSERT       database=crosstechplayers_development collection=users documents=[{"_id"=>BSON::ObjectId('5460f4f04d617211f3000000'), "username"=>"hmh2", "password_digest"=>"$2a$10$Vn5M9FU8HZ8F4oL0bECPQer/xR34QQJDPOzQtjZ83TrNlGOZzyzEm", "ct_user_type"=>"web-self-registered", "is_admin"=>false, "prefix"=>"Mr.", "firstname"=>"Martin", "lastname"=>"Haley", "suffix"=>"Suffix", "jobtitle"=>"job Title", "org"=>"VMG", "email"=>"mhaley@vmgstrategies.com", "altemail"=>"hmhaley@yahoo.com", "mobiletel"=>"7039069400", "officetel"=>"7033375200", "hometel"=>"7034251945", "fax"=>"7034251945", "indiv_web_url"=>"linkedin", "indiv_description"=>"bio", "indiv_notes"=>"questions", "work_address_street"=>"1069 west broad st", "work_address_city"=>"Falls Church", "work_address_state"=>"VA", "work_address_zip"=>"22015", "home_address_street"=>"home street", "home_address_city"=>"home city", "home_address_state"=>"home state", "home_address_zip"=>"home zip", "gender"=>"male", "ethnicity"=>"race doesn't exist", "country_of_origin"=>"USA", "staff_notes"=>"", "social_twitter"=>"twitter", "social_linkedin"=>"linked", "social_facebook"=>"faceb", "social_googleplus"=>"goog", "social_youtube"=>"yout", "social_pinterest"=>"pint", "social_instagram"=>"insta", "social_flickr"=>"flickr", "social_blog"=>"myblog.com", "social_platform_dominant"=>"twitter", "date_last_updated"=>2014-11-10 17:22:59 UTC}] flags=[]
+                         COMMAND      database=crosstechplayers_development command={:getlasterror=>1, :w=>1} runtime: 5.1380ms
+Redirected to http://localhost:3000/
+Completed 302 Found in 106ms
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 09:25:04 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.2ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>{"$oid"=>BSON::ObjectId('5460f4f04d617211f3000000')}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.0020ms
+Completed 500 Internal Server Error in 71ms
+
+ActionView::Template::Error (The operation: #<Moped::Protocol::Query
+  @length=96
+  @request_id=9
+  @response_to=0
+  @op_code=2004
+  @flags=[]
+  @full_collection_name="crosstechplayers_development.users"
+  @skip=0
+  @limit=0
+  @selector={"_id"=>{"$oid"=>BSON::ObjectId('5460f4f04d617211f3000000')}}
+  @fields=nil>
+failed with error 17287: "Can't canonicalize query: BadValue unknown operator: $oid"
+
+See https://github.com/mongodb/mongo/blob/master/docs/errors.md
+for details about this error.):
+     9: <body>
+    10: 	<div id="container">
+    11:       <div id="user_header">
+    12:    <% if current_user %>
+    13:       Logged in as Username: <%= current_user.username %>.
+    14:       <%= link_to "Log Out", logout_path %>
+    15:     <% else %>
+  app/controllers/application_controller.rb:11:in `current_user'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___126029220271784687_70344158704220'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (19.3ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-11-10 09:26:15 -0800
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sccT01OMlANSayZ9xH0cZy5BxmkJ98iZ3Mti6qucrCE=", "user"=>{"username"=>"hmh2", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "ct_user_type"=>"web-self-registered", "is_admin"=>"false", "prefix"=>"Mr.", "firstname"=>"Martin", "lastname"=>"Haley", "suffix"=>"Suffix", "jobtitle"=>"job Title", "org"=>"VMG", "email"=>"mhaley@vmgstrategies.com", "altemail"=>"hmhaley@yahoo.com", "mobiletel"=>"7039069400", "officetel"=>"7033375200", "hometel"=>"7034251945", "fax"=>"7034251945", "indiv_web_url"=>"linkedin", "indiv_description"=>"bio", "work_address_street"=>"1069 west broad st", "work_address_city"=>"Falls Church", "work_address_state"=>"VA", "work_address_zip"=>"22015", "home_address_street"=>"home street", "home_address_city"=>"home city", "home_address_state"=>"home state", "home_address_zip"=>"home zip", "social_twitter"=>"twitter", "social_linkedin"=>"linked", "social_facebook"=>"faceb", "social_googleplus"=>"goog", "social_youtube"=>"yout", "social_pinterest"=>"pint", "social_instagram"=>"insta", "social_flickr"=>"flickr", "social_blog"=>"myblog.com", "social_platform_dominant"=>"twitter", "gender"=>"male", "ethnicity"=>"race doesn't exist", "country_of_origin"=>"USA", "staff_notes"=>"", "indiv_notes"=>"questions", "date_last_updated"=>"2014-11-10 09:22:59 -0800"}, "commit"=>"Submit"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.6350ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"username"=>"hmh2"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.6710ms
+  Rendered users/new.html.erb within layouts/application (9.2ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>{"$oid"=>BSON::ObjectId('5460f4f04d617211f3000000')}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.2170ms
+Completed 500 Internal Server Error in 122ms
+
+ActionView::Template::Error (The operation: #<Moped::Protocol::Query
+  @length=96
+  @request_id=12
+  @response_to=0
+  @op_code=2004
+  @flags=[]
+  @full_collection_name="crosstechplayers_development.users"
+  @skip=0
+  @limit=0
+  @selector={"_id"=>{"$oid"=>BSON::ObjectId('5460f4f04d617211f3000000')}}
+  @fields=nil>
+failed with error 17287: "Can't canonicalize query: BadValue unknown operator: $oid"
+
+See https://github.com/mongodb/mongo/blob/master/docs/errors.md
+for details about this error.):
+     9: <body>
+    10: 	<div id="container">
+    11:       <div id="user_header">
+    12:    <% if current_user %>
+    13:       Logged in as Username: <%= current_user.username %>.
+    14:       <%= link_to "Log Out", logout_path %>
+    15:     <% else %>
+  app/controllers/application_controller.rb:11:in `current_user'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___126029220271784687_70344158704220'
+  app/controllers/users_controller.rb:24:in `create'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (19.2ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-11-10 09:26:18 -0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (5.2ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>{"$oid"=>BSON::ObjectId('5460f4f04d617211f3000000')}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.9890ms
+Completed 500 Internal Server Error in 71ms
+
+ActionView::Template::Error (The operation: #<Moped::Protocol::Query
+  @length=96
+  @request_id=13
+  @response_to=0
+  @op_code=2004
+  @flags=[]
+  @full_collection_name="crosstechplayers_development.users"
+  @skip=0
+  @limit=0
+  @selector={"_id"=>{"$oid"=>BSON::ObjectId('5460f4f04d617211f3000000')}}
+  @fields=nil>
+failed with error 17287: "Can't canonicalize query: BadValue unknown operator: $oid"
+
+See https://github.com/mongodb/mongo/blob/master/docs/errors.md
+for details about this error.):
+     9: <body>
+    10: 	<div id="container">
+    11:       <div id="user_header">
+    12:    <% if current_user %>
+    13:       Logged in as Username: <%= current_user.username %>.
+    14:       <%= link_to "Log Out", logout_path %>
+    15:     <% else %>
+  app/controllers/application_controller.rb:11:in `current_user'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___126029220271784687_70344158704220'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.7ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-11-10 09:27:22 -0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (4.9ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.5430ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>{"$oid"=>BSON::ObjectId('5460d5ea4d61720d20020000')}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.0690ms
+Completed 500 Internal Server Error in 89ms
+
+ActionView::Template::Error (The operation: #<Moped::Protocol::Query
+  @length=96
+  @request_id=15
+  @response_to=0
+  @op_code=2004
+  @flags=[]
+  @full_collection_name="crosstechplayers_development.users"
+  @skip=0
+  @limit=0
+  @selector={"_id"=>{"$oid"=>BSON::ObjectId('5460d5ea4d61720d20020000')}}
+  @fields=nil>
+failed with error 17287: "Can't canonicalize query: BadValue unknown operator: $oid"
+
+See https://github.com/mongodb/mongo/blob/master/docs/errors.md
+for details about this error.):
+     9: <body>
+    10: 	<div id="container">
+    11:       <div id="user_header">
+    12:    <% if current_user %>
+    13:       Logged in as Username: <%= current_user.username %>.
+    14:       <%= link_to "Log Out", logout_path %>
+    15:     <% else %>
+  app/controllers/application_controller.rb:11:in `current_user'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___126029220271784687_70344158704220'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.9ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-11-10 09:27:38 -0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (4.7ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>{"$oid"=>BSON::ObjectId('5460d5ea4d61720d20020000')}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.0020ms
+Completed 500 Internal Server Error in 67ms
+
+ActionView::Template::Error (The operation: #<Moped::Protocol::Query
+  @length=96
+  @request_id=16
+  @response_to=0
+  @op_code=2004
+  @flags=[]
+  @full_collection_name="crosstechplayers_development.users"
+  @skip=0
+  @limit=0
+  @selector={"_id"=>{"$oid"=>BSON::ObjectId('5460d5ea4d61720d20020000')}}
+  @fields=nil>
+failed with error 17287: "Can't canonicalize query: BadValue unknown operator: $oid"
+
+See https://github.com/mongodb/mongo/blob/master/docs/errors.md
+for details about this error.):
+     9: <body>
+    10: 	<div id="container">
+    11:       <div id="user_header">
+    12:    <% if current_user %>
+    13:       Logged in as Username: <%= current_user.username %>.
+    14:       <%= link_to "Log Out", logout_path %>
+    15:     <% else %>
+  app/controllers/application_controller.rb:11:in `current_user'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___126029220271784687_70344158704220'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.2ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-11-10 09:31:38 -0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (4.7ms)
+Completed 500 Internal Server Error in 101ms
+
+ActionView::Template::Error (undefined local variable or method `current_user' for #<#<Class:0x007ff48d3df778>:0x007ff48d3d76b8>):
+     9: <body>
+    10: 	<div id="container">
+    11:       <div id="user_header">
+    12:    <% if current_user %>
+    13:       Logged in as Username: <%= current_user.username %>.
+    14:       <%= link_to "Log Out", logout_path %>
+    15:     <% else %>
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___126029220271784687_70344158704220'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.8ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-11-10 09:31:43 -0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (4.5ms)
+Completed 500 Internal Server Error in 96ms
+
+ActionView::Template::Error (undefined local variable or method `current_user' for #<#<Class:0x007ff48d3df778>:0x007ff489980cf8>):
+     9: <body>
+    10: 	<div id="container">
+    11:       <div id="user_header">
+    12:    <% if current_user %>
+    13:       Logged in as Username: <%= current_user.username %>.
+    14:       <%= link_to "Log Out", logout_path %>
+    15:     <% else %>
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___126029220271784687_70344158704220'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.3ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-11-10 09:31:59 -0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (5.2ms)
+Completed 500 Internal Server Error in 87ms
+
+ActionView::Template::Error ({"$oid"=>"5460d5ea4d61720d20020000"}):
+     9: <body>
+    10: 	<div id="container">
+    11:       <div id="user_header">
+    12:    <% if current_user %>
+    13:       Logged in as Username: <%= current_user.username %>.
+    14:       <%= link_to "Log Out", logout_path %>
+    15:     <% else %>
+  app/controllers/application_controller.rb:11:in `current_user'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___126029220271784687_70344158704220'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.7ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-11-10 09:32:39 -0800
+
+SyntaxError (/Users/hmhaleyjr/WDI/Martin_WDI/projects_major/02b_crosstechplayers_final_round3/app/controllers/application_controller.rb:12: syntax error, unexpected tGVAR, expecting '('
+...ser.find(session[:user_id].$oid) if session[:user_id] 
+...                               ^):
+  app/controllers/application_controller.rb:12: syntax error, unexpected tGVAR, expecting '('
+  app/controllers/users_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.9ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-11-10 09:33:10 -0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (19.1ms)
+Completed 500 Internal Server Error in 90ms
+
+ActionView::Template::Error ({"$oid"=>"5460d5ea4d61720d20020000"}):
+     9: <body>
+    10: 	<div id="container">
+    11:       <div id="user_header">
+    12:    <% if current_user %>
+    13:       Logged in as Username: <%= current_user.username %>.
+    14:       <%= link_to "Log Out", logout_path %>
+    15:     <% else %>
+  app/controllers/application_controller.rb:11:in `current_user'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___126029220271784687_70344158704220'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.9ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-11-10 09:35:15 -0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (4.3ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.4650ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>{"$oid"=>BSON::ObjectId('5460d5ea4d61720d20020000')}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.9610ms
+Completed 500 Internal Server Error in 68ms
+
+ActionView::Template::Error (The operation: #<Moped::Protocol::Query
+  @length=96
+  @request_id=18
+  @response_to=0
+  @op_code=2004
+  @flags=[]
+  @full_collection_name="crosstechplayers_development.users"
+  @skip=0
+  @limit=0
+  @selector={"_id"=>{"$oid"=>BSON::ObjectId('5460d5ea4d61720d20020000')}}
+  @fields=nil>
+failed with error 17287: "Can't canonicalize query: BadValue unknown operator: $oid"
+
+See https://github.com/mongodb/mongo/blob/master/docs/errors.md
+for details about this error.):
+     9: <body>
+    10: 	<div id="container">
+    11:       <div id="user_header">
+    12:    <% if current_user %>
+    13:       Logged in as Username: <%= current_user.username %>.
+    14:       <%= link_to "Log Out", logout_path %>
+    15:     <% else %>
+  app/controllers/application_controller.rb:12:in `current_user'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___126029220271784687_70344158704220'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.6ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-11-10 09:39:42 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.1ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.4640ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>{"$oid"=>BSON::ObjectId('5460d5ea4d61720d20020000')}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8580ms
+Completed 500 Internal Server Error in 64ms
+
+ActionView::Template::Error (The operation: #<Moped::Protocol::Query
+  @length=96
+  @request_id=20
+  @response_to=0
+  @op_code=2004
+  @flags=[]
+  @full_collection_name="crosstechplayers_development.users"
+  @skip=0
+  @limit=0
+  @selector={"_id"=>{"$oid"=>BSON::ObjectId('5460d5ea4d61720d20020000')}}
+  @fields=nil>
+failed with error 17287: "Can't canonicalize query: BadValue unknown operator: $oid"
+
+See https://github.com/mongodb/mongo/blob/master/docs/errors.md
+for details about this error.):
+     9: <body>
+    10: 	<div id="container">
+    11:       <div id="user_header">
+    12:    <% if current_user %>
+    13:       Logged in as Username: <%= current_user.username %>.
+    14:       <%= link_to "Log Out", logout_path %>
+    15:     <% else %>
+  app/controllers/application_controller.rb:12:in `current_user'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___126029220271784687_70344158704220'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (16.5ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (26.3ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-11-10 09:40:36 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.6ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.4940ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>{"$oid"=>BSON::ObjectId('5460d5ea4d61720d20020000')}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.9480ms
+Completed 500 Internal Server Error in 94ms
+
+ActionView::Template::Error (The operation: #<Moped::Protocol::Query
+  @length=96
+  @request_id=22
+  @response_to=0
+  @op_code=2004
+  @flags=[]
+  @full_collection_name="crosstechplayers_development.users"
+  @skip=0
+  @limit=0
+  @selector={"_id"=>{"$oid"=>BSON::ObjectId('5460d5ea4d61720d20020000')}}
+  @fields=nil>
+failed with error 17287: "Can't canonicalize query: BadValue unknown operator: $oid"
+
+See https://github.com/mongodb/mongo/blob/master/docs/errors.md
+for details about this error.):
+     9: <body>
+    10: 	<div id="container">
+    11:       <div id="user_header">
+    12:    <% if current_user %>
+    13:       Logged in as Username: <%= current_user.username %>.
+    14:       <%= link_to "Log Out", logout_path %>
+    15:     <% else %>
+  app/controllers/application_controller.rb:12:in `current_user'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___126029220271784687_70344158704220'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.6ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-11-10 09:42:03 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.2ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.4650ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>{"$oid"=>BSON::ObjectId('5460d5ea4d61720d20020000')}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7700ms
+Completed 500 Internal Server Error in 60ms
+
+ActionView::Template::Error (The operation: #<Moped::Protocol::Query
+  @length=96
+  @request_id=24
+  @response_to=0
+  @op_code=2004
+  @flags=[]
+  @full_collection_name="crosstechplayers_development.users"
+  @skip=0
+  @limit=0
+  @selector={"_id"=>{"$oid"=>BSON::ObjectId('5460d5ea4d61720d20020000')}}
+  @fields=nil>
+failed with error 17287: "Can't canonicalize query: BadValue unknown operator: $oid"
+
+See https://github.com/mongodb/mongo/blob/master/docs/errors.md
+for details about this error.):
+     9: <body>
+    10: 	<div id="container">
+    11:       <div id="user_header">
+    12:    <% if current_user %>
+    13:       Logged in as Username: <%= current_user.username %>.
+    14:       <%= link_to "Log Out", logout_path %>
+    15:     <% else %>
+  app/controllers/application_controller.rb:12:in `current_user'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___126029220271784687_70344158704220'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 09:42:24 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (2.2ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.0850ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>{"$oid"=>BSON::ObjectId('5460d5ea4d61720d20020000')}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.0110ms
+Completed 500 Internal Server Error in 217ms
+
+ActionView::Template::Error (The operation: #<Moped::Protocol::Query
+  @length=96
+  @request_id=2
+  @response_to=0
+  @op_code=2004
+  @flags=[]
+  @full_collection_name="crosstechplayers_development.users"
+  @skip=0
+  @limit=0
+  @selector={"_id"=>{"$oid"=>BSON::ObjectId('5460d5ea4d61720d20020000')}}
+  @fields=nil>
+failed with error 17287: "Can't canonicalize query: BadValue unknown operator: $oid"
+
+See https://github.com/mongodb/mongo/blob/master/docs/errors.md
+for details about this error.):
+     9: <body>
+    10: 	<div id="container">
+    11:       <div id="user_header">
+    12:    <% if current_user %>
+    13:       Logged in as Username: <%= current_user.username %>.
+    14:       <%= link_to "Log Out", logout_path %>
+    15:     <% else %>
+  app/controllers/application_controller.rb:12:in `current_user'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__2925990215753980205_70101517124060'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (13.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 09:42:27 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.2ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>{"$oid"=>BSON::ObjectId('5460d5ea4d61720d20020000')}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8920ms
+Completed 500 Internal Server Error in 79ms
+
+ActionView::Template::Error (The operation: #<Moped::Protocol::Query
+  @length=96
+  @request_id=3
+  @response_to=0
+  @op_code=2004
+  @flags=[]
+  @full_collection_name="crosstechplayers_development.users"
+  @skip=0
+  @limit=0
+  @selector={"_id"=>{"$oid"=>BSON::ObjectId('5460d5ea4d61720d20020000')}}
+  @fields=nil>
+failed with error 17287: "Can't canonicalize query: BadValue unknown operator: $oid"
+
+See https://github.com/mongodb/mongo/blob/master/docs/errors.md
+for details about this error.):
+     9: <body>
+    10: 	<div id="container">
+    11:       <div id="user_header">
+    12:    <% if current_user %>
+    13:       Logged in as Username: <%= current_user.username %>.
+    14:       <%= link_to "Log Out", logout_path %>
+    15:     <% else %>
+  app/controllers/application_controller.rb:12:in `current_user'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__2925990215753980205_70101517124060'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 09:43:13 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 57ms (Views: 56.6ms)
+
+
+Started GET "/assets/enablers.css?body=1" for 127.0.0.1 at 2014-11-10 09:43:13 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-10 09:43:13 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-10 09:43:13 -0800
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2014-11-10 09:43:13 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-10 09:43:13 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-10 09:43:13 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-10 09:43:13 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-10 09:43:13 -0800
+
+
+Started GET "/assets/enablers.js?body=1" for 127.0.0.1 at 2014-11-10 09:43:13 -0800
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2014-11-10 09:43:13 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-10 09:43:13 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-10 09:43:13 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-10 09:43:13 -0800
+
+
+Started GET "/login" for 127.0.0.1 at 2014-11-10 09:43:18 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 59ms (Views: 58.8ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-11-10 09:43:24 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WalED8FojU8Mr7xJYXJl3uje0qRol8h2Gv2LATlAQHo=", "username"=>"hmh2", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.4780ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"$query"=>{"username"=>"hmh2"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.7980ms
+Completed 500 Internal Server Error in 95ms
+
+RuntimeError (#<User _id: 5460f4f04d617211f3000000, username: "hmh2", password_digest: "$2a$10$Vn5M9FU8HZ8F4oL0bECPQer/xR34QQJDPOzQtjZ83TrNlGOZzyzEm", ct_user_type: "web-self-registered", is_admin: false, prefix: "Mr.", firstname: "Martin", lastname: "Haley", suffix: "Suffix", jobtitle: "job Title", org: "VMG", email: "mhaley@vmgstrategies.com", altemail: "hmhaley@yahoo.com", mobiletel: "7039069400", officetel: "7033375200", hometel: "7034251945", fax: "7034251945", indiv_web_url: "linkedin", indiv_description: "bio", indiv_notes: "questions", work_address_street: "1069 west broad st", work_address_city: "Falls Church", work_address_state: "VA", work_address_zip: "22015", home_address_street: "home street", home_address_city: "home city", home_address_state: "home state", home_address_zip: "home zip", spousal_status: nil, spouse_name: nil, orientation: nil, gender: "male", ethnicity: "race doesn't exist", country_of_origin: "USA", staff_notes: "", social_twitter: "twitter", social_linkedin: "linked", social_facebook: "faceb", social_googleplus: "goog", social_youtube: "yout", social_pinterest: "pint", social_instagram: "insta", social_flickr: "flickr", social_blog: "myblog.com", social_platform_dominant: "twitter", date_last_updated: 2014-11-10 17:22:59 UTC>):
+  app/controllers/sessions_controller.rb:14:in `create'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.2ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (23.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 09:45:32 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 76ms (Views: 75.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 09:45:33 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 59ms (Views: 59.0ms)
+
+
+Started GET "/assets/enablers.css?body=1" for 127.0.0.1 at 2014-11-10 09:45:33 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-10 09:45:33 -0800
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2014-11-10 09:45:33 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-10 09:45:33 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-10 09:45:33 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-10 09:45:33 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-10 09:45:33 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-10 09:45:33 -0800
+
+
+Started GET "/assets/enablers.js?body=1" for 127.0.0.1 at 2014-11-10 09:45:33 -0800
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2014-11-10 09:45:33 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-10 09:45:33 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-10 09:45:33 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-10 09:45:33 -0800
+
+
+Started GET "/login" for 127.0.0.1 at 2014-11-10 09:45:36 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 61ms (Views: 61.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-11-10 09:45:42 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0+LuW6D5BSklMGbhbxlSJfWqJuPaVEEkP3Pfw3jTY78=", "username"=>"hmh2", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.5240ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"$query"=>{"username"=>"hmh2"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.5760ms
+Completed 500 Internal Server Error in 93ms
+
+RuntimeError (#<User _id: 5460f4f04d617211f3000000, username: "hmh2", password_digest: "$2a$10$Vn5M9FU8HZ8F4oL0bECPQer/xR34QQJDPOzQtjZ83TrNlGOZzyzEm", ct_user_type: "web-self-registered", is_admin: false, prefix: "Mr.", firstname: "Martin", lastname: "Haley", suffix: "Suffix", jobtitle: "job Title", org: "VMG", email: "mhaley@vmgstrategies.com", altemail: "hmhaley@yahoo.com", mobiletel: "7039069400", officetel: "7033375200", hometel: "7034251945", fax: "7034251945", indiv_web_url: "linkedin", indiv_description: "bio", indiv_notes: "questions", work_address_street: "1069 west broad st", work_address_city: "Falls Church", work_address_state: "VA", work_address_zip: "22015", home_address_street: "home street", home_address_city: "home city", home_address_state: "home state", home_address_zip: "home zip", spousal_status: nil, spouse_name: nil, orientation: nil, gender: "male", ethnicity: "race doesn't exist", country_of_origin: "USA", staff_notes: "", social_twitter: "twitter", social_linkedin: "linked", social_facebook: "faceb", social_googleplus: "goog", social_youtube: "yout", social_pinterest: "pint", social_instagram: "insta", social_flickr: "flickr", social_blog: "myblog.com", social_platform_dominant: "twitter", date_last_updated: 2014-11-10 17:22:59 UTC>):
+  app/controllers/sessions_controller.rb:14:in `create'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.7ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-11-10 09:47:26 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0+LuW6D5BSklMGbhbxlSJfWqJuPaVEEkP3Pfw3jTY78=", "username"=>"hmh2", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.4570ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"$query"=>{"username"=>"hmh2"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.6270ms
+Completed 500 Internal Server Error in 83ms
+
+RuntimeError (#<User _id: 5460f4f04d617211f3000000, username: "hmh2", password_digest: "$2a$10$Vn5M9FU8HZ8F4oL0bECPQer/xR34QQJDPOzQtjZ83TrNlGOZzyzEm", ct_user_type: "web-self-registered", is_admin: false, prefix: "Mr.", firstname: "Martin", lastname: "Haley", suffix: "Suffix", jobtitle: "job Title", org: "VMG", email: "mhaley@vmgstrategies.com", altemail: "hmhaley@yahoo.com", mobiletel: "7039069400", officetel: "7033375200", hometel: "7034251945", fax: "7034251945", indiv_web_url: "linkedin", indiv_description: "bio", indiv_notes: "questions", work_address_street: "1069 west broad st", work_address_city: "Falls Church", work_address_state: "VA", work_address_zip: "22015", home_address_street: "home street", home_address_city: "home city", home_address_state: "home state", home_address_zip: "home zip", spousal_status: nil, spouse_name: nil, orientation: nil, gender: "male", ethnicity: "race doesn't exist", country_of_origin: "USA", staff_notes: "", social_twitter: "twitter", social_linkedin: "linked", social_facebook: "faceb", social_googleplus: "goog", social_youtube: "yout", social_pinterest: "pint", social_instagram: "insta", social_flickr: "flickr", social_blog: "myblog.com", social_platform_dominant: "twitter", date_last_updated: 2014-11-10 17:22:59 UTC>):
+  app/controllers/sessions_controller.rb:14:in `create'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-11-10 09:47:30 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 77ms (Views: 76.4ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-11-10 09:47:35 -0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (37.4ms)
+Completed 200 OK in 111ms (Views: 110.9ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-11-10 09:48:03 -0800
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0+LuW6D5BSklMGbhbxlSJfWqJuPaVEEkP3Pfw3jTY78=", "user"=>{"username"=>"hmh3", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "ct_user_type"=>"web-self-registered", "is_admin"=>"false", "prefix"=>"", "firstname"=>"grant", "lastname"=>"", "suffix"=>"", "jobtitle"=>"", "org"=>"", "email"=>"", "altemail"=>"", "mobiletel"=>"", "officetel"=>"", "hometel"=>"", "fax"=>"", "indiv_web_url"=>"", "indiv_description"=>"", "work_address_street"=>"", "work_address_city"=>"", "work_address_state"=>"", "work_address_zip"=>"", "home_address_street"=>"", "home_address_city"=>"", "home_address_state"=>"", "home_address_zip"=>"", "social_twitter"=>"", "social_linkedin"=>"", "social_facebook"=>"", "social_googleplus"=>"", "social_youtube"=>"", "social_pinterest"=>"", "social_instagram"=>"", "social_flickr"=>"", "social_blog"=>"", "social_platform_dominant"=>"", "gender"=>"", "ethnicity"=>"", "country_of_origin"=>"", "staff_notes"=>"", "indiv_notes"=>"", "date_last_updated"=>"2014-11-10 09:47:35 -0800"}, "commit"=>"Submit"}
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"username"=>"hmh3"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.4940ms
+  MOPED: 127.0.0.1:27017 INSERT       database=crosstechplayers_development collection=users documents=[{"_id"=>BSON::ObjectId('5460fa544d61721263000000'), "username"=>"hmh3", "password_digest"=>"$2a$10$TwcXlvtZ7AHbysqyY590aO8GQOcQVndItlAHpUjC44424VQb2vpnG", "ct_user_type"=>"web-self-registered", "is_admin"=>false, "prefix"=>"", "firstname"=>"grant", "lastname"=>"", "suffix"=>"", "jobtitle"=>"", "org"=>"", "email"=>"", "altemail"=>"", "mobiletel"=>"", "officetel"=>"", "hometel"=>"", "fax"=>"", "indiv_web_url"=>"", "indiv_description"=>"", "indiv_notes"=>"", "work_address_street"=>"", "work_address_city"=>"", "work_address_state"=>"", "work_address_zip"=>"", "home_address_street"=>"", "home_address_city"=>"", "home_address_state"=>"", "home_address_zip"=>"", "gender"=>"", "ethnicity"=>"", "country_of_origin"=>"", "staff_notes"=>"", "social_twitter"=>"", "social_linkedin"=>"", "social_facebook"=>"", "social_googleplus"=>"", "social_youtube"=>"", "social_pinterest"=>"", "social_instagram"=>"", "social_flickr"=>"", "social_blog"=>"", "social_platform_dominant"=>"", "date_last_updated"=>2014-11-10 17:47:35 UTC}] flags=[]
+                         COMMAND      database=crosstechplayers_development command={:getlasterror=>1, :w=>1} runtime: 0.8550ms
+Redirected to http://localhost:3000/
+Completed 302 Found in 107ms
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 09:48:04 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.2ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>{"$oid"=>BSON::ObjectId('5460fa544d61721263000000')}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.1520ms
+Completed 500 Internal Server Error in 69ms
+
+ActionView::Template::Error (The operation: #<Moped::Protocol::Query
+  @length=96
+  @request_id=13
+  @response_to=0
+  @op_code=2004
+  @flags=[]
+  @full_collection_name="crosstechplayers_development.users"
+  @skip=0
+  @limit=0
+  @selector={"_id"=>{"$oid"=>BSON::ObjectId('5460fa544d61721263000000')}}
+  @fields=nil>
+failed with error 17287: "Can't canonicalize query: BadValue unknown operator: $oid"
+
+See https://github.com/mongodb/mongo/blob/master/docs/errors.md
+for details about this error.):
+     9: <body>
+    10: 	<div id="container">
+    11:       <div id="user_header">
+    12:    <% if current_user %>
+    13:       Logged in as Username: <%= current_user.username %>.
+    14:       <%= link_to "Log Out", logout_path %>
+    15:     <% else %>
+  app/controllers/application_controller.rb:12:in `current_user'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__2925990215753980205_70101517124060'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (13.5ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-11-10 09:48:18 -0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (5.7ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>{"$oid"=>BSON::ObjectId('5460fa544d61721263000000')}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.9640ms
+Completed 500 Internal Server Error in 81ms
+
+ActionView::Template::Error (The operation: #<Moped::Protocol::Query
+  @length=96
+  @request_id=14
+  @response_to=0
+  @op_code=2004
+  @flags=[]
+  @full_collection_name="crosstechplayers_development.users"
+  @skip=0
+  @limit=0
+  @selector={"_id"=>{"$oid"=>BSON::ObjectId('5460fa544d61721263000000')}}
+  @fields=nil>
+failed with error 17287: "Can't canonicalize query: BadValue unknown operator: $oid"
+
+See https://github.com/mongodb/mongo/blob/master/docs/errors.md
+for details about this error.):
+     9: <body>
+    10: 	<div id="container">
+    11:       <div id="user_header">
+    12:    <% if current_user %>
+    13:       Logged in as Username: <%= current_user.username %>.
+    14:       <%= link_to "Log Out", logout_path %>
+    15:     <% else %>
+  app/controllers/application_controller.rb:12:in `current_user'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__2925990215753980205_70101517124060'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.2ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-11-10 09:48:18 -0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (7.8ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>{"$oid"=>BSON::ObjectId('5460fa544d61721263000000')}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.9440ms
+Completed 500 Internal Server Error in 82ms
+
+ActionView::Template::Error (The operation: #<Moped::Protocol::Query
+  @length=96
+  @request_id=15
+  @response_to=0
+  @op_code=2004
+  @flags=[]
+  @full_collection_name="crosstechplayers_development.users"
+  @skip=0
+  @limit=0
+  @selector={"_id"=>{"$oid"=>BSON::ObjectId('5460fa544d61721263000000')}}
+  @fields=nil>
+failed with error 17287: "Can't canonicalize query: BadValue unknown operator: $oid"
+
+See https://github.com/mongodb/mongo/blob/master/docs/errors.md
+for details about this error.):
+     9: <body>
+    10: 	<div id="container">
+    11:       <div id="user_header">
+    12:    <% if current_user %>
+    13:       Logged in as Username: <%= current_user.username %>.
+    14:       <%= link_to "Log Out", logout_path %>
+    15:     <% else %>
+  app/controllers/application_controller.rb:12:in `current_user'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__2925990215753980205_70101517124060'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 09:48:27 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.2ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.5180ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>{"$oid"=>BSON::ObjectId('5460fa544d61721263000000')}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8600ms
+Completed 500 Internal Server Error in 69ms
+
+ActionView::Template::Error (The operation: #<Moped::Protocol::Query
+  @length=96
+  @request_id=17
+  @response_to=0
+  @op_code=2004
+  @flags=[]
+  @full_collection_name="crosstechplayers_development.users"
+  @skip=0
+  @limit=0
+  @selector={"_id"=>{"$oid"=>BSON::ObjectId('5460fa544d61721263000000')}}
+  @fields=nil>
+failed with error 17287: "Can't canonicalize query: BadValue unknown operator: $oid"
+
+See https://github.com/mongodb/mongo/blob/master/docs/errors.md
+for details about this error.):
+     9: <body>
+    10: 	<div id="container">
+    11:       <div id="user_header">
+    12:    <% if current_user %>
+    13:       Logged in as Username: <%= current_user.username %>.
+    14:       <%= link_to "Log Out", logout_path %>
+    15:     <% else %>
+  app/controllers/application_controller.rb:12:in `current_user'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__2925990215753980205_70101517124060'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.5ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-11-10 09:48:32 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (2.5ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>{"$oid"=>BSON::ObjectId('5460fa544d61721263000000')}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.1500ms
+Completed 500 Internal Server Error in 68ms
+
+ActionView::Template::Error (The operation: #<Moped::Protocol::Query
+  @length=96
+  @request_id=18
+  @response_to=0
+  @op_code=2004
+  @flags=[]
+  @full_collection_name="crosstechplayers_development.users"
+  @skip=0
+  @limit=0
+  @selector={"_id"=>{"$oid"=>BSON::ObjectId('5460fa544d61721263000000')}}
+  @fields=nil>
+failed with error 17287: "Can't canonicalize query: BadValue unknown operator: $oid"
+
+See https://github.com/mongodb/mongo/blob/master/docs/errors.md
+for details about this error.):
+     9: <body>
+    10: 	<div id="container">
+    11:       <div id="user_header">
+    12:    <% if current_user %>
+    13:       Logged in as Username: <%= current_user.username %>.
+    14:       <%= link_to "Log Out", logout_path %>
+    15:     <% else %>
+  app/controllers/application_controller.rb:12:in `current_user'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__2925990215753980205_70101517124060'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 09:48:39 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.2ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>{"$oid"=>BSON::ObjectId('5460fa544d61721263000000')}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.9040ms
+Completed 500 Internal Server Error in 77ms
+
+ActionView::Template::Error (The operation: #<Moped::Protocol::Query
+  @length=96
+  @request_id=19
+  @response_to=0
+  @op_code=2004
+  @flags=[]
+  @full_collection_name="crosstechplayers_development.users"
+  @skip=0
+  @limit=0
+  @selector={"_id"=>{"$oid"=>BSON::ObjectId('5460fa544d61721263000000')}}
+  @fields=nil>
+failed with error 17287: "Can't canonicalize query: BadValue unknown operator: $oid"
+
+See https://github.com/mongodb/mongo/blob/master/docs/errors.md
+for details about this error.):
+     9: <body>
+    10: 	<div id="container">
+    11:       <div id="user_header">
+    12:    <% if current_user %>
+    13:       Logged in as Username: <%= current_user.username %>.
+    14:       <%= link_to "Log Out", logout_path %>
+    15:     <% else %>
+  app/controllers/application_controller.rb:12:in `current_user'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__2925990215753980205_70101517124060'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 09:48:51 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 81ms (Views: 80.5ms)
+
+
+Started GET "/assets/enablers.css?body=1" for 127.0.0.1 at 2014-11-10 09:48:51 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-10 09:48:51 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-10 09:48:51 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-10 09:48:51 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-10 09:48:51 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-10 09:48:51 -0800
+
+
+Started GET "/assets/enablers.js?body=1" for 127.0.0.1 at 2014-11-10 09:48:51 -0800
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2014-11-10 09:48:51 -0800
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2014-11-10 09:48:51 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-10 09:48:51 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-10 09:48:51 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-10 09:48:51 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-10 09:48:51 -0800
+
+
+Started GET "/login" for 127.0.0.1 at 2014-11-10 09:48:55 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 61ms (Views: 60.2ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-11-10 09:49:02 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"A/NsuhIICcVaS7cO1/n3J0rVUr4rYzr/pZNJfZxh5zA=", "username"=>"hmh3", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.4390ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"$query"=>{"username"=>"hmh3"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.8780ms
+Completed 500 Internal Server Error in 90ms
+
+RuntimeError (#<User _id: 5460fa544d61721263000000, username: "hmh3", password_digest: "$2a$10$TwcXlvtZ7AHbysqyY590aO8GQOcQVndItlAHpUjC44424VQb2vpnG", ct_user_type: "web-self-registered", is_admin: false, prefix: "", firstname: "grant", lastname: "", suffix: "", jobtitle: "", org: "", email: "", altemail: "", mobiletel: "", officetel: "", hometel: "", fax: "", indiv_web_url: "", indiv_description: "", indiv_notes: "", work_address_street: "", work_address_city: "", work_address_state: "", work_address_zip: "", home_address_street: "", home_address_city: "", home_address_state: "", home_address_zip: "", spousal_status: nil, spouse_name: nil, orientation: nil, gender: "", ethnicity: "", country_of_origin: "", staff_notes: "", social_twitter: "", social_linkedin: "", social_facebook: "", social_googleplus: "", social_youtube: "", social_pinterest: "", social_instagram: "", social_flickr: "", social_blog: "", social_platform_dominant: "", date_last_updated: 2014-11-10 17:47:35 UTC>):
+  app/controllers/sessions_controller.rb:14:in `create'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 09:50:04 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 58ms (Views: 57.6ms)
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2014-11-10 09:50:04 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-10 09:50:04 -0800
+
+
+Started GET "/assets/enablers.css?body=1" for 127.0.0.1 at 2014-11-10 09:50:04 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-10 09:50:04 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-10 09:50:04 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-10 09:50:04 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-10 09:50:04 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-10 09:50:04 -0800
+
+
+Started GET "/assets/enablers.js?body=1" for 127.0.0.1 at 2014-11-10 09:50:04 -0800
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2014-11-10 09:50:04 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-10 09:50:04 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-10 09:50:04 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-10 09:50:04 -0800
+
+
+Started GET "/login" for 127.0.0.1 at 2014-11-10 09:50:09 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 61ms (Views: 60.8ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-11-10 09:50:15 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IMEMy4nmgcd35CJNJwB088HixQ2G+qlEImCKMQag/AY=", "username"=>"hmh3", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.5050ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"$query"=>{"username"=>"hmh3"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.9630ms
+Completed 500 Internal Server Error in 112ms
+
+RuntimeError (BSON::ObjectId('5460fa544d61721263000000')):
+  app/controllers/sessions_controller.rb:16:in `create'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.9ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-11-10 09:53:55 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 86ms
+
+ActionView::Template::Error (undefined local variable or method `current_user' for #<#<Class:0x007f838c82df40>:0x007f838c96f980>):
+     9: <body>
+    10: 	<div id="container">
+    11:       <div id="user_header">
+    12:    <% if current_user %>
+    13:       Logged in as Username: <%= current_user.username %>.
+    14:       <%= link_to "Log Out", logout_path %>
+    15:     <% else %>
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__2925990215753980205_70101517124060'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-11-10 09:53:55 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 80ms
+
+ActionView::Template::Error (undefined local variable or method `current_user' for #<#<Class:0x007f838c82df40>:0x007f838aa106e8>):
+     9: <body>
+    10: 	<div id="container">
+    11:       <div id="user_header">
+    12:    <% if current_user %>
+    13:       Logged in as Username: <%= current_user.username %>.
+    14:       <%= link_to "Log Out", logout_path %>
+    15:     <% else %>
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__2925990215753980205_70101517124060'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 09:55:03 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 183ms
+
+ActionView::Template::Error (undefined local variable or method `current_user' for #<#<Class:0x007f830ea49e10>:0x007f830ea491b8>):
+     9: <body>
+    10: 	<div id="container">
+    11:       <div id="user_header">
+    12:    <% if current_user %>
+    13:       Logged in as Username: <%= current_user.username %>.
+    14:       <%= link_to "Log Out", logout_path %>
+    15:     <% else %>
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__416982634135518793_70100431425220'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (12.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 09:56:24 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 69ms (Views: 68.8ms)
+
+
+Started GET "/assets/enablers.css?body=1" for 127.0.0.1 at 2014-11-10 09:56:24 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-10 09:56:24 -0800
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2014-11-10 09:56:24 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-10 09:56:24 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-10 09:56:24 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-10 09:56:24 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-10 09:56:24 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-10 09:56:24 -0800
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2014-11-10 09:56:24 -0800
+
+
+Started GET "/assets/enablers.js?body=1" for 127.0.0.1 at 2014-11-10 09:56:24 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-10 09:56:24 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-10 09:56:24 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-10 09:56:24 -0800
+
+
+Started GET "/login" for 127.0.0.1 at 2014-11-10 09:56:28 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 69ms (Views: 68.7ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-11-10 09:56:42 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 67ms (Views: 67.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-10 09:56:42 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-10 09:56:42 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-10 09:56:42 -0800
+
+
+Started GET "/assets/enablers.js?body=1" for 127.0.0.1 at 2014-11-10 09:56:42 -0800
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2014-11-10 09:56:42 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-10 09:56:42 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-10 09:56:42 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-10 09:56:42 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-10 09:56:42 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 10:00:15 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 68ms (Views: 67.5ms)
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2014-11-10 10:00:16 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-10 10:00:16 -0800
+
+
+Started GET "/assets/enablers.css?body=1" for 127.0.0.1 at 2014-11-10 10:00:16 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-10 10:00:16 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-10 10:00:16 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-10 10:00:16 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-10 10:00:16 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-10 10:00:16 -0800
+
+
+Started GET "/assets/enablers.js?body=1" for 127.0.0.1 at 2014-11-10 10:00:16 -0800
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2014-11-10 10:00:16 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-10 10:00:16 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-10 10:00:16 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-10 10:00:16 -0800
+
+
+Started GET "/login" for 127.0.0.1 at 2014-11-10 10:00:20 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 65ms (Views: 64.8ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-11-10 10:00:58 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ak7TCf8C89fA3Qr/ltLAh15o/1VdJzHbATAmaJGdhPI=", "username"=>"hmh3", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.9830ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"$query"=>{"username"=>"hmh3"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.6280ms
+Completed 500 Internal Server Error in 113ms
+
+RuntimeError (BSON::ObjectId('5460fa544d61721263000000')):
+  app/controllers/sessions_controller.rb:16:in `create'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 10:01:27 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 68ms (Views: 67.3ms)
+
+
+Started GET "/assets/enablers.css?body=1" for 127.0.0.1 at 2014-11-10 10:01:27 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-10 10:01:27 -0800
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2014-11-10 10:01:27 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-10 10:01:27 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-10 10:01:27 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-10 10:01:27 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-10 10:01:27 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-10 10:01:27 -0800
+
+
+Started GET "/assets/enablers.js?body=1" for 127.0.0.1 at 2014-11-10 10:01:27 -0800
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2014-11-10 10:01:27 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-10 10:01:27 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-10 10:01:27 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-10 10:01:27 -0800
+
+
+Started GET "/login" for 127.0.0.1 at 2014-11-10 10:01:32 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 60ms (Views: 59.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-11-10 10:01:40 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ak7TCf8C89fA3Qr/ltLAh15o/1VdJzHbATAmaJGdhPI=", "username"=>"hmh3", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.7100ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"$query"=>{"username"=>"hmh3"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.9780ms
+Redirected to http://localhost:3000/
+Completed 302 Found in 106ms
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 10:01:40 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.2ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>{"$oid"=>BSON::ObjectId('5460fa544d61721263000000')}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.0850ms
+Completed 500 Internal Server Error in 75ms
+
+ActionView::Template::Error (The operation: #<Moped::Protocol::Query
+  @length=96
+  @request_id=5
+  @response_to=0
+  @op_code=2004
+  @flags=[]
+  @full_collection_name="crosstechplayers_development.users"
+  @skip=0
+  @limit=0
+  @selector={"_id"=>{"$oid"=>BSON::ObjectId('5460fa544d61721263000000')}}
+  @fields=nil>
+failed with error 17287: "Can't canonicalize query: BadValue unknown operator: $oid"
+
+See https://github.com/mongodb/mongo/blob/master/docs/errors.md
+for details about this error.):
+     9: <body>
+    10: 	<div id="container">
+    11:       <div id="user_header">
+    12:    <% if current_user %>
+    13:       Logged in as Username: <%= current_user.username %>.
+    14:       <%= link_to "Log Out", logout_path %>
+    15:     <% else %>
+  app/controllers/application_controller.rb:12:in `current_user'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__416982634135518793_70100431425220'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (13.2ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-11-10 10:02:34 -0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (30.6ms)
+Completed 500 Internal Server Error in 102ms
+
+ActionView::Template::Error (nil):
+     9: <body>
+    10: 	<div id="container">
+    11:       <div id="user_header">
+    12:    <% if current_user %>
+    13:       Logged in as Username: <%= current_user.username %>.
+    14:       <%= link_to "Log Out", logout_path %>
+    15:     <% else %>
+  app/controllers/application_controller.rb:11:in `current_user'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__416982634135518793_70100431425220'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 10:02:36 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.3ms)
+Completed 500 Internal Server Error in 79ms
+
+ActionView::Template::Error (nil):
+     9: <body>
+    10: 	<div id="container">
+    11:       <div id="user_header">
+    12:    <% if current_user %>
+    13:       Logged in as Username: <%= current_user.username %>.
+    14:       <%= link_to "Log Out", logout_path %>
+    15:     <% else %>
+  app/controllers/application_controller.rb:11:in `current_user'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__416982634135518793_70100431425220'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (15.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 10:02:39 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 66ms
+
+ActionView::Template::Error (nil):
+     9: <body>
+    10: 	<div id="container">
+    11:       <div id="user_header">
+    12:    <% if current_user %>
+    13:       Logged in as Username: <%= current_user.username %>.
+    14:       <%= link_to "Log Out", logout_path %>
+    15:     <% else %>
+  app/controllers/application_controller.rb:11:in `current_user'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__416982634135518793_70100431425220'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 10:02:42 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 75ms
+
+ActionView::Template::Error (nil):
+     9: <body>
+    10: 	<div id="container">
+    11:       <div id="user_header">
+    12:    <% if current_user %>
+    13:       Logged in as Username: <%= current_user.username %>.
+    14:       <%= link_to "Log Out", logout_path %>
+    15:     <% else %>
+  app/controllers/application_controller.rb:11:in `current_user'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__416982634135518793_70100431425220'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.3ms)
+
+
+Started GET "/sessions" for 127.0.0.1 at 2014-11-10 10:02:42 -0800
+
+AbstractController::ActionNotFound (The action 'index' could not be found for SessionsController):
+  actionpack (4.1.6) lib/abstract_controller/base.rb:131:in `process'
+  actionview (4.1.6) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.6) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.6) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 10:02:43 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.2ms)
+Completed 500 Internal Server Error in 72ms
+
+ActionView::Template::Error (nil):
+     9: <body>
+    10: 	<div id="container">
+    11:       <div id="user_header">
+    12:    <% if current_user %>
+    13:       Logged in as Username: <%= current_user.username %>.
+    14:       <%= link_to "Log Out", logout_path %>
+    15:     <% else %>
+  app/controllers/application_controller.rb:11:in `current_user'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__416982634135518793_70100431425220'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (23.8ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-11-10 10:02:43 -0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 62ms
+
+ActionView::Template::Error (nil):
+     9: <body>
+    10: 	<div id="container">
+    11:       <div id="user_header">
+    12:    <% if current_user %>
+    13:       Logged in as Username: <%= current_user.username %>.
+    14:       <%= link_to "Log Out", logout_path %>
+    15:     <% else %>
+  app/controllers/application_controller.rb:11:in `current_user'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__416982634135518793_70100431425220'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (14.1ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-11-10 10:02:44 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.2ms)
+Completed 500 Internal Server Error in 68ms
+
+ActionView::Template::Error (nil):
+     9: <body>
+    10: 	<div id="container">
+    11:       <div id="user_header">
+    12:    <% if current_user %>
+    13:       Logged in as Username: <%= current_user.username %>.
+    14:       <%= link_to "Log Out", logout_path %>
+    15:     <% else %>
+  app/controllers/application_controller.rb:11:in `current_user'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__416982634135518793_70100431425220'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.5ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-11-10 10:02:45 -0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (4.1ms)
+Completed 500 Internal Server Error in 74ms
+
+ActionView::Template::Error (nil):
+     9: <body>
+    10: 	<div id="container">
+    11:       <div id="user_header">
+    12:    <% if current_user %>
+    13:       Logged in as Username: <%= current_user.username %>.
+    14:       <%= link_to "Log Out", logout_path %>
+    15:     <% else %>
+  app/controllers/application_controller.rb:11:in `current_user'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__416982634135518793_70100431425220'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.4ms)
+
+
+Started GET "/assets/enablers.css?body=1" for 127.0.0.1 at 2014-11-10 10:02:50 -0800
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2014-11-10 10:02:50 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-10 10:02:50 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-10 10:02:50 -0800
+
+
+Started GET "/login" for 127.0.0.1 at 2014-11-10 10:02:52 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 71ms
+
+ActionView::Template::Error (nil):
+     9: <body>
+    10: 	<div id="container">
+    11:       <div id="user_header">
+    12:    <% if current_user %>
+    13:       Logged in as Username: <%= current_user.username %>.
+    14:       <%= link_to "Log Out", logout_path %>
+    15:     <% else %>
+  app/controllers/application_controller.rb:11:in `current_user'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__416982634135518793_70100431425220'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.9ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-11-10 10:02:52 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 73ms
+
+ActionView::Template::Error (nil):
+     9: <body>
+    10: 	<div id="container">
+    11:       <div id="user_header">
+    12:    <% if current_user %>
+    13:       Logged in as Username: <%= current_user.username %>.
+    14:       <%= link_to "Log Out", logout_path %>
+    15:     <% else %>
+  app/controllers/application_controller.rb:11:in `current_user'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__416982634135518793_70100431425220'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-11-10 10:03:50 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 68ms (Views: 67.9ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-11-10 10:04:00 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"syr2wdY4T36phBnO5OD0yw8SQNWx5dI8poNVMFrsvRM=", "username"=>"hmh3", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.5320ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"$query"=>{"username"=>"hmh3"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.9370ms
+Redirected to http://localhost:3000/
+Completed 302 Found in 110ms
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 10:04:00 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.2ms)
+Completed 500 Internal Server Error in 63ms
+
+ActionView::Template::Error (
+Problem:
+  Calling Document.find with nil is invalid.
+Summary:
+  Document.find expects the parameters to be 1 or more ids, and will return a single document if 1 id is provided, otherwise an array of documents if multiple ids are provided.
+Resolution:
+  Most likely this is caused by passing parameters directly through to the find, and the parameter either is not present or the key from which it is accessed is incorrect.):
+     9: <body>
+    10: 	<div id="container">
+    11:       <div id="user_header">
+    12:    <% if current_user %>
+    13:       Logged in as Username: <%= current_user.username %>.
+    14:       <%= link_to "Log Out", logout_path %>
+    15:     <% else %>
+  app/controllers/application_controller.rb:12:in `current_user'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__416982634135518793_70100431425220'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (21.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 10:06:42 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.3ms)
+Completed 500 Internal Server Error in 134ms
+
+ActionView::Template::Error (undefined method `primary_key=' for User:Class):
+     9: <body>
+    10: 	<div id="container">
+    11:       <div id="user_header">
+    12:    <% if current_user %>
+    13:       Logged in as Username: <%= current_user.username %>.
+    14:       <%= link_to "Log Out", logout_path %>
+    15:     <% else %>
+  app/models/user.rb:3:in `<class:User>'
+  app/models/user.rb:1:in `<top (required)>'
+  app/controllers/application_controller.rb:12:in `current_user'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__416982634135518793_70100431425220'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (15.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 10:09:51 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.3ms)
+Completed 500 Internal Server Error in 77ms
+
+ActionView::Template::Error (undefined method `primary_key=' for User:Class):
+     9: <body>
+    10: 	<div id="container">
+    11:       <div id="user_header">
+    12:    <% if current_user %>
+    13:       Logged in as Username: <%= current_user.username %>.
+    14:       <%= link_to "Log Out", logout_path %>
+    15:     <% else %>
+  app/models/user.rb:3:in `<class:User>'
+  app/models/user.rb:1:in `<top (required)>'
+  app/controllers/application_controller.rb:12:in `current_user'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__416982634135518793_70100431425220'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 10:13:29 -0800
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 9ms
+
+TypeError (incompatible marshal file format (can't be read)
+	format version 4.8 required; 123.34 given):
+  activesupport (4.1.6) lib/active_support/core_ext/marshal.rb:6:in `load'
+  activesupport (4.1.6) lib/active_support/core_ext/marshal.rb:6:in `load_with_autoloading'
+  actionpack (4.1.6) lib/action_dispatch/middleware/cookies.rb:428:in `deserialize'
+  actionpack (4.1.6) lib/action_dispatch/middleware/cookies.rb:516:in `[]'
+  actionpack (4.1.6) lib/action_dispatch/middleware/session/cookie_store.rb:114:in `get_cookie'
+  actionpack (4.1.6) lib/action_dispatch/middleware/session/cookie_store.rb:90:in `block in unpacked_cookie_data'
+  actionpack (4.1.6) lib/action_dispatch/middleware/session/abstract_store.rb:51:in `stale_session_check!'
+  actionpack (4.1.6) lib/action_dispatch/middleware/session/cookie_store.rb:89:in `unpacked_cookie_data'
+  actionpack (4.1.6) lib/action_dispatch/middleware/session/cookie_store.rb:83:in `block in extract_session_id'
+  actionpack (4.1.6) lib/action_dispatch/middleware/session/abstract_store.rb:51:in `stale_session_check!'
+  actionpack (4.1.6) lib/action_dispatch/middleware/session/cookie_store.rb:82:in `extract_session_id'
+  actionpack (4.1.6) lib/action_dispatch/request/session.rb:49:in `block in []'
+  actionpack (4.1.6) lib/action_dispatch/request/session.rb:48:in `fetch'
+  actionpack (4.1.6) lib/action_dispatch/request/session.rb:48:in `[]'
+  actionpack (4.1.6) lib/action_dispatch/request/session.rb:70:in `id'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:282:in `current_session_id'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:288:in `session_exists?'
+  actionpack (4.1.6) lib/action_dispatch/request/session.rb:152:in `exists?'
+  actionpack (4.1.6) lib/action_dispatch/request/session.rb:172:in `load_for_read!'
+  actionpack (4.1.6) lib/action_dispatch/request/session.rb:89:in `[]'
+  turbolinks (2.5.1) lib/turbolinks/xhr_headers.rb:33:in `set_xhr_redirected_to'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:424:in `block in make_lambda'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:160:in `call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:160:in `block in halting'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.6) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.6) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.6) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.6) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.6) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  actionpack (4.1.6) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.6) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.6) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.6) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.7ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (27.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 10:15:31 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 193ms
+
+ActionView::Template::Error (undefined method `primary_key' for User:Class):
+     9: <body>
+    10: 	<div id="container">
+    11:       <div id="user_header">
+    12:    <% if current_user %>
+    13:       Logged in as Username: <%= current_user.username %>.
+    14:       <%= link_to "Log Out", logout_path %>
+    15:     <% else %>
+  app/models/user.rb:3:in `<class:User>'
+  app/models/user.rb:1:in `<top (required)>'
+  app/controllers/application_controller.rb:12:in `current_user'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___2985533742962564406_70196323971540'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (16.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 10:15:50 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.2ms)
+Completed 500 Internal Server Error in 77ms
+
+ActionView::Template::Error (uninitialized constant User::ZeroOidfix):
+     9: <body>
+    10: 	<div id="container">
+    11:       <div id="user_header">
+    12:    <% if current_user %>
+    13:       Logged in as Username: <%= current_user.username %>.
+    14:       <%= link_to "Log Out", logout_path %>
+    15:     <% else %>
+  app/models/user.rb:5:in `<class:User>'
+  app/models/user.rb:1:in `<top (required)>'
+  app/controllers/application_controller.rb:12:in `current_user'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___2985533742962564406_70196323971540'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 10:16:19 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.2ms)
+Completed 500 Internal Server Error in 78ms
+
+ActionView::Template::Error (uninitialized constant User::ZeroOidFix):
+     9: <body>
+    10: 	<div id="container">
+    11:       <div id="user_header">
+    12:    <% if current_user %>
+    13:       Logged in as Username: <%= current_user.username %>.
+    14:       <%= link_to "Log Out", logout_path %>
+    15:     <% else %>
+  app/models/user.rb:5:in `<class:User>'
+  app/models/user.rb:1:in `<top (required)>'
+  app/controllers/application_controller.rb:12:in `current_user'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___2985533742962564406_70196323971540'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 10:17:35 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.2ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.2950ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>{"$oid"=>BSON::ObjectId('5460fa544d61721263000000')}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 5.3860ms
+Completed 500 Internal Server Error in 85ms
+
+ActionView::Template::Error (The operation: #<Moped::Protocol::Query
+  @length=96
+  @request_id=2
+  @response_to=0
+  @op_code=2004
+  @flags=[]
+  @full_collection_name="crosstechplayers_development.users"
+  @skip=0
+  @limit=0
+  @selector={"_id"=>{"$oid"=>BSON::ObjectId('5460fa544d61721263000000')}}
+  @fields=nil>
+failed with error 17287: "Can't canonicalize query: BadValue unknown operator: $oid"
+
+See https://github.com/mongodb/mongo/blob/master/docs/errors.md
+for details about this error.):
+     9: <body>
+    10: 	<div id="container">
+    11:       <div id="user_header">
+    12:    <% if current_user %>
+    13:       Logged in as Username: <%= current_user.username %>.
+    14:       <%= link_to "Log Out", logout_path %>
+    15:     <% else %>
+  app/controllers/application_controller.rb:12:in `current_user'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___2985533742962564406_70196323971540'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 10:18:54 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.2ms)
+Completed 500 Internal Server Error in 65ms
+
+ActionView::Template::Error (uninitialized constant User::ZeroOidFix):
+     9: <body>
+    10: 	<div id="container">
+    11:       <div id="user_header">
+    12:    <% if current_user %>
+    13:       Logged in as Username: <%= current_user.username %>.
+    14:       <%= link_to "Log Out", logout_path %>
+    15:     <% else %>
+  app/models/user.rb:5:in `<class:User>'
+  app/models/user.rb:1:in `<top (required)>'
+  app/controllers/application_controller.rb:12:in `current_user'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___2985533742962564406_70196323971540'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 10:24:18 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (1.9ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.2750ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>{"$oid"=>BSON::ObjectId('5460fa544d61721263000000')}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.9560ms
+Completed 500 Internal Server Error in 201ms
+
+ActionView::Template::Error (The operation: #<Moped::Protocol::Query
+  @length=96
+  @request_id=2
+  @response_to=0
+  @op_code=2004
+  @flags=[]
+  @full_collection_name="crosstechplayers_development.users"
+  @skip=0
+  @limit=0
+  @selector={"_id"=>{"$oid"=>BSON::ObjectId('5460fa544d61721263000000')}}
+  @fields=nil>
+failed with error 17287: "Can't canonicalize query: BadValue unknown operator: $oid"
+
+See https://github.com/mongodb/mongo/blob/master/docs/errors.md
+for details about this error.):
+     9: <body>
+    10: 	<div id="container">
+    11:       <div id="user_header">
+    12:    <% if current_user %>
+    13:       Logged in as Username: <%= current_user.username %>.
+    14:       <%= link_to "Log Out", logout_path %>
+    15:     <% else %>
+  app/controllers/application_controller.rb:12:in `current_user'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___3569431453983715653_70110573453080'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (14.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 10:24:20 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.2ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>{"$oid"=>BSON::ObjectId('5460fa544d61721263000000')}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8970ms
+Completed 500 Internal Server Error in 74ms
+
+ActionView::Template::Error (The operation: #<Moped::Protocol::Query
+  @length=96
+  @request_id=3
+  @response_to=0
+  @op_code=2004
+  @flags=[]
+  @full_collection_name="crosstechplayers_development.users"
+  @skip=0
+  @limit=0
+  @selector={"_id"=>{"$oid"=>BSON::ObjectId('5460fa544d61721263000000')}}
+  @fields=nil>
+failed with error 17287: "Can't canonicalize query: BadValue unknown operator: $oid"
+
+See https://github.com/mongodb/mongo/blob/master/docs/errors.md
+for details about this error.):
+     9: <body>
+    10: 	<div id="container">
+    11:       <div id="user_header">
+    12:    <% if current_user %>
+    13:       Logged in as Username: <%= current_user.username %>.
+    14:       <%= link_to "Log Out", logout_path %>
+    15:     <% else %>
+  app/controllers/application_controller.rb:12:in `current_user'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___3569431453983715653_70110573453080'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 10:25:13 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.2ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.4250ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>{"$oid"=>BSON::ObjectId('5460d5ea4d61720d20020000')}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 8.5500ms
+Completed 500 Internal Server Error in 133ms
+
+ActionView::Template::Error (The operation: #<Moped::Protocol::Query
+  @length=96
+  @request_id=5
+  @response_to=0
+  @op_code=2004
+  @flags=[]
+  @full_collection_name="crosstechplayers_development.users"
+  @skip=0
+  @limit=0
+  @selector={"_id"=>{"$oid"=>BSON::ObjectId('5460d5ea4d61720d20020000')}}
+  @fields=nil>
+failed with error 17287: "Can't canonicalize query: BadValue unknown operator: $oid"
+
+See https://github.com/mongodb/mongo/blob/master/docs/errors.md
+for details about this error.):
+     9: <body>
+    10: 	<div id="container">
+    11:       <div id="user_header">
+    12:    <% if current_user %>
+    13:       Logged in as Username: <%= current_user.username %>.
+    14:       <%= link_to "Log Out", logout_path %>
+    15:     <% else %>
+  app/controllers/application_controller.rb:12:in `current_user'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___3569431453983715653_70110573453080'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (21.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 10:25:13 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.2ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.4340ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>{"$oid"=>BSON::ObjectId('5460d5ea4d61720d20020000')}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7010ms
+Completed 500 Internal Server Error in 62ms
+
+ActionView::Template::Error (The operation: #<Moped::Protocol::Query
+  @length=96
+  @request_id=7
+  @response_to=0
+  @op_code=2004
+  @flags=[]
+  @full_collection_name="crosstechplayers_development.users"
+  @skip=0
+  @limit=0
+  @selector={"_id"=>{"$oid"=>BSON::ObjectId('5460d5ea4d61720d20020000')}}
+  @fields=nil>
+failed with error 17287: "Can't canonicalize query: BadValue unknown operator: $oid"
+
+See https://github.com/mongodb/mongo/blob/master/docs/errors.md
+for details about this error.):
+     9: <body>
+    10: 	<div id="container">
+    11:       <div id="user_header">
+    12:    <% if current_user %>
+    13:       Logged in as Username: <%= current_user.username %>.
+    14:       <%= link_to "Log Out", logout_path %>
+    15:     <% else %>
+  app/controllers/application_controller.rb:12:in `current_user'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___3569431453983715653_70110573453080'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 10:30:52 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.4ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.4990ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>{"$oid"=>BSON::ObjectId('5460fa544d61721263000000')}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8630ms
+Completed 500 Internal Server Error in 77ms
+
+ActionView::Template::Error (The operation: #<Moped::Protocol::Query
+  @length=96
+  @request_id=9
+  @response_to=0
+  @op_code=2004
+  @flags=[]
+  @full_collection_name="crosstechplayers_development.users"
+  @skip=0
+  @limit=0
+  @selector={"_id"=>{"$oid"=>BSON::ObjectId('5460fa544d61721263000000')}}
+  @fields=nil>
+failed with error 17287: "Can't canonicalize query: BadValue unknown operator: $oid"
+
+See https://github.com/mongodb/mongo/blob/master/docs/errors.md
+for details about this error.):
+     9: <body>
+    10: 	<div id="container">
+    11:       <div id="user_header">
+    12:    <% if current_user %>
+    13:       Logged in as Username: <%= current_user.username %>.
+    14:       <%= link_to "Log Out", logout_path %>
+    15:     <% else %>
+  app/controllers/application_controller.rb:12:in `current_user'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___3569431453983715653_70110573453080'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (14.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 10:31:06 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (3.9ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.0810ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>{"$oid"=>BSON::ObjectId('5460fa544d61721263000000')}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8140ms
+Completed 500 Internal Server Error in 207ms
+
+ActionView::Template::Error (The operation: #<Moped::Protocol::Query
+  @length=96
+  @request_id=2
+  @response_to=0
+  @op_code=2004
+  @flags=[]
+  @full_collection_name="crosstechplayers_development.users"
+  @skip=0
+  @limit=0
+  @selector={"_id"=>{"$oid"=>BSON::ObjectId('5460fa544d61721263000000')}}
+  @fields=nil>
+failed with error 17287: "Can't canonicalize query: BadValue unknown operator: $oid"
+
+See https://github.com/mongodb/mongo/blob/master/docs/errors.md
+for details about this error.):
+     9: <body>
+    10: 	<div id="container">
+    11:       <div id="user_header">
+    12:    <% if current_user %>
+    13:       Logged in as Username: <%= current_user.username %>.
+    14:       <%= link_to "Log Out", logout_path %>
+    15:     <% else %>
+  app/controllers/application_controller.rb:12:in `current_user'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__3476241405907921287_70173933178300'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 10:31:07 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.2ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.4530ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>{"$oid"=>BSON::ObjectId('5460fa544d61721263000000')}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7920ms
+Completed 500 Internal Server Error in 73ms
+
+ActionView::Template::Error (The operation: #<Moped::Protocol::Query
+  @length=96
+  @request_id=4
+  @response_to=0
+  @op_code=2004
+  @flags=[]
+  @full_collection_name="crosstechplayers_development.users"
+  @skip=0
+  @limit=0
+  @selector={"_id"=>{"$oid"=>BSON::ObjectId('5460fa544d61721263000000')}}
+  @fields=nil>
+failed with error 17287: "Can't canonicalize query: BadValue unknown operator: $oid"
+
+See https://github.com/mongodb/mongo/blob/master/docs/errors.md
+for details about this error.):
+     9: <body>
+    10: 	<div id="container">
+    11:       <div id="user_header">
+    12:    <% if current_user %>
+    13:       Logged in as Username: <%= current_user.username %>.
+    14:       <%= link_to "Log Out", logout_path %>
+    15:     <% else %>
+  app/controllers/application_controller.rb:12:in `current_user'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__3476241405907921287_70173933178300'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 10:33:42 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 67ms (Views: 67.0ms)
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2014-11-10 10:33:42 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-10 10:33:42 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-10 10:33:42 -0800
+
+
+Started GET "/assets/enablers.css?body=1" for 127.0.0.1 at 2014-11-10 10:33:42 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-10 10:33:42 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-10 10:33:42 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-10 10:33:42 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-10 10:33:42 -0800
+
+
+Started GET "/assets/enablers.js?body=1" for 127.0.0.1 at 2014-11-10 10:33:42 -0800
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2014-11-10 10:33:42 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-10 10:33:43 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-10 10:33:43 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-10 10:33:43 -0800
+
+
+Started GET "/login" for 127.0.0.1 at 2014-11-10 10:33:46 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 64ms (Views: 63.3ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-11-10 10:33:55 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GkB6wTxJ/pOKph9psrlyqK4kBIXBcAYa4SgDS4UVCCk=", "username"=>"hmh4", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.5410ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"$query"=>{"username"=>"hmh4"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 3.9280ms
+Completed 500 Internal Server Error in 11ms
+
+NoMethodError (undefined method `ender' for #<SessionsController:0x007fa543fb5c30>):
+  app/controllers/sessions_controller.rb:19:in `create'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (29.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-11-10 10:33:58 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 73ms (Views: 72.6ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-11-10 10:34:39 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 74ms (Views: 73.0ms)
+
+
+Started GET "/assets/enablers.css?body=1" for 127.0.0.1 at 2014-11-10 10:34:39 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-10 10:34:39 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-10 10:34:39 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-10 10:34:39 -0800
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2014-11-10 10:34:39 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-10 10:34:39 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-10 10:34:39 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-10 10:34:39 -0800
+
+
+Started GET "/assets/enablers.js?body=1" for 127.0.0.1 at 2014-11-10 10:34:39 -0800
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2014-11-10 10:34:39 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-10 10:34:39 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-10 10:34:39 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-10 10:34:39 -0800
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-11-10 10:34:40 -0800
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (38.9ms)
+Completed 200 OK in 122ms (Views: 109.9ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-11-10 10:35:02 -0800
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GkB6wTxJ/pOKph9psrlyqK4kBIXBcAYa4SgDS4UVCCk=", "user"=>{"username"=>"hmh5", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "ct_user_type"=>"web-self-registered", "is_admin"=>"false", "prefix"=>"", "firstname"=>"Big", "lastname"=>"Mongod", "suffix"=>"", "jobtitle"=>"", "org"=>"", "email"=>"", "altemail"=>"", "mobiletel"=>"", "officetel"=>"", "hometel"=>"", "fax"=>"", "indiv_web_url"=>"", "indiv_description"=>"", "work_address_street"=>"", "work_address_city"=>"", "work_address_state"=>"", "work_address_zip"=>"", "home_address_street"=>"", "home_address_city"=>"", "home_address_state"=>"", "home_address_zip"=>"", "social_twitter"=>"", "social_linkedin"=>"", "social_facebook"=>"", "social_googleplus"=>"", "social_youtube"=>"", "social_pinterest"=>"", "social_instagram"=>"", "social_flickr"=>"", "social_blog"=>"", "social_platform_dominant"=>"", "gender"=>"", "ethnicity"=>"", "country_of_origin"=>"", "staff_notes"=>"", "indiv_notes"=>"", "date_last_updated"=>"2014-11-10 10:34:40 -0800"}, "commit"=>"Submit"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.5020ms
+  MOPED: 127.0.0.1:27017 INSERT       database=crosstechplayers_development collection=users documents=[{"_id"=>BSON::ObjectId('546105564d617213dc000000'), "username"=>"hmh5", "password_digest"=>"$2a$10$qdIKfBvLY/1xNXyTk/qOAOTZpyknKv/fpD3EhPN5M5OtfL5OqGq/m", "ct_user_type"=>"web-self-registered", "is_admin"=>false, "prefix"=>"", "firstname"=>"Big", "lastname"=>"Mongod", "suffix"=>"", "jobtitle"=>"", "org"=>"", "email"=>"", "altemail"=>"", "mobiletel"=>"", "officetel"=>"", "hometel"=>"", "fax"=>"", "indiv_web_url"=>"", "indiv_description"=>"", "indiv_notes"=>"", "work_address_street"=>"", "work_address_city"=>"", "work_address_state"=>"", "work_address_zip"=>"", "home_address_street"=>"", "home_address_city"=>"", "home_address_state"=>"", "home_address_zip"=>"", "gender"=>"", "ethnicity"=>"", "country_of_origin"=>"", "staff_notes"=>"", "social_twitter"=>"", "social_linkedin"=>"", "social_facebook"=>"", "social_googleplus"=>"", "social_youtube"=>"", "social_pinterest"=>"", "social_instagram"=>"", "social_flickr"=>"", "social_blog"=>"", "social_platform_dominant"=>"", "date_last_updated"=>2014-11-10 18:34:40 UTC}] flags=[]
+                         COMMAND      database=crosstechplayers_development command={:getlasterror=>1, :w=>1} runtime: 1.2440ms
+Redirected to http://localhost:3000/
+Completed 302 Found in 110ms
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 10:35:02 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.3ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>BSON::ObjectId('546105564d617213dc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8640ms
+Completed 200 OK in 72ms (Views: 71.0ms)
+
+
+Started GET "/assets/enablers.css?body=1" for 127.0.0.1 at 2014-11-10 10:35:02 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-10 10:35:02 -0800
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2014-11-10 10:35:02 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-10 10:35:02 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-10 10:35:02 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-10 10:35:02 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-10 10:35:02 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-10 10:35:02 -0800
+
+
+Started GET "/assets/enablers.js?body=1" for 127.0.0.1 at 2014-11-10 10:35:02 -0800
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2014-11-10 10:35:02 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-10 10:35:02 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-10 10:35:02 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-10 10:35:02 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 10:35:13 -0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.3ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.5440ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>BSON::ObjectId('546105564d617213dc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5350ms
+Completed 200 OK in 74ms (Views: 74.0ms)
+
+
+Started GET "/assets/enablers.css?body=1" for 127.0.0.1 at 2014-11-10 10:35:13 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-10 10:35:13 -0800
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2014-11-10 10:35:13 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-10 10:35:13 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-10 10:35:13 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-10 10:35:13 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-10 10:35:13 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-10 10:35:13 -0800
+
+
+Started GET "/assets/enablers.js?body=1" for 127.0.0.1 at 2014-11-10 10:35:13 -0800
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2014-11-10 10:35:13 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-10 10:35:13 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-10 10:35:13 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-10 10:35:13 -0800
+
+
+Started GET "/enablers" for 127.0.0.1 at 2014-11-10 10:35:18 -0800
+Processing by EnablersController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=enablers selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7030ms
+  Rendered enablers/index.html.erb within layouts/application (1.9ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>BSON::ObjectId('546105564d617213dc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5600ms
+Completed 200 OK in 86ms (Views: 74.2ms)
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2014-11-10 10:35:18 -0800
+
+
+Started GET "/assets/enablers.css?body=1" for 127.0.0.1 at 2014-11-10 10:35:18 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-10 10:35:18 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-10 10:35:18 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-10 10:35:18 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-10 10:35:18 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-10 10:35:18 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-10 10:35:18 -0800
+
+
+Started GET "/assets/enablers.js?body=1" for 127.0.0.1 at 2014-11-10 10:35:18 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-10 10:35:18 -0800
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2014-11-10 10:35:18 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-10 10:35:18 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-10 10:35:18 -0800
