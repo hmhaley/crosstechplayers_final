@@ -7,7 +7,7 @@ get 'logout', to: 'sessions#destroy', as: 'logout'
 resources :users
 resources :sessions
 
-root 'users#index'
+root 'organizations#index'
 
   get 'enablers/' => 'enablers#index', as: :enablers
   get 'enablers/new' => 'enablers#new', as: :new_enabler

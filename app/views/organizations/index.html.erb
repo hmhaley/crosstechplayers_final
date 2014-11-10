@@ -4,22 +4,26 @@
 			<thead>
 			<tr class="row_odd">
 				<th colspan="4"><h1 style="margin:20px">VIEW the Technology "Organizations" enabling Innovation</h1></th>
+				<th>Actions</th>
 			</tr>
 			</thead>
 			<tbody>
-		<% @organizations.each do |one_org| %>
+		<% @organizations.each do |organization| %>
 			<tr>
-				<td><strong><%= one_org.name %></strong>
+				<td><strong><%= organization.name %></strong>
 				</td>
-				<td><strong><%= one_org.type %></strong>
+				<td><strong><%= organization.type %></strong>
 				</td>
-				<td><%= one_org.web_url %></strong>
+				<td><%= organization.web_url %></strong>
 				</td>
-				<td><%= one_org.description %></strong>
+				<td><%= organization.description %></strong>
 				</td>
+				<td><%= link_to 'Show Org Details', organization %></td> -->
+        		<!-- <td><%=# link_to 'Edit', edit_organization_path(organization) %></td>
 			</tr>
 			<% end %>
 			</tbody>
 		</table>
+
 	</div>
 </div>

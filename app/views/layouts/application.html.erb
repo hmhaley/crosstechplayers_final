@@ -7,6 +7,8 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <img src="http://www.crosstechpipeline.org/sites/default/files/CTX-Logo-full-wide-300-words-v4.jpg"><br><br>
+  <h1><i>Tracking the Executives and Organizations that Enable Startups</i></h1>
 	<div id="container">
       <div id="user_header">
    <% if current_user %>
@@ -20,7 +22,27 @@
 
 <%= yield %>
 
-   </div>
+   </div><br><br><br><hr><br><br><br>
+   <table>
+    <thead>
+      <th><b>Enabler Executives</b></th>
+      <th><b>Enabler Organizations</b></th>
+      <th><b>Quotes and Issues from the Executives</b></th>
+      <th><b>Deals Done and Enabled by these Orgs</b></th>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+      <br><br><%= link_to 'Add a New Enabler Executive', new_enabler_path %><br><br>
+    <%= link_to 'View All Enabler Executives', enablers_path %><br><br>
+    <a href="/enablers/545dc4114d6172fb53070000/edit">Edit an Enabler Executive</a><br><br></td>
+    <td><br><br>
+    <%= link_to 'Add a New Enabler Organization', new_organization_path %><br><br>
+    <%= link_to 'View All Enabler Organizations', organizations_path %><br><br>
+    <a href="organizations/545d8c994d6172fb53020000/edit">Edit an Enabler Organization</a><br><br></td>
+  </tr>
+</tbody>
+</table>
 
 </body>
 </html>
