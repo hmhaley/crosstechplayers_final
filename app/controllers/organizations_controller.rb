@@ -2,6 +2,8 @@ class OrganizationsController < ApplicationController
 	
 # before_action :make_sure_logged_in
 
+skip_before_filter :authorize
+
 	def index
 		@organizations = Organization.all
 	end
@@ -88,6 +90,7 @@ private
   		:company_special_designations, 
   		:ct_constituency_type, 
   		:date_last_updated, 
+  		enabler_ids: []
 		)
     end
 end

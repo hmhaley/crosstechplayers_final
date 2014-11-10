@@ -2,6 +2,8 @@ class EnablersController < ApplicationController
 	
 # before_action :make_sure_logged_in
 
+skip_before_filter :authorize
+
 	def index
 		@enablers = Enabler.all
 	end

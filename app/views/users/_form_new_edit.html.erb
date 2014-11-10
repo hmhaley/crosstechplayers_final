@@ -1,0 +1,230 @@
+<%= form_for @user do |f| %>
+  <% if @user.errors.any? %>
+    <div class="error_messages">
+      <h2>Form is invalid</h2>
+      <ul>
+        <% @user.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<div class="wrapper_div">
+	<div class="center_div">
+<table>
+	<thead>
+		<tr>
+			<th> </th>
+			<th> </th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><%= f.label :username %></td>
+			<td><%= f.text_field :username %></td>
+		</tr>
+		<tr>
+			<td><%= f.label :password %> </td>
+			<td><%= f.password_field :password %></td>
+		</tr>
+		<tr>
+			<td><%= f.label :password_confirmation %></td>
+			<td><%= f.password_field :password_confirmation %>
+			<%= f.hidden_field :ct_user_type, :value => "web-self-registered" %>
+			<%= f.hidden_field :is_admin, :value => false %>
+		</td>
+		</tr>
+		<tr>
+			<td>Prefix or Honorific </td>
+			<td><%= f.text_field :prefix, :placeholder => "\(Exs: Mr, Ms, Dr, COL, Hon\)" %>
+		  	</td>
+		</tr>
+		<tr>
+			<td>First Name </td>
+			<td><%= f.text_field :firstname %>
+	  		</td>
+		</tr>
+		<tr>
+			<td>Last Name </td>
+			<td><%= f.text_field :lastname %>
+	  		</td>
+		</tr>
+		<tr>
+			<td>Suffix </td>
+			<td><%= f.text_field :suffix %>
+	  		</td>
+		</tr>
+		<tr>
+			<td>Job Title </td>
+			<td><%= f.text_field :jobtitle %>
+	  		</td>
+		</tr>
+		<tr>
+			<td>Company or Organization </td>
+			<td><%= f.text_field :org %>
+	  		</td>
+		</tr>
+		<tr>
+			<td>Primary Email </td>
+			<td><%= f.text_field :email %>
+	  		</td>
+		</tr>
+		<tr>
+			<td>Alternate Email </td>
+			<td><%= f.text_field :altemail %>
+	  		</td>
+		</tr>
+		<tr>
+			<td>Mobile Tel </td>
+			<td><%= f.text_field :mobiletel %>
+	  		</td>
+		</tr>
+		<tr>
+			<td>Office Tel </td>
+			<td><%= f.text_field :officetel %>
+	  		</td>
+		</tr>
+		<tr>
+			<td>Home Tel </td>
+			<td><%= f.text_field :hometel %>
+	  		</td>
+		</tr>
+		<tr>
+			<td>Fax </td>
+			<td><%= f.text_field :fax %>
+	  		</td>
+		</tr>
+		<tr>
+			<td>URL Link to your Individual Website or Online CV </td>
+			<td><%= f.text_field :indiv_web_url %>
+	  		</td>
+		</tr>
+		<tr>
+			<td>Short Individual Bio/Description </td>
+			<td><%= f.text_field :indiv_description %>
+	  		</td>
+		</tr>
+		<tr>
+			<td>Work Address Street </td>
+			<td><%= f.text_field :work_address_street %>
+	  		</td>
+		</tr>
+		<tr>
+			<td>Work Address City </td>
+			<td><%= f.text_field :work_address_city %>
+	  		</td>
+		</tr>
+		<tr>
+			<td>Work Address State  </td>
+			<td><%= f.text_field :work_address_state %>
+	  		</td>
+		</tr>
+		<tr>
+			<td>Work Address Zip  </td>
+			<td><%= f.text_field :work_address_zip %>
+	  		</td>
+		</tr>
+		<tr>
+			<td>Home Address Street  </td>
+			<td><%= f.text_field :home_address_street %>
+	  		</td>
+		</tr>
+		<tr>
+			<td>Home Address City  </td>
+			<td><%= f.text_field :home_address_city %>
+	  		</td>
+		</tr>
+		<tr>
+			<td>Home Address State </td>
+			<td><%= f.text_field :home_address_state, :placeholder => "(Two Letters Only)" %>
+	  		</td>
+		</tr>
+		<tr>
+			<td>Home Address Zip </td>
+			<td><%= f.text_field :home_address_zip %>
+	  		</td>
+		</tr>
+		<tr>
+			<td>Twitter URL Link </td>
+			<td><%= f.text_field :social_twitter %>
+	  		</td>
+		</tr>
+		<tr>
+			<td>Linked-In URL Link </td>
+			<td><%= f.text_field :social_linkedin %>
+	  		</td>
+		</tr>
+		<tr>
+			<td>Facebook URL Link </td>
+			<td><%= f.text_field :social_facebook %>
+	  		</td>
+		</tr>
+		<tr>
+			<td>Google+ URL Link </td>
+			<td><%= f.text_field :social_googleplus %>
+	  		</td>
+		</tr>
+		<tr>
+			<td>YouTube URL Link:  </td>
+			<td><%= f.text_field :social_youtube %>
+	  		</td>
+		</tr>
+		<tr>
+			<td>Pinterest URL Link </td>
+			<td><%= f.text_field :social_pinterest %>
+	  		</td>
+		</tr>
+		<tr>
+			<td>Instagram URL Link </td>
+			<td><%= f.text_field :social_instagram %>
+	  		</td>
+		</tr>
+		<tr>
+			<td>Flickr/Photos/Picasa URL Link </td>
+			<td><%= f.text_field :social_flickr %>
+	  		</td>
+		</tr>
+		<tr>
+			<td>Your Blog URL Link </td>
+			<td><%= f.text_field :social_blog %>
+	  		</td>
+		</tr>
+		<tr>
+			<td>Which Social Media Platform do you use the most?</td>
+			<td><%= f.text_field :social_platform_dominant %>
+	  		</td>
+		</tr>
+            <tr>
+         <td>Gender </td>
+         <td><%= f.text_field :gender %>
+         </td>
+      </tr>
+      <tr>
+         <td>Ethnicity </td>
+         <td><%= f.text_field :ethnicity %>
+         </td>
+      </tr>
+      <tr>
+         <td>Country of Origin </td>
+         <td><%= f.text_field :country_of_origin %>
+      <%= f.hidden_field :staff_notes, :value => "" %>
+         </td>
+      </tr> 
+		<tr>
+			<td> Comments/Questions </td>
+			<td><%= f.text_field :indiv_notes %>
+			<%= f.datetime_field :date_last_updated, :type => "hidden", :value => Time.now %>
+			</td>
+		</tr>
+      <tr>
+         <td> </td>
+         <td> <%= f.submit "Submit" %>
+         </td>
+       </tr>
+	</tbody>
+</table>
+
+<% end %>
+</div>
+</div>

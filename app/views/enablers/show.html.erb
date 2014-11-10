@@ -2,7 +2,7 @@
 	<div class="center_div">
 		<table>
 			<thead>
-			<tr class="row_odd">
+			<tr>
 				<th colspan="2"><h1 style="margin:20px">VIEW This Technology Executive "Enabler"</h1></th>
 			</tr>
 			</thead>
@@ -13,7 +13,7 @@
 				<td><%= @enabler.prefix %>
 				</td>
 			</tr>
-			<tr class="row_odd">
+			<tr>
 				<td>First Name:</td>
 				<td><%= @enabler.firstname %></td>
 			</tr>
@@ -21,7 +21,11 @@
 				<td>Last Name:</td>
 				<td><%= @enabler.lastname %></td>
 			</tr>
-			<tr class="row_odd">
+			<tr>
+				<td>Suffix:</td>
+				<td><%= @enabler.suffix %></td>
+			</tr>
+			<tr>
 				<td>Job Title:</td>
 				<td><%= @enabler.jobtitle %></td>
 			</tr>
@@ -29,7 +33,7 @@
 				<td>Organization:</td>
 				<td><%= @enabler.org %></td>
 			</tr>
-			<tr class="row_odd">
+			<tr>
 				<td>Email Address, Main:</td>
 				<td><%= @enabler.email %>
 				</td>
@@ -38,42 +42,146 @@
 				<td>Alternate Email:</td>
 				<td><%= @enabler.altemail %></td>
 			</tr>
-			<tr class="row_odd">
+			<tr>
 				<td>Type of Enabler:</td>
-				<td><%= @enabler.enabler_type %></td>
+				<td><%= @enabler.ct_enabler_type %></td>
 			</tr>
 			<tr>
 				<td>Mobile Tel:</td>
 				<td><%= @enabler.mobiletel %></td>
 			</tr>
-			<tr class="row_odd">
+			<tr>
 				<td>Office Tel:</td>
 				<td><%= @enabler.officetel %></td>
 			</tr>
 			<tr>
-				<td>Address Street:</td>
-				<td><%= @enabler.address_street %></td>
-			</tr>
-			<tr class="row_odd">
-				<td>Address City:</td>
-				<td><%= @enabler.address_city %></td>
+				<td>Home Tel:</td>
+				<td><%= @enabler.hometel %></td>
 			</tr>
 			<tr>
-				<td>Address State:</td>
-				<td><%= @enabler.address_state %></td>
+				<td>Fax:</td>
+				<td><%= @enabler.fax %></td>
 			</tr>
-			<tr class="row_odd">
-				<td>Address Zip:</td>
-				<td><%= @enabler.address_zip %></td>
+			<tr>
+				<td>Individual's Website Url:</td>
+				<td><%= @enabler.indiv_web_url %></td>
+			</tr>
+			<tr>
+				<td>Individual's Description:</td>
+				<td><%= @enabler.indiv_description %></td>
+			</tr>
+			<tr>
+				<td>Individual Notes:</td>
+				<td><%= @enabler.indiv_notes %></td>
+			</tr>
+			<tr>
+				<td>Work Address Street:</td>
+				<td><%= @enabler.work_address_street %></td>
+			</tr>
+			<tr>
+				<td>Work Address City:</td>
+				<td><%= @enabler.work_address_city %></td>
+			</tr>
+			<tr>
+				<td>Work Address State:</td>
+				<td><%= @enabler.work_address_state %></td>
+			</tr>
+			<tr>
+				<td>Work Address Zip:</td>
+				<td><%= @enabler.work_address_zip %></td>
+			</tr>
+						<tr>
+				<td>Home Address Street:</td>
+				<td><%= @enabler.home_address_street %></td>
+			</tr>
+			<tr>
+				<td>Home Address City:</td>
+				<td><%= @enabler.home_address_city %></td>
+			</tr>
+			<tr>
+				<td>Home Address State:</td>
+				<td><%= @enabler.home_address_state %></td>
+			</tr>
+			<tr>
+				<td>Home Address Zip:</td>
+				<td><%= @enabler.home_address_zip %></td>
+			</tr>
+			<tr>
+				<td>Spousal Status:</td>
+				<td><%= @enabler.spousal_status %></td>
+			</tr>
+			<tr>
+				<td>Spouse's Name:</td>
+				<td><%= @enabler.spouse_name %></td>
+			</tr>
+			<tr>
+				<td>Orientation:</td>
+				<td><%= @enabler.orientation %></td>
+			</tr>
+			<tr>
+				<td>Gender:</td>
+				<td><%= @enabler.gender %></td>
+			</tr>
+			<tr>
+				<td>Ethnicity/Race:</td>
+				<td><%= @enabler.ethnicity %></td>
+			</tr>
+			<tr>
+				<td>Country of Origin:</td>
+				<td><%= @enabler.country_of_origin %></td>
 			</tr>
 			<tr>
 				<td>Major Deals:</td>
 				<td><%= @enabler.major_deals %></td>
 			</tr>
-			<tr class="row_odd">
-				<td>Notes:</td>
-				<td><%= @enabler.notes %></td>
+			<tr>
+				<td>Staff Notes:</td>
+				<td><%= @enabler.staff_notes %></td>
 			</tr>
+			<tr>
+				<td>Twitter Account Link:</td>
+				<td><%= @enabler.social_twitter %></td>
+			</tr>
+			<tr>
+				<td>Linked-In Account Link:</td>
+				<td><%= @enabler.social_linkedin %></td>
+			</tr>
+			<tr>
+				<td>Facebook Account Link:</td>
+				<td><%= @enabler.social_facebook %></td>
+			</tr>
+			<tr>
+				<td>Google + Account Link:</td>
+				<td><%= @enabler.social_googleplus %></td>
+			</tr>
+			<tr>
+				<td>YouTube Account Link:</td>
+				<td><%= @enabler.social_youtube %></td>
+			</tr>
+			<tr>
+				<td>Pinterest Account Link:</td>
+				<td><%= @enabler.social_pinterest %></td>
+			</tr>
+			<tr>
+				<td>Instagram Account Link:</td>
+				<td><%= @enabler.social_instagram %></td>
+			</tr>
+			<tr>
+				<td>Flickr Account Link:</td>
+				<td><%= @enabler.social_flickr %></td>
+			</tr>
+			<tr>
+				<td>Blog Link:</td>
+				<td><%= @enabler.social_blog %></td>
+			</tr>
+			<tr>
+				<td>Dominant/Preffered Social Media Platform:</td>
+				<td><%= @enabler.social_platform_dominant %></td>
+			</tr>
+			<tr>
+				<td>Date Last Updated:</td>
+				<td><%= @enabler.date_last_updated %></td>
+			</tr>			
 			<tr style="background-color:#055154">
 				<td style="font-weight:normal"><br>
 					<%= link_to "Return to the list of Enablers!", enablers_path %></td>

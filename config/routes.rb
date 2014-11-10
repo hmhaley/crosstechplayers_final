@@ -1,5 +1,14 @@
 Rails.application.routes.draw do
 
+get 'signup', to: 'users#new', as: 'signup'
+get 'login', to: 'sessions#new', as: 'login'
+get 'logout', to: 'sessions#destroy', as: 'logout'
+
+resources :users
+resources :sessions
+
+root 'users#index'
+
   get 'enablers/' => 'enablers#index', as: :enablers
   get 'enablers/new' => 'enablers#new', as: :new_enabler
   get 'enablers/:id' => 'enablers#show', as: :enabler
@@ -16,7 +25,7 @@ Rails.application.routes.draw do
   patch 'organizations/:id' => 'organizations#update', as: :update_organization
   delete 'organizations/:id' => 'organizations#destroy', as: :delete_organization
 
-  end
+end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

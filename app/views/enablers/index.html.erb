@@ -7,15 +7,15 @@
 			</tr>
 			</thead>
 			<tbody>
-		<% @enablers.each do |ena| %>
+		<% @enablers.each do |one_ena| %>
 			<tr>
-				<td><strong><%= ena.firstname %></strong>
+				<td><strong><%= one_ena.firstname %></strong>
 				</td>
-				<td><strong><%= ena.lastname %></strong>
+				<td><strong><%= one_ena.lastname %></strong>
 				</td>
-				<td><%= ena.jobtitle %></strong>
+				<td><%= one_ena.jobtitle %></strong>
 				</td>
-				<td><%= ena.org %></strong>
+				<td><%= one_ena.org %></strong>
 				</td>
 			</tr>
 			<% end %>

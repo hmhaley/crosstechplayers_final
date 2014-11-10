@@ -4,6 +4,8 @@ class User
 
   has_secure_password
 
+  validates_uniqueness_of :username
+
   field :username, type: String
   field :password_digest, type: String
   field :ct_user_type, type: String
@@ -49,4 +51,7 @@ class User
   field :social_blog, type: String
   field :social_platform_dominant, type: String
   field :date_last_updated, type: DateTime
+
+  has_many :org_ena_join_tables
+  
 end

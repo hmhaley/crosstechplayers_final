@@ -36,4 +36,37 @@ class Organization
   field :company_special_designations, type: String
   field :ct_constituency_type, type: String
   field :date_last_updated, type: DateTime
+
+  has_many :org_ena_join_tables
+
+  def enablers
+    Enabler.find enabler_ids
+  end
+
+  def enabler_ids
+    enabler_ids_array = []
+    self.org_ena_join_tables.each do |one_joining|
+      if one_joining.enabler_id
+        enabler_ids_array.push one_joining.enabler_id
+      end 
+    end
+    enabler_ids_array 
+  end
+
+  def enabler_ids=(list)
+    self.org_ena_join_tables.destroy
+    list.each do |enabler_id|
+      self.org_ena_join_tables.create(enabler_id: enabler_id)
+    end
+  end
+
+  # some way of showing a list
+  def join_list
+    enablers_string = ""
+    enablers.each do |one_enabler|
+      enablers_string += " " + one_enabler.name
+    end
+    enablers_string.slice(2,enablers_string.length - 1)
+    enablers_string
+  end
 end

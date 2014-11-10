@@ -4,7 +4,7 @@
 	<div class="center_div">
 		<table>
 			<thead>
-			<tr class="row_odd">
+			<tr>
 				<th colspan="2"><h1>ADD a NEW "Enabler" Executive</h1></th>
 			</tr>
 			</thead>
@@ -12,74 +12,182 @@
 			<tr>
 				<td>Prefix or Honorific/Rank:
 				</td>
-				<td><%= f.text_field :prefix, :class => "text_field_width_medium", :placeholder => "                  (exs: Mr, Ms, Dr, Hon, COL)"%>
+				<td><%= f.text_field :prefix, :placeholder => "exs: Mr, Ms, Dr, Hon, COL" %>
 				</td>
 			</tr>
-			<tr class="row_odd">
+			<tr>
 				<td>First Name:</td>
-				<td><%= f.text_field :firstname, :class => "text_field_width_medium" %></td>
+				<td><%= f.text_field :firstname %></td>
 			</tr>
 			<tr>
 				<td>Last Name:</td>
-				<td><%= f.text_field :lastname, :class => "text_field_width_medium" %></td>
+				<td><%= f.text_field :lastname %></td>
 			</tr>
-			<tr class="row_odd">
+			<tr>
+				<td>Suffix:</td>
+				<td><%= f.text_field :suffix %></td>
+			</tr>
+			<tr>
 				<td>Job Title:</td>
-				<td><%= f.text_field :jobtitle, :class => "text_field_width_medium" %></td>
+				<td><%= f.text_field :jobtitle %></td>
 			</tr>
 			<tr>
 				<td>Organization:</td>
-				<td><%= f.text_field :org, :class => "text_field_width_medium" %></td>
+				<td><%= f.text_field :org %></td>
 			</tr>
-			<tr class="row_odd">
+			<tr>
 				<td>Email Address, Main:</td>
-				<td><%= f.text_field :email, :class => "text_field_width_medium", :placeholder => "     (your work email, or the one you check daily)" %>
+				<td><%= f.text_field :email %>
 				</td>
 			</tr>
 			<tr>
 				<td>Alternate Email:</td>
-				<td><%= f.text_field :altemail, :class => "text_field_width_medium" %></td>
+				<td><%= f.text_field :altemail %></td>
 			</tr>
-			<tr class="row_odd">
+			<tr>
 				<td>Type of Enabler:</td>
-				<td><%= f.text_field :enabler_type, :class => "text_field_width_medium" %></td>
+				<td><%= f.text_field :ct_enabler_type %></td>
 			</tr>
 			<tr>
 				<td>Mobile Tel:</td>
-				<td><%= f.text_field :mobiletel, :class => "text_field_width_medium" %></td>
+				<td><%= f.text_field :mobiletel %></td>
 			</tr>
-			<tr class="row_odd">
+			<tr>
 				<td>Office Tel:</td>
-				<td><%= f.text_field :officetel, :class => "text_field_width_medium" %></td>
+				<td><%= f.text_field :officetel %></td>
 			</tr>
 			<tr>
-				<td>Address Street:</td>
-				<td><%= f.text_field :address_street, :class => "text_field_width_medium" %></td>
-			</tr>
-			<tr class="row_odd">
-				<td>Address City:</td>
-				<td><%= f.text_field :address_city, :class => "text_field_width_medium" %></td>
+				<td>Home Tel:</td>
+				<td><%= f.text_field :hometel %></td>
 			</tr>
 			<tr>
-				<td>Address State:</td>
-				<td><%= f.text_field :address_state, :class => "text_field_width_short", :placeholder => "   (2 letters only)" %></td>
+				<td>Fax:</td>
+				<td><%= f.text_field :fax %></td>
 			</tr>
-			<tr class="row_odd">
-				<td>Address Zip:</td>
-				<td><%= f.text_field :address_zip, :class => "text_field_width_short" %></td>
+			<tr>
+				<td>Individual's Website Url:</td>
+				<td><%= f.text_field :indiv_web_url %></td>
+			</tr>
+			<tr>
+				<td>Individual's Description:</td>
+				<td><%= f.text_field :indiv_description %></td>
+			</tr>
+			<tr>
+				<td>Individual Notes:</td>
+				<td><%= f.text_field :indiv_notes %></td>
+			</tr>
+			<tr>
+				<td>Work Address Street:</td>
+				<td><%= f.text_field :work_address_street %></td>
+			</tr>
+			<tr>
+				<td>Work Address City:</td>
+				<td><%= f.text_field :work_address_city %></td>
+			</tr>
+			<tr>
+				<td>Work Address State:</td>
+				<td><%= f.text_field :work_address_state %></td>
+			</tr>
+			<tr>
+				<td>Work Address Zip:</td>
+				<td><%= f.text_field :work_address_zip %></td>
+			</tr>
+						<tr>
+				<td>Home Address Street:</td>
+				<td><%= f.text_field :home_address_street %></td>
+			</tr>
+			<tr>
+				<td>Home Address City:</td>
+				<td><%= f.text_field :home_address_city %></td>
+			</tr>
+			<tr>
+				<td>Home Address State:</td>
+				<td><%= f.text_field :home_address_state %></td>
+			</tr>
+			<tr>
+				<td>Home Address Zip:</td>
+				<td><%= f.text_field :home_address_zip %></td>
+			</tr>
+			<tr>
+				<td>Spousal Status:</td>
+				<td><%= f.text_field :spousal_status %></td>
+			</tr>
+			<tr>
+				<td>Spouse's Name:</td>
+				<td><%= f.text_field :spouse_name %></td>
+			</tr>
+			<tr>
+				<td>Orientation:</td>
+				<td><%= f.text_field :orientation %></td>
+			</tr>
+			<tr>
+				<td>Gender:</td>
+				<td><%= f.text_field :gender %></td>
+			</tr>
+			<tr>
+				<td>Ethnicity/Race:</td>
+				<td><%= f.text_field :ethnicity %></td>
+			</tr>
+			<tr>
+				<td>Country of Origin:</td>
+				<td><%= f.text_field :country_of_origin %></td>
 			</tr>
 			<tr>
 				<td>Major Deals:</td>
-				<td><%= f.text_field :major_deals, :class => "text_box_width_long" %></td>
-			</tr>
-			<tr class="row_odd">
-				<td>Notes:</td>
-				<td><%= f.text_field :notes, :class => "text_box_width_long" %></td>
+				<td><%= f.text_field :major_deals %></td>
 			</tr>
 			<tr>
-				<td> </td>
-				<td><%= f.submit "Submit" %></td>
+				<td>Staff Notes:</td>
+				<td><%= f.text_field :staff_notes %></td>
 			</tr>
+			<tr>
+				<td>Twitter Account Link:</td>
+				<td><%= f.text_field :social_twitter %></td>
+			</tr>
+			<tr>
+				<td>Linked-In Account Link:</td>
+				<td><%= f.text_field :social_linkedin %></td>
+			</tr>
+			<tr>
+				<td>Facebook Account Link:</td>
+				<td><%= f.text_field :social_facebook %></td>
+			</tr>
+			<tr>
+				<td>Google + Account Link:</td>
+				<td><%= f.text_field :social_googleplus %></td>
+			</tr>
+			<tr>
+				<td>YouTube Account Link:</td>
+				<td><%= f.text_field :social_youtube %></td>
+			</tr>
+			<tr>
+				<td>Pinterest Account Link:</td>
+				<td><%= f.text_field :social_pinterest %></td>
+			</tr>
+			<tr>
+				<td>Instagram Account Link:</td>
+				<td><%= f.text_field :social_instagram %></td>
+			</tr>
+			<tr>
+				<td>Flickr Account Link:</td>
+				<td><%= f.text_field :social_flickr %></td>
+			</tr>
+			<tr>
+				<td>Blog Link:</td>
+				<td><%= f.text_field :social_blog %></td>
+			</tr>
+			<tr>
+				<td>Dominant/Preffered Social Media Platform:</td>
+				<td><%= f.text_field :social_platform_dominant %></td>
+			</tr>
+			<tr>
+				<td>Date Last Updated:</td>
+				<td><%= f.datetime_field :date_last_updated %></td>
+			</tr>
+			<tr>
+            	<td> </td>
+            	<td><%= f.submit "Submit" %></td>
+         	</tr>
 			</tbody>
 		</table>
 	</div>

@@ -178,6 +178,14 @@
             <td><%= f.datetime_field :date_last_updated %>
             </td>
          </tr>
+         <tr>
+            <td>And here is some data from the child record that can be edited:</td>
+            <td> <%= f.collection_check_boxes :enabler_ids, Enabler.all, :id, :lastname %>
+         </tr>
+         <tr>
+            <td> </td>
+            <td><%= f.submit "Submit" %></td>
+         </tr>
 			</tbody>
 		</table>
 	</div>
