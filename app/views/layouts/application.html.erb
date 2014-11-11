@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Crosstechplayers</title>
+  <title>Crosstech PipeLine Enablers and Players Tracking</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <!-- FONTS I might want to use -->
+  <link href='http://fonts.googleapis.com/css?family=Voces' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Nova+Round' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Cinzel:400,700,900' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Quattrocento:400,700' rel='stylesheet' type='text/css'>
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <img src="http://www.crosstechpipeline.org/sites/default/files/CTX-Logo-full-wide-300-words-v4.jpg"><br><br>
-  <h1><i>Tracking the Executives and Organizations that Enable Startups</i></h1>
-	<div id="container">
+  <div class="wrapper_div">
+    <div class="center_div">
+    <div class="header_content">
+    <img src="http://www.crosstechpipeline.org/sites/default/files/CTX-Logo-full-wide.jpg"><br><div id="container">
       <div id="user_header">
    <% if current_user %>
       Logged in as Username: <%= current_user.username %>.
@@ -18,31 +25,40 @@
       <%= link_to "Sign Up", signup_path %> or
       <%= link_to "Login", login_path %>
     <% end %>
-      </div>
+      </div><br>
+  <h1><i>SciTech PipeLine Enablers</i></h1>
+  <h2>Tracking the Orgs, Execs, Deals &amp; Consultants<br> that Enable Startup Success</i></h2>
+  </div>
 
 <%= yield %>
 
-   </div><br><br><br><hr><br><br><br>
-   <table>
-    <thead>
-      <th><b>Enabler Executives</b></th>
-      <th><b>Enabler Organizations</b></th>
-      <th><b>Quotes and Issues from the Executives</b></th>
-      <th><b>Deals Done and Enabled by these Orgs</b></th>
-    </thead>
-    <tbody>
+   </div>
+   <br>
+   <hr>
+   <br>
+
+<table class="footer_table">
+    <tr><u>
+        <td><b>Enabler Executives</b></td>
+      <td><b>Enabler Organizations</b></td>
+      <td><b>Roadmap</b></td>
+    </u>
+    </tr>
       <tr>
         <td>
-      <br><br><%= link_to 'Add a New Enabler Executive', new_enabler_path %><br><br>
-    <%= link_to 'View All Enabler Executives', enablers_path %><br><br>
-    <a href="/enablers/545dc4114d6172fb53070000/edit">Edit an Enabler Executive</a><br><br></td>
-    <td><br><br>
-    <%= link_to 'Add a New Enabler Organization', new_organization_path %><br><br>
-    <%= link_to 'View All Enabler Organizations', organizations_path %><br><br>
-    <a href="organizations/545d8c994d6172fb53020000/edit">Edit an Enabler Organization</a><br><br></td>
-  </tr>
-</tbody>
+        <%= link_to 'Add a New Exec', new_enabler_path %> &nbsp;&nbsp;| &nbsp;&nbsp;
+        <%= link_to 'View All Executives', enablers_path %>
+        </td>
+        <td>
+        <%= link_to 'Add a New Organization', new_organization_path %> &nbsp;&nbsp;| &nbsp;&nbsp;
+        <%= link_to 'View All Organizations', organizations_path %>
+        <br>
+        </td>
+        <td> &nbsp; </td>
+    </tr>
 </table>
 
+ </div>
+</div>
 </body>
 </html>

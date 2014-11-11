@@ -21,7 +21,7 @@ root 'organizations#index'
   get 'organizations/new' => 'organizations#new', as: :new_organization
   get 'organizations/:id' => 'organizations#show', as: :organization
   post 'organizations/' => 'organizations#create', as: :create_organization
-  get 'organizations/:id/edit' => 'organizations#edit', as: :edit_organizations
+  get 'organizations/:id/edit' => 'organizations#edit', as: :edit_organization
   patch 'organizations/:id' => 'organizations#update', as: :update_organization
   delete 'organizations/:id' => 'organizations#destroy', as: :delete_organization
 

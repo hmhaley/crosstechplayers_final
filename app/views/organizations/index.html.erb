@@ -3,8 +3,14 @@
 		<table>
 			<thead>
 			<tr class="row_odd">
-				<th colspan="4"><h1 style="margin:20px">VIEW the Technology "Organizations" enabling Innovation</h1></th>
-				<th>Actions</th>
+				<th colspan="5"><h2 style="margin:20px">VIEW the "Organizations" enabling Tech Innovation</h2></th>
+			</tr>
+			<tr class="row_odd">
+				<th><h2><u>Org Name</u></h2></th>
+				<th><h2><u>Org Type</u></h2></th>
+				<th><h2><u>Website</u></h2></th>
+				<th><h2><u>Description</u></h2></th>
+				<th><h2><u>Actions</u></h2></th>
 			</tr>
 			</thead>
 			<tbody>
@@ -18,8 +24,14 @@
 				</td>
 				<td><%= organization.description %></strong>
 				</td>
-				<td><%= link_to 'Show Org Details', organization %></td> -->
-        		<!-- <td><%=# link_to 'Edit', edit_organization_path(organization) %></td>
+				<td>
+					<ul>
+						<li><%= link_to 'Details', organization %></li>
+						<li><%= link_to 'Edit', edit_organization_path(organization) %></li>
+						<li><%= link_to 'Delete', organization, method: :delete, data: { confirm: 'Are you sure?' } %></li>
+					</ul>
+						</td>
+
 			</tr>
 			<% end %>
 			</tbody>

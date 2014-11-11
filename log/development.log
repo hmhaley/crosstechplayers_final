@@ -10349,3 +10349,3070 @@ Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-10 13:34:22
 
 
 Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-10 13:34:22 -0800
+
+
+Started GET "/enablers" for 127.0.0.1 at 2014-11-10 14:17:40 -0800
+Processing by EnablersController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 8.2010ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>BSON::ObjectId('546105564d617213dc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 4.6290ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=enablers selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 4.6080ms
+  Rendered enablers/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 122ms (Views: 84.1ms)
+
+
+Started GET "/assets/enablers.css?body=1" for 127.0.0.1 at 2014-11-10 14:17:40 -0800
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2014-11-10 14:17:40 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-10 14:17:40 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-10 14:17:40 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-10 14:17:40 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-10 14:17:40 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-10 14:17:40 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-10 14:17:40 -0800
+
+
+Started GET "/assets/enablers.js?body=1" for 127.0.0.1 at 2014-11-10 14:17:40 -0800
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2014-11-10 14:17:40 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-10 14:17:40 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-10 14:17:40 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-10 14:17:40 -0800
+
+
+Started GET "/organizations" for 127.0.0.1 at 2014-11-10 14:17:51 -0800
+Processing by OrganizationsController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>BSON::ObjectId('546105564d617213dc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8610ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=organizations selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 2.6320ms
+  Rendered organizations/index.html.erb within layouts/application (17.8ms)
+Completed 500 Internal Server Error in 33ms
+
+ActionView::Template::Error (undefined method `edit_organization_path' for #<#<Class:0x007f9739da0e80>:0x007f9739da0228>):
+    18: 				</td>
+    19: 				<td><%= organization.description %></strong>
+    20: 				</td>
+    21: 				<td><%= link_to 'Show Org Details', organization %></td> &nbsp; &nbsp; <%= link_to 'Edit this Org', edit_organization_path(organization) %></td>
+    22: 			</tr>
+    23: 			<% end %>
+    24: 			</tbody>
+  app/views/organizations/index.html.erb:21:in `block in _app_views_organizations_index_html_erb___4285259734574365219_70143743678120'
+  app/views/organizations/index.html.erb:11:in `_app_views_organizations_index_html_erb___4285259734574365219_70143743678120'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.1ms)
+
+
+Started GET "/organizations" for 127.0.0.1 at 2014-11-10 14:17:51 -0800
+Processing by OrganizationsController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>BSON::ObjectId('546105564d617213dc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7470ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=organizations selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6760ms
+  Rendered organizations/index.html.erb within layouts/application (14.2ms)
+Completed 500 Internal Server Error in 20ms
+
+ActionView::Template::Error (undefined method `edit_organization_path' for #<#<Class:0x007f9739da0e80>:0x007f9739659730>):
+    18: 				</td>
+    19: 				<td><%= organization.description %></strong>
+    20: 				</td>
+    21: 				<td><%= link_to 'Show Org Details', organization %></td> &nbsp; &nbsp; <%= link_to 'Edit this Org', edit_organization_path(organization) %></td>
+    22: 			</tr>
+    23: 			<% end %>
+    24: 			</tbody>
+  app/views/organizations/index.html.erb:21:in `block in _app_views_organizations_index_html_erb___4285259734574365219_70143739871580'
+  app/views/organizations/index.html.erb:11:in `_app_views_organizations_index_html_erb___4285259734574365219_70143739871580'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.7ms)
+
+
+Started GET "/organizations" for 127.0.0.1 at 2014-11-10 14:18:09 -0800
+Processing by OrganizationsController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>BSON::ObjectId('546105564d617213dc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.9860ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=organizations selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.9230ms
+  Rendered organizations/index.html.erb within layouts/application (14.1ms)
+Completed 500 Internal Server Error in 19ms
+
+ActionView::Template::Error (undefined local variable or method `id' for #<#<Class:0x007f9739da0e80>:0x007f9739d0a6d8>):
+    18: 				</td>
+    19: 				<td><%= organization.description %></strong>
+    20: 				</td>
+    21: 				<td><%= link_to 'Show Org Details', organization %></td> &nbsp; &nbsp; <%= link_to 'Edit this Org', edit_organization_path(id) %></td>
+    22: 			</tr>
+    23: 			<% end %>
+    24: 			</tbody>
+  app/views/organizations/index.html.erb:21:in `block in _app_views_organizations_index_html_erb___4285259734574365219_70143743379840'
+  app/views/organizations/index.html.erb:11:in `_app_views_organizations_index_html_erb___4285259734574365219_70143743379840'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.4ms)
+
+
+Started GET "/enablers" for 127.0.0.1 at 2014-11-10 14:18:15 -0800
+Processing by EnablersController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>BSON::ObjectId('546105564d617213dc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6090ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=enablers selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7340ms
+  Rendered enablers/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 63ms (Views: 60.5ms)
+
+
+Started GET "/assets/enablers.css?body=1" for 127.0.0.1 at 2014-11-10 14:18:15 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-10 14:18:15 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-10 14:18:15 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-10 14:18:15 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-10 14:18:15 -0800
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2014-11-10 14:18:15 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-10 14:18:15 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-10 14:18:15 -0800
+
+
+Started GET "/assets/enablers.js?body=1" for 127.0.0.1 at 2014-11-10 14:18:15 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-10 14:18:15 -0800
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2014-11-10 14:18:15 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-10 14:18:15 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-10 14:18:15 -0800
+
+
+Started GET "/organizations" for 127.0.0.1 at 2014-11-10 14:18:34 -0800
+Processing by OrganizationsController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>BSON::ObjectId('546105564d617213dc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6470ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=organizations selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6140ms
+  Rendered organizations/index.html.erb within layouts/application (13.7ms)
+Completed 500 Internal Server Error in 18ms
+
+ActionView::Template::Error (undefined local variable or method `id' for #<#<Class:0x007f9739da0e80>:0x007f9738cf0ef0>):
+    18: 				</td>
+    19: 				<td><%= organization.description %></strong>
+    20: 				</td>
+    21: 				<td><%= link_to 'Show Org Details', organization %></td> &nbsp; &nbsp; <%= link_to 'Edit this Org', edit_organization_path(id) %></td>
+    22: 			</tr>
+    23: 			<% end %>
+    24: 			</tbody>
+  app/views/organizations/index.html.erb:21:in `block in _app_views_organizations_index_html_erb___4285259734574365219_70143734928680'
+  app/views/organizations/index.html.erb:11:in `_app_views_organizations_index_html_erb___4285259734574365219_70143734928680'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.4ms)
+
+
+Started GET "/organizations" for 127.0.0.1 at 2014-11-10 14:18:34 -0800
+Processing by OrganizationsController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>BSON::ObjectId('546105564d617213dc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6970ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=organizations selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5640ms
+  Rendered organizations/index.html.erb within layouts/application (13.7ms)
+Completed 500 Internal Server Error in 18ms
+
+ActionView::Template::Error (undefined local variable or method `id' for #<#<Class:0x007f9739da0e80>:0x007f9738951100>):
+    18: 				</td>
+    19: 				<td><%= organization.description %></strong>
+    20: 				</td>
+    21: 				<td><%= link_to 'Show Org Details', organization %></td> &nbsp; &nbsp; <%= link_to 'Edit this Org', edit_organization_path(id) %></td>
+    22: 			</tr>
+    23: 			<% end %>
+    24: 			</tbody>
+  app/views/organizations/index.html.erb:21:in `block in _app_views_organizations_index_html_erb___4285259734574365219_70143743379840'
+  app/views/organizations/index.html.erb:11:in `_app_views_organizations_index_html_erb___4285259734574365219_70143743379840'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.4ms)
+
+
+Started GET "/enablers" for 127.0.0.1 at 2014-11-10 14:19:16 -0800
+Processing by EnablersController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.5850ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>BSON::ObjectId('546105564d617213dc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6710ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=enablers selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7820ms
+  Rendered enablers/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 87ms (Views: 82.5ms)
+
+
+Started GET "/assets/enablers.css?body=1" for 127.0.0.1 at 2014-11-10 14:19:16 -0800
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2014-11-10 14:19:16 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-10 14:19:16 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-10 14:19:16 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-10 14:19:16 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-10 14:19:16 -0800
+
+
+Started GET "/assets/enablers.js?body=1" for 127.0.0.1 at 2014-11-10 14:19:16 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-10 14:19:16 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-10 14:19:16 -0800
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2014-11-10 14:19:16 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-10 14:19:16 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-10 14:19:16 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-10 14:19:16 -0800
+
+
+Started GET "/organizations" for 127.0.0.1 at 2014-11-10 14:19:18 -0800
+Processing by OrganizationsController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>BSON::ObjectId('546105564d617213dc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8020ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=organizations selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5070ms
+  Rendered organizations/index.html.erb within layouts/application (16.0ms)
+Completed 500 Internal Server Error in 21ms
+
+ActionView::Template::Error (undefined local variable or method `id' for #<#<Class:0x007f9739da0e80>:0x007f9739da1dd0>):
+    18: 				</td>
+    19: 				<td><%= organization.description %></strong>
+    20: 				</td>
+    21: 				<td><%= link_to 'Show Org Details', organization %></td> &nbsp; &nbsp; <%= link_to 'Edit this Org', organization(id) %></td>
+    22: 			</tr>
+    23: 			<% end %>
+    24: 			</tbody>
+  app/views/organizations/index.html.erb:21:in `block in _app_views_organizations_index_html_erb___4285259734574365219_70143743680340'
+  app/views/organizations/index.html.erb:11:in `_app_views_organizations_index_html_erb___4285259734574365219_70143743680340'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.9ms)
+
+
+Started GET "/organizations" for 127.0.0.1 at 2014-11-10 14:19:18 -0800
+Processing by OrganizationsController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>BSON::ObjectId('546105564d617213dc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8470ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=organizations selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5560ms
+  Rendered organizations/index.html.erb within layouts/application (13.0ms)
+Completed 500 Internal Server Error in 18ms
+
+ActionView::Template::Error (undefined local variable or method `id' for #<#<Class:0x007f9739da0e80>:0x007f973965ae28>):
+    18: 				</td>
+    19: 				<td><%= organization.description %></strong>
+    20: 				</td>
+    21: 				<td><%= link_to 'Show Org Details', organization %></td> &nbsp; &nbsp; <%= link_to 'Edit this Org', organization(id) %></td>
+    22: 			</tr>
+    23: 			<% end %>
+    24: 			</tbody>
+  app/views/organizations/index.html.erb:21:in `block in _app_views_organizations_index_html_erb___4285259734574365219_70143739874540'
+  app/views/organizations/index.html.erb:11:in `_app_views_organizations_index_html_erb___4285259734574365219_70143739874540'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.3ms)
+
+
+Started GET "/enablers" for 127.0.0.1 at 2014-11-10 15:18:20 -0800
+Processing by EnablersController#index as HTML
+Redirected to http://localhost:3000/login
+Filter chain halted as :authorize rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/login" for 127.0.0.1 at 2014-11-10 15:18:20 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 76ms (Views: 75.4ms)
+
+
+Started GET "/assets/enablers.css?body=1" for 127.0.0.1 at 2014-11-10 15:18:20 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-10 15:18:20 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-10 15:18:20 -0800
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2014-11-10 15:18:20 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-10 15:18:20 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-10 15:18:20 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-10 15:18:20 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-10 15:18:20 -0800
+
+
+Started GET "/assets/enablers.js?body=1" for 127.0.0.1 at 2014-11-10 15:18:20 -0800
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2014-11-10 15:18:20 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-10 15:18:20 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-10 15:18:20 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-10 15:18:20 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 15:19:10 -0800
+Processing by OrganizationsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.0740ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>BSON::ObjectId('546105564d617213dc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6080ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=organizations selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7570ms
+  Rendered organizations/index.html.erb within layouts/application (15.6ms)
+Completed 500 Internal Server Error in 56ms
+
+ActionView::Template::Error (undefined local variable or method `id' for #<#<Class:0x007fc76cb8da40>:0x007fc76cb8cc08>):
+    18: 				</td>
+    19: 				<td><%= organization.description %></strong>
+    20: 				</td>
+    21: 				<td><%= link_to 'Show Org Details', organization %></td> &nbsp; &nbsp; <%= link_to 'Edit this Org', organization_path(id) %></td>
+    22: 			</tr>
+    23: 			<% end %>
+    24: 			</tbody>
+  app/views/organizations/index.html.erb:21:in `block in _app_views_organizations_index_html_erb___4117263356596655385_70247249508480'
+  app/views/organizations/index.html.erb:11:in `_app_views_organizations_index_html_erb___4117263356596655385_70247249508480'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (14.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 15:19:10 -0800
+Processing by OrganizationsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.4190ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>BSON::ObjectId('546105564d617213dc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5150ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=organizations selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4620ms
+  Rendered organizations/index.html.erb within layouts/application (9.7ms)
+Completed 500 Internal Server Error in 14ms
+
+ActionView::Template::Error (undefined local variable or method `id' for #<#<Class:0x007fc76cb8da40>:0x007fc76c81e440>):
+    18: 				</td>
+    19: 				<td><%= organization.description %></strong>
+    20: 				</td>
+    21: 				<td><%= link_to 'Show Org Details', organization %></td> &nbsp; &nbsp; <%= link_to 'Edit this Org', organization_path(id) %></td>
+    22: 			</tr>
+    23: 			<% end %>
+    24: 			</tbody>
+  app/views/organizations/index.html.erb:21:in `block in _app_views_organizations_index_html_erb___4117263356596655385_70247249508480'
+  app/views/organizations/index.html.erb:11:in `_app_views_organizations_index_html_erb___4117263356596655385_70247249508480'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 15:21:10 -0800
+Processing by OrganizationsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.6340ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>BSON::ObjectId('546105564d617213dc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6640ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=organizations selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5690ms
+  Rendered organizations/index.html.erb within layouts/application (35.2ms)
+Completed 500 Internal Server Error in 41ms
+
+ActionView::Template::Error (undefined method `model_name' for BSON::ObjectId:Class):
+    18: 				</td>
+    19: 				<td><%= organization.description %></strong>
+    20: 				</td>
+    21: 				<td><%= link_to 'Show Org Details', organization %></td> &nbsp; &nbsp; <%= link_to 'Edit this Org', organization.id %></td>
+    22: 			</tr>
+    23: 			<% end %>
+    24: 			</tbody>
+  app/views/organizations/index.html.erb:21:in `block in _app_views_organizations_index_html_erb___4117263356596655385_70247231025880'
+  app/views/organizations/index.html.erb:11:in `_app_views_organizations_index_html_erb___4117263356596655385_70247231025880'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 15:21:17 -0800
+Processing by OrganizationsController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>BSON::ObjectId('546105564d617213dc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6270ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=organizations selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5960ms
+  Rendered organizations/index.html.erb within layouts/application (3.4ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionView::Template::Error (undefined method `model_name' for BSON::ObjectId:Class):
+    18: 				</td>
+    19: 				<td><%= organization.description %></strong>
+    20: 				</td>
+    21: 				<td><%= link_to 'Show Org Details', organization %></td> &nbsp; &nbsp; <%= link_to 'Edit this Org', organization.id %></td>
+    22: 			</tr>
+    23: 			<% end %>
+    24: 			</tbody>
+  app/views/organizations/index.html.erb:21:in `block in _app_views_organizations_index_html_erb___4117263356596655385_70247230500840'
+  app/views/organizations/index.html.erb:11:in `_app_views_organizations_index_html_erb___4117263356596655385_70247230500840'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 15:21:54 -0800
+Processing by OrganizationsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.6730ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>BSON::ObjectId('546105564d617213dc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 2.0790ms
+  Rendered organizations/index.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 8ms
+
+SyntaxError (/Users/hmhaleyjr/WDI/Martin_WDI/projects_major/02b_crosstechplayers_final_round3/app/views/organizations/index.html.erb:21: syntax error, unexpected '.', expecting ')'
+...'Edit this Org', organization(.id) );@output_buffer.safe_app...
+...                               ^):
+  app/views/organizations/index.html.erb:21: syntax error, unexpected '.', expecting ')'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.2ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 15:22:22 -0800
+Processing by OrganizationsController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>BSON::ObjectId('546105564d617213dc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6440ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=organizations selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5220ms
+  Rendered organizations/index.html.erb within layouts/application (10.5ms)
+Completed 500 Internal Server Error in 15ms
+
+ActionView::Template::Error (undefined local variable or method `id' for #<#<Class:0x007fc76cb8da40>:0x007fc76ce6ef48>):
+    18: 				</td>
+    19: 				<td><%= organization.description %></strong>
+    20: 				</td>
+    21: 				<td><%= link_to 'Show Org Details', organization %></td> &nbsp; &nbsp; <%= link_to 'Edit this Org', organization(id) %></td>
+    22: 			</tr>
+    23: 			<% end %>
+    24: 			</tbody>
+  app/views/organizations/index.html.erb:21:in `block in _app_views_organizations_index_html_erb___4117263356596655385_70247251142760'
+  app/views/organizations/index.html.erb:11:in `_app_views_organizations_index_html_erb___4117263356596655385_70247251142760'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 15:22:57 -0800
+Processing by OrganizationsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.5260ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>BSON::ObjectId('546105564d617213dc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7620ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=organizations selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6060ms
+  Rendered organizations/index.html.erb within layouts/application (11.5ms)
+Completed 500 Internal Server Error in 17ms
+
+ActionView::Template::Error (undefined local variable or method `id' for #<#<Class:0x007fc76cb8da40>:0x007fc76cb44458>):
+    18: 				</td>
+    19: 				<td><%= organization.description %></strong>
+    20: 				</td>
+    21: 				<td><%= link_to 'Show Org Details', organization %></td> &nbsp; &nbsp; <%= link_to 'Edit this Org', organization[id] %></td>
+    22: 			</tr>
+    23: 			<% end %>
+    24: 			</tbody>
+  app/views/organizations/index.html.erb:21:in `block in _app_views_organizations_index_html_erb___4117263356596655385_70247249474360'
+  app/views/organizations/index.html.erb:11:in `_app_views_organizations_index_html_erb___4117263356596655385_70247249474360'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 15:23:09 -0800
+Processing by OrganizationsController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>BSON::ObjectId('546105564d617213dc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8900ms
+  Rendered organizations/index.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 5ms
+
+SyntaxError (/Users/hmhaleyjr/WDI/Martin_WDI/projects_major/02b_crosstechplayers_final_round3/app/views/organizations/index.html.erb:21: syntax error, unexpected '.', expecting ']'
+...'Edit this Org', organization[.id] );@output_buffer.safe_app...
+...                               ^
+/Users/hmhaleyjr/WDI/Martin_WDI/projects_major/02b_crosstechplayers_final_round3/app/views/organizations/index.html.erb:23: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;			 end 
+         			    ^
+/Users/hmhaleyjr/WDI/Martin_WDI/projects_major/02b_crosstechplayers_final_round3/app/views/organizations/index.html.erb:29: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/hmhaleyjr/WDI/Martin_WDI/projects_major/02b_crosstechplayers_final_round3/app/views/organizations/index.html.erb:31: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/organizations/index.html.erb:21: syntax error, unexpected '.', expecting ']'
+  app/views/organizations/index.html.erb:23: syntax error, unexpected keyword_end, expecting ')'
+  app/views/organizations/index.html.erb:29: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/organizations/index.html.erb:31: syntax error, unexpected keyword_end, expecting ')'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 15:23:34 -0800
+Processing by OrganizationsController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>BSON::ObjectId('546105564d617213dc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7430ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=organizations selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5600ms
+  Rendered organizations/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 173ms (Views: 170.4ms)
+
+
+Started GET "/assets/enablers.css?body=1" for 127.0.0.1 at 2014-11-10 15:23:34 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-10 15:23:34 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-10 15:23:34 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-10 15:23:34 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-10 15:23:34 -0800
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2014-11-10 15:23:34 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-10 15:23:34 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-10 15:23:34 -0800
+
+
+Started GET "/assets/enablers.js?body=1" for 127.0.0.1 at 2014-11-10 15:23:34 -0800
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2014-11-10 15:23:34 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-10 15:23:34 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-10 15:23:34 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-10 15:23:34 -0800
+
+
+Started GET "/organizations/545d8c994d6172fb53020000" for 127.0.0.1 at 2014-11-10 15:24:19 -0800
+Processing by OrganizationsController#show as HTML
+  Parameters: {"id"=>"545d8c994d6172fb53020000"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.4570ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>BSON::ObjectId('546105564d617213dc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5610ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=organizations selector={"_id"=>BSON::ObjectId('545d8c994d6172fb53020000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 8.3970ms
+  Rendered organizations/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 73ms (Views: 60.8ms)
+
+
+Started GET "/organizations/545d8c994d6172fb53020000" for 127.0.0.1 at 2014-11-10 15:24:28 -0800
+Processing by OrganizationsController#show as HTML
+  Parameters: {"id"=>"545d8c994d6172fb53020000"}
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>BSON::ObjectId('546105564d617213dc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5490ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=organizations selector={"_id"=>BSON::ObjectId('545d8c994d6172fb53020000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4180ms
+  Rendered organizations/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 76ms (Views: 73.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 15:25:54 -0800
+Processing by OrganizationsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.5970ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>BSON::ObjectId('546105564d617213dc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.5320ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=organizations selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5660ms
+  Rendered organizations/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 67ms (Views: 62.0ms)
+
+
+Started GET "/assets/enablers.css?body=1" for 127.0.0.1 at 2014-11-10 15:25:54 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-10 15:25:54 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-10 15:25:54 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-10 15:25:54 -0800
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2014-11-10 15:25:54 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-10 15:25:54 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-10 15:25:54 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-10 15:25:54 -0800
+
+
+Started GET "/assets/enablers.js?body=1" for 127.0.0.1 at 2014-11-10 15:25:54 -0800
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2014-11-10 15:25:54 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-10 15:25:54 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-10 15:25:54 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-10 15:25:54 -0800
+
+
+Started GET "/organizations/545d8c994d6172fb53020000" for 127.0.0.1 at 2014-11-10 15:25:56 -0800
+Processing by OrganizationsController#show as HTML
+  Parameters: {"id"=>"545d8c994d6172fb53020000"}
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>BSON::ObjectId('546105564d617213dc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5630ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=organizations selector={"_id"=>BSON::ObjectId('545d8c994d6172fb53020000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4710ms
+  Rendered organizations/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 74ms (Views: 71.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 15:26:01 -0800
+Processing by OrganizationsController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>BSON::ObjectId('546105564d617213dc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6000ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=organizations selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5310ms
+  Rendered organizations/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 70ms (Views: 67.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 15:26:04 -0800
+Processing by OrganizationsController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>BSON::ObjectId('546105564d617213dc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5400ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=organizations selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5980ms
+  Rendered organizations/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 60ms (Views: 58.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 15:26:19 -0800
+Processing by OrganizationsController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>BSON::ObjectId('546105564d617213dc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6410ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=organizations selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7920ms
+  Rendered organizations/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 76ms (Views: 74.2ms)
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2014-11-10 15:26:19 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-10 15:26:19 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-10 15:26:19 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-10 15:26:19 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-10 15:26:19 -0800
+
+
+Started GET "/assets/enablers.css?body=1" for 127.0.0.1 at 2014-11-10 15:26:19 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-10 15:26:19 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-10 15:26:19 -0800
+
+
+Started GET "/assets/enablers.js?body=1" for 127.0.0.1 at 2014-11-10 15:26:19 -0800
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2014-11-10 15:26:19 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-10 15:26:19 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-10 15:26:19 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-10 15:26:19 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 15:26:23 -0800
+Processing by OrganizationsController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>BSON::ObjectId('546105564d617213dc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5730ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=organizations selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6620ms
+  Rendered organizations/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 72ms (Views: 70.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 15:26:25 -0800
+Processing by OrganizationsController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>BSON::ObjectId('546105564d617213dc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5750ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=organizations selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5080ms
+  Rendered organizations/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 62ms (Views: 60.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 15:28:57 -0800
+Processing by OrganizationsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.7210ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>BSON::ObjectId('546105564d617213dc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5090ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=organizations selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5210ms
+  Rendered organizations/index.html.erb within layouts/application (10.4ms)
+Completed 500 Internal Server Error in 17ms
+
+ActionView::Template::Error (undefined local variable or method `edit_organization_path' for #<#<Class:0x007fc76cb8da40>:0x007fc769ba5260>):
+    18: 				</td>
+    19: 				<td><%= organization.description %></strong>
+    20: 				</td>
+    21: 				<td><%= link_to 'Show Org Details', organization %> &nbsp; &nbsp; <%= link_to 'Edit this Org', edit_organization_path[organization] %></td>
+    22: 			</tr>
+    23: 			<% end %>
+    24: 			</tbody>
+  app/views/organizations/index.html.erb:21:in `block in _app_views_organizations_index_html_erb___4117263356596655385_70247224512340'
+  app/views/organizations/index.html.erb:11:in `_app_views_organizations_index_html_erb___4117263356596655385_70247224512340'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (12.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 15:29:17 -0800
+Processing by OrganizationsController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>BSON::ObjectId('546105564d617213dc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7180ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=organizations selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7350ms
+  Rendered organizations/index.html.erb within layouts/application (11.9ms)
+Completed 500 Internal Server Error in 18ms
+
+ActionView::Template::Error (undefined local variable or method `edit_organization_path' for #<#<Class:0x007fc76cb8da40>:0x007fc769cc75a8>):
+    18: 				</td>
+    19: 				<td><%= organization.description %></strong>
+    20: 				</td>
+    21: 				<td><%= link_to 'Show Org Details', organization %> &nbsp; &nbsp; <%= link_to 'Edit this Org', edit_organization_path[organization.id] %></td>
+    22: 			</tr>
+    23: 			<% end %>
+    24: 			</tbody>
+  app/views/organizations/index.html.erb:21:in `block in _app_views_organizations_index_html_erb___4117263356596655385_70247225079360'
+  app/views/organizations/index.html.erb:11:in `_app_views_organizations_index_html_erb___4117263356596655385_70247225079360'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 15:40:00 -0800
+Processing by OrganizationsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.5050ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>BSON::ObjectId('546105564d617213dc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6770ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=organizations selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5400ms
+  Rendered organizations/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 80ms (Views: 60.7ms)
+
+
+Started GET "/assets/enablers.css?body=1" for 127.0.0.1 at 2014-11-10 15:40:00 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-10 15:40:00 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-10 15:40:00 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-10 15:40:00 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-10 15:40:00 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-10 15:40:00 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-10 15:40:00 -0800
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2014-11-10 15:40:00 -0800
+
+
+Started GET "/assets/enablers.js?body=1" for 127.0.0.1 at 2014-11-10 15:40:00 -0800
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2014-11-10 15:40:00 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-10 15:40:00 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-10 15:40:00 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-10 15:40:00 -0800
+
+
+Started GET "/organizations/545d8c994d6172fb53020000" for 127.0.0.1 at 2014-11-10 15:40:03 -0800
+Processing by OrganizationsController#show as HTML
+  Parameters: {"id"=>"545d8c994d6172fb53020000"}
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>BSON::ObjectId('546105564d617213dc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5740ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=organizations selector={"_id"=>BSON::ObjectId('545d8c994d6172fb53020000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5000ms
+  Rendered organizations/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 62ms (Views: 58.5ms)
+
+
+Started GET "/organizations/545d8c994d6172fb53020000/edit" for 127.0.0.1 at 2014-11-10 15:40:06 -0800
+Processing by OrganizationsController#edit as HTML
+  Parameters: {"id"=>"545d8c994d6172fb53020000"}
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>BSON::ObjectId('546105564d617213dc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5500ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=organizations selector={"_id"=>BSON::ObjectId('545d8c994d6172fb53020000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4630ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=enablers selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8930ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=org_ena_join_tables selector={"organization_id"=>BSON::ObjectId('545d8c994d6172fb53020000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.7910ms
+  Rendered organizations/_form_new_edit.html.erb (74.7ms)
+  Rendered organizations/edit.html.erb within layouts/application (83.3ms)
+Completed 200 OK in 151ms (Views: 148.0ms)
+
+
+Started GET "/organizations/545d8c994d6172fb53020000" for 127.0.0.1 at 2014-11-10 15:40:13 -0800
+Processing by OrganizationsController#show as HTML
+  Parameters: {"id"=>"545d8c994d6172fb53020000"}
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>BSON::ObjectId('546105564d617213dc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6280ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=organizations selector={"_id"=>BSON::ObjectId('545d8c994d6172fb53020000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6160ms
+  Rendered organizations/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 74ms (Views: 70.4ms)
+
+
+Started GET "/organizations/545d8c994d6172fb53020000/edit" for 127.0.0.1 at 2014-11-10 15:40:15 -0800
+Processing by OrganizationsController#edit as HTML
+  Parameters: {"id"=>"545d8c994d6172fb53020000"}
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>BSON::ObjectId('546105564d617213dc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6120ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=organizations selector={"_id"=>BSON::ObjectId('545d8c994d6172fb53020000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5470ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=enablers selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7940ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=org_ena_join_tables selector={"organization_id"=>BSON::ObjectId('545d8c994d6172fb53020000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4100ms
+  Rendered organizations/_form_new_edit.html.erb (8.2ms)
+  Rendered organizations/edit.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 79ms (Views: 75.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 15:41:53 -0800
+Processing by OrganizationsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.5010ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>BSON::ObjectId('546105564d617213dc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4410ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=organizations selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4640ms
+  Rendered organizations/index.html.erb within layouts/application (10.7ms)
+Completed 500 Internal Server Error in 18ms
+
+ActionView::Template::Error (undefined local variable or method `organization' for #<#<Class:0x007fc76cece948>:0x007fc76a64c0d8>):
+    18: 				</td>
+    19: 				<td><%= one_organization.description %></strong>
+    20: 				</td>
+    21: 				<td><%= link_to 'Show Org Details', organization %> &nbsp; &nbsp; <%= link_to 'Edit this Org', edit_organization_path(one_organization) %></td>
+    22: 			</tr>
+    23: 			<% end %>
+    24: 			</tbody>
+  app/views/organizations/index.html.erb:21:in `block in _app_views_organizations_index_html_erb___4117263356596655385_70247230091420'
+  app/views/organizations/index.html.erb:11:in `_app_views_organizations_index_html_erb___4117263356596655385_70247230091420'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 15:46:22 -0800
+Processing by OrganizationsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.4930ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>BSON::ObjectId('546105564d617213dc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5620ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=organizations selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4980ms
+  Rendered organizations/index.html.erb within layouts/application (10.4ms)
+Completed 500 Internal Server Error in 15ms
+
+ActionView::Template::Error (undefined local variable or method `organization' for #<#<Class:0x007fc76cece948>:0x007fc76ce0fb88>):
+    18: 				</td>
+    19: 				<td><%= one_organization.description %></strong>
+    20: 				</td>
+    21: 				<td><%= link_to 'Show Org Details', organization %> &nbsp; &nbsp; <%= link_to 'Edit this Org', edit_organization_path(:organization => organization.id) %></td>
+    22: 			</tr>
+    23: 			<% end %>
+    24: 			</tbody>
+  app/views/organizations/index.html.erb:21:in `block in _app_views_organizations_index_html_erb___4117263356596655385_70247250947740'
+  app/views/organizations/index.html.erb:11:in `_app_views_organizations_index_html_erb___4117263356596655385_70247250947740'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 15:47:11 -0800
+Processing by OrganizationsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.6460ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>BSON::ObjectId('546105564d617213dc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.3660ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=organizations selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6390ms
+  Rendered organizations/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 78ms (Views: 73.5ms)
+
+
+Started GET "/assets/enablers.css?body=1" for 127.0.0.1 at 2014-11-10 15:47:11 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-10 15:47:11 -0800
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2014-11-10 15:47:11 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-10 15:47:11 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-10 15:47:11 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-10 15:47:11 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-10 15:47:11 -0800
+
+
+Started GET "/assets/enablers.js?body=1" for 127.0.0.1 at 2014-11-10 15:47:11 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-10 15:47:11 -0800
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2014-11-10 15:47:11 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-10 15:47:11 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-10 15:47:11 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-10 15:47:11 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 15:47:59 -0800
+Processing by OrganizationsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.6850ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>BSON::ObjectId('546105564d617213dc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.9380ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=organizations selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5770ms
+  Rendered organizations/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 82ms (Views: 76.9ms)
+
+
+Started GET "/assets/enablers.css?body=1" for 127.0.0.1 at 2014-11-10 15:47:59 -0800
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2014-11-10 15:47:59 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-10 15:47:59 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-10 15:47:59 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-10 15:47:59 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-10 15:47:59 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-10 15:47:59 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-10 15:47:59 -0800
+
+
+Started GET "/assets/enablers.js?body=1" for 127.0.0.1 at 2014-11-10 15:47:59 -0800
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2014-11-10 15:47:59 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-10 15:47:59 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-10 15:47:59 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-10 15:47:59 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 15:48:27 -0800
+Processing by OrganizationsController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>BSON::ObjectId('546105564d617213dc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7000ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=organizations selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6770ms
+  Rendered organizations/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 79ms (Views: 76.3ms)
+
+
+Started GET "/assets/enablers.css?body=1" for 127.0.0.1 at 2014-11-10 15:48:27 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-10 15:48:27 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-10 15:48:27 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-10 15:48:27 -0800
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2014-11-10 15:48:27 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-10 15:48:27 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-10 15:48:27 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-10 15:48:27 -0800
+
+
+Started GET "/assets/enablers.js?body=1" for 127.0.0.1 at 2014-11-10 15:48:27 -0800
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2014-11-10 15:48:27 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-10 15:48:27 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-10 15:48:27 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-10 15:48:27 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 15:53:20 -0800
+Processing by OrganizationsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.6520ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>BSON::ObjectId('546105564d617213dc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5580ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=organizations selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5500ms
+  Rendered organizations/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 106ms (Views: 102.9ms)
+
+
+Started GET "/assets/enablers.css?body=1" for 127.0.0.1 at 2014-11-10 15:53:20 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-10 15:53:20 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-10 15:53:20 -0800
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2014-11-10 15:53:20 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-10 15:53:20 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-10 15:53:20 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-10 15:53:20 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-10 15:53:20 -0800
+
+
+Started GET "/assets/enablers.js?body=1" for 127.0.0.1 at 2014-11-10 15:53:20 -0800
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2014-11-10 15:53:20 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-10 15:53:20 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-10 15:53:20 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-10 15:53:20 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 15:55:37 -0800
+Processing by OrganizationsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.5680ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>BSON::ObjectId('546105564d617213dc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6510ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=organizations selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6020ms
+  Rendered organizations/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 68ms (Views: 63.7ms)
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2014-11-10 15:55:37 -0800
+
+
+Started GET "/assets/enablers.css?body=1" for 127.0.0.1 at 2014-11-10 15:55:37 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-10 15:55:37 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-10 15:55:37 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-10 15:55:37 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-10 15:55:37 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-10 15:55:37 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-10 15:55:37 -0800
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2014-11-10 15:55:37 -0800
+
+
+Started GET "/assets/enablers.js?body=1" for 127.0.0.1 at 2014-11-10 15:55:37 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-10 15:55:37 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-10 15:55:37 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-10 15:55:37 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 15:56:33 -0800
+Processing by OrganizationsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.7310ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>BSON::ObjectId('546105564d617213dc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.6510ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=organizations selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6160ms
+  Rendered organizations/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 86ms (Views: 81.2ms)
+
+
+Started GET "/assets/enablers.css?body=1" for 127.0.0.1 at 2014-11-10 15:56:33 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-10 15:56:33 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-10 15:56:33 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-10 15:56:33 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-10 15:56:33 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-10 15:56:33 -0800
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2014-11-10 15:56:33 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-10 15:56:33 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-10 15:56:33 -0800
+
+
+Started GET "/assets/enablers.js?body=1" for 127.0.0.1 at 2014-11-10 15:56:33 -0800
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2014-11-10 15:56:33 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-10 15:56:33 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-10 15:56:33 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 16:45:04 -0800
+Processing by OrganizationsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.5820ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>BSON::ObjectId('546105564d617213dc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6150ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=organizations selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6690ms
+  Rendered organizations/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 111ms (Views: 107.2ms)
+
+
+Started GET "/assets/enablers.css?body=1" for 127.0.0.1 at 2014-11-10 16:45:04 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-10 16:45:04 -0800
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2014-11-10 16:45:04 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-10 16:45:04 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-10 16:45:04 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-10 16:45:04 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-10 16:45:04 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-10 16:45:04 -0800
+
+
+Started GET "/assets/enablers.js?body=1" for 127.0.0.1 at 2014-11-10 16:45:04 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-10 16:45:04 -0800
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2014-11-10 16:45:04 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-10 16:45:04 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-10 16:45:04 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 16:56:06 -0800
+Processing by OrganizationsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.5610ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>BSON::ObjectId('546105564d617213dc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4820ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=organizations selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6870ms
+  Rendered organizations/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 95ms (Views: 91.8ms)
+
+
+Started GET "/assets/enablers.css?body=1" for 127.0.0.1 at 2014-11-10 16:56:06 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-10 16:56:06 -0800
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2014-11-10 16:56:06 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-10 16:56:06 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-10 16:56:06 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-10 16:56:06 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-10 16:56:06 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-10 16:56:06 -0800
+
+
+Started GET "/assets/enablers.js?body=1" for 127.0.0.1 at 2014-11-10 16:56:06 -0800
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2014-11-10 16:56:06 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-10 16:56:06 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-10 16:56:06 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-10 16:56:06 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 16:57:00 -0800
+Processing by OrganizationsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.4730ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>BSON::ObjectId('546105564d617213dc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6200ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=organizations selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4990ms
+  Rendered organizations/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 94ms (Views: 90.6ms)
+
+
+Started GET "/assets/enablers.css?body=1" for 127.0.0.1 at 2014-11-10 16:57:00 -0800
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2014-11-10 16:57:00 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-10 16:57:00 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-10 16:57:00 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-10 16:57:00 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-10 16:57:00 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-10 16:57:00 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-10 16:57:00 -0800
+
+
+Started GET "/assets/enablers.js?body=1" for 127.0.0.1 at 2014-11-10 16:57:00 -0800
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2014-11-10 16:57:00 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-10 16:57:00 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-10 16:57:00 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-10 16:57:00 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 17:40:55 -0800
+Processing by OrganizationsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 8.9190ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>BSON::ObjectId('546105564d617213dc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 4.6260ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=organizations selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 3.6600ms
+  Rendered organizations/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 117ms (Views: 96.8ms)
+
+
+Started GET "/assets/enablers.css?body=1" for 127.0.0.1 at 2014-11-10 17:40:55 -0800
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2014-11-10 17:40:55 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-10 17:40:55 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-10 17:40:55 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-10 17:40:55 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-10 17:40:55 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-10 17:40:55 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-10 17:40:55 -0800
+
+
+Started GET "/assets/enablers.js?body=1" for 127.0.0.1 at 2014-11-10 17:40:55 -0800
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2014-11-10 17:40:55 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-10 17:40:55 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-10 17:40:55 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-10 17:40:55 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-10 17:41:20 -0800
+Processing by OrganizationsController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>BSON::ObjectId('546105564d617213dc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.9880ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=organizations selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 2.6980ms
+  Rendered organizations/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 79ms (Views: 76.2ms)
+
+
+Started GET "/assets/enablers.css?body=1" for 127.0.0.1 at 2014-11-10 17:41:20 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-10 17:41:21 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-10 17:41:21 -0800
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2014-11-10 17:41:21 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-10 17:41:21 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-10 17:41:21 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-10 17:41:21 -0800
+
+
+Started GET "/assets/enablers.js?body=1" for 127.0.0.1 at 2014-11-10 17:41:21 -0800
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2014-11-10 17:41:21 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-10 17:41:21 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-10 17:41:21 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-10 17:41:21 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-10 17:41:21 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-11 13:24:05 -0800
+Processing by OrganizationsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 2.5550ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>{"$oid"=>BSON::ObjectId('5460d5ea4d61720d20020000')}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 6.4900ms
+Completed 500 Internal Server Error in 37ms
+
+Moped::Errors::QueryFailure (The operation: #<Moped::Protocol::Query
+  @length=96
+  @request_id=2
+  @response_to=0
+  @op_code=2004
+  @flags=[]
+  @full_collection_name="crosstechplayers_development.users"
+  @skip=0
+  @limit=0
+  @selector={"_id"=>{"$oid"=>BSON::ObjectId('5460d5ea4d61720d20020000')}}
+  @fields=nil>
+failed with error 17287: "Can't canonicalize query: BadValue unknown operator: $oid"
+
+See https://github.com/mongodb/mongo/blob/master/docs/errors.md
+for details about this error.):
+  app/controllers/application_controller.rb:12:in `current_user'
+  app/controllers/application_controller.rb:16:in `authorize'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (27.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-11 13:25:55 -0800
+Processing by OrganizationsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.9810ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>BSON::ObjectId('546105564d617213dc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 2.1540ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=organizations selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.8470ms
+  Rendered organizations/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 222ms (Views: 179.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-11 13:25:55 -0800
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2014-11-11 13:25:55 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-11 13:25:55 -0800
+
+
+Started GET "/assets/enablers.css?body=1" for 127.0.0.1 at 2014-11-11 13:25:55 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-11 13:25:55 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-11 13:25:55 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-11 13:25:56 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-11 13:25:56 -0800
+
+
+Started GET "/assets/enablers.js?body=1" for 127.0.0.1 at 2014-11-11 13:25:56 -0800
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2014-11-11 13:25:56 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-11 13:25:56 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-11 13:25:56 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-11 13:25:56 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-11 13:32:00 -0800
+Processing by OrganizationsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.9350ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>BSON::ObjectId('546105564d617213dc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6250ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=organizations selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5940ms
+  Rendered organizations/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 109ms (Views: 105.1ms)
+
+
+Started GET "/assets/enablers.css?body=1" for 127.0.0.1 at 2014-11-11 13:32:00 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-11 13:32:00 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-11 13:32:00 -0800
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2014-11-11 13:32:00 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-11 13:32:00 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-11 13:32:00 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-11 13:32:01 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-11 13:32:01 -0800
+
+
+Started GET "/assets/enablers.js?body=1" for 127.0.0.1 at 2014-11-11 13:32:01 -0800
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2014-11-11 13:32:01 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-11 13:32:01 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-11 13:32:01 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-11 13:32:01 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-11 13:35:54 -0800
+Processing by OrganizationsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.6180ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>BSON::ObjectId('546105564d617213dc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5580ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=organizations selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6270ms
+  Rendered organizations/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 78ms (Views: 75.0ms)
+
+
+Started GET "/assets/enablers.css?body=1" for 127.0.0.1 at 2014-11-11 13:35:54 -0800
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2014-11-11 13:35:54 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-11 13:35:54 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-11 13:35:54 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-11 13:35:54 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-11 13:35:54 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-11 13:35:54 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-11 13:35:54 -0800
+
+
+Started GET "/assets/enablers.js?body=1" for 127.0.0.1 at 2014-11-11 13:35:54 -0800
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2014-11-11 13:35:54 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-11 13:35:54 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-11 13:35:54 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-11 13:35:54 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-11 13:36:13 -0800
+Processing by OrganizationsController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>BSON::ObjectId('546105564d617213dc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 3.3610ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=organizations selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8850ms
+  Rendered organizations/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 87ms (Views: 81.6ms)
+
+
+Started GET "/assets/enablers.css?body=1" for 127.0.0.1 at 2014-11-11 13:36:13 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-11 13:36:13 -0800
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2014-11-11 13:36:13 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-11 13:36:13 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-11 13:36:13 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-11 13:36:13 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-11 13:36:13 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-11 13:36:13 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-11 13:36:13 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-11 13:36:13 -0800
+
+
+Started GET "/assets/enablers.js?body=1" for 127.0.0.1 at 2014-11-11 13:36:13 -0800
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2014-11-11 13:36:13 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-11 13:36:13 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-11 13:37:14 -0800
+Processing by OrganizationsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.4160ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>BSON::ObjectId('546105564d617213dc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4560ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=organizations selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5470ms
+  Rendered organizations/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 85ms (Views: 82.5ms)
+
+
+Started GET "/assets/enablers.css?body=1" for 127.0.0.1 at 2014-11-11 13:37:14 -0800
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2014-11-11 13:37:14 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-11 13:37:14 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-11 13:37:14 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-11 13:37:14 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-11 13:37:14 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-11 13:37:14 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-11 13:37:14 -0800
+
+
+Started GET "/assets/enablers.js?body=1" for 127.0.0.1 at 2014-11-11 13:37:14 -0800
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2014-11-11 13:37:14 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-11 13:37:14 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-11 13:37:14 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-11 13:37:14 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-11 13:37:47 -0800
+Processing by OrganizationsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.4460ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>{"$oid"=>BSON::ObjectId('5460d5ea4d61720d20020000')}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8770ms
+Completed 500 Internal Server Error in 3ms
+
+Moped::Errors::QueryFailure (The operation: #<Moped::Protocol::Query
+  @length=96
+  @request_id=16
+  @response_to=0
+  @op_code=2004
+  @flags=[]
+  @full_collection_name="crosstechplayers_development.users"
+  @skip=0
+  @limit=0
+  @selector={"_id"=>{"$oid"=>BSON::ObjectId('5460d5ea4d61720d20020000')}}
+  @fields=nil>
+failed with error 17287: "Can't canonicalize query: BadValue unknown operator: $oid"
+
+See https://github.com/mongodb/mongo/blob/master/docs/errors.md
+for details about this error.):
+  app/controllers/application_controller.rb:12:in `current_user'
+  app/controllers/application_controller.rb:16:in `authorize'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (26.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-11 13:37:52 -0800
+Processing by OrganizationsController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>{"$oid"=>BSON::ObjectId('5460d5ea4d61720d20020000')}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.9940ms
+Completed 500 Internal Server Error in 3ms
+
+Moped::Errors::QueryFailure (The operation: #<Moped::Protocol::Query
+  @length=96
+  @request_id=17
+  @response_to=0
+  @op_code=2004
+  @flags=[]
+  @full_collection_name="crosstechplayers_development.users"
+  @skip=0
+  @limit=0
+  @selector={"_id"=>{"$oid"=>BSON::ObjectId('5460d5ea4d61720d20020000')}}
+  @fields=nil>
+failed with error 17287: "Can't canonicalize query: BadValue unknown operator: $oid"
+
+See https://github.com/mongodb/mongo/blob/master/docs/errors.md
+for details about this error.):
+  app/controllers/application_controller.rb:12:in `current_user'
+  app/controllers/application_controller.rb:16:in `authorize'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-11 13:39:44 -0800
+Processing by OrganizationsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.4660ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>{"$oid"=>BSON::ObjectId('5460d5ea4d61720d20020000')}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.2040ms
+Completed 500 Internal Server Error in 4ms
+
+Moped::Errors::QueryFailure (The operation: #<Moped::Protocol::Query
+  @length=96
+  @request_id=19
+  @response_to=0
+  @op_code=2004
+  @flags=[]
+  @full_collection_name="crosstechplayers_development.users"
+  @skip=0
+  @limit=0
+  @selector={"_id"=>{"$oid"=>BSON::ObjectId('5460d5ea4d61720d20020000')}}
+  @fields=nil>
+failed with error 17287: "Can't canonicalize query: BadValue unknown operator: $oid"
+
+See https://github.com/mongodb/mongo/blob/master/docs/errors.md
+for details about this error.):
+  app/controllers/application_controller.rb:12:in `current_user'
+  app/controllers/application_controller.rb:16:in `authorize'
+
+
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/hmhaleyjr/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-11 13:40:11 -0800
+Processing by OrganizationsController#index as HTML
+Redirected to http://localhost:3000/login
+Filter chain halted as :authorize rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/login" for 127.0.0.1 at 2014-11-11 13:40:11 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 68ms (Views: 67.8ms)
+
+
+Started GET "/assets/enablers.css?body=1" for 127.0.0.1 at 2014-11-11 13:40:11 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-11 13:40:11 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-11 13:40:11 -0800
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2014-11-11 13:40:11 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-11 13:40:11 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-11 13:40:11 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-11 13:40:11 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-11 13:40:11 -0800
+
+
+Started GET "/assets/enablers.js?body=1" for 127.0.0.1 at 2014-11-11 13:40:11 -0800
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2014-11-11 13:40:11 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-11 13:40:11 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-11 13:40:11 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-11 13:40:11 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-11 13:41:45 -0800
+Processing by OrganizationsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.6910ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>BSON::ObjectId('546105564d617213dc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6790ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=organizations selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6350ms
+  Rendered organizations/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 81ms (Views: 76.9ms)
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2014-11-11 13:41:45 -0800
+
+
+Started GET "/assets/enablers.css?body=1" for 127.0.0.1 at 2014-11-11 13:41:45 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-11 13:41:45 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-11 13:41:45 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-11 13:41:45 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-11 13:41:45 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-11 13:41:45 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-11 13:41:45 -0800
+
+
+Started GET "/assets/enablers.js?body=1" for 127.0.0.1 at 2014-11-11 13:41:45 -0800
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2014-11-11 13:41:45 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-11 13:41:45 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-11 13:41:45 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-11 13:41:45 -0800
+
+
+Started GET "/login" for 127.0.0.1 at 2014-11-11 13:42:03 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 71ms (Views: 70.5ms)
+
+
+Started GET "/assets/enablers.css?body=1" for 127.0.0.1 at 2014-11-11 13:42:03 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-11 13:42:03 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-11 13:42:03 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-11 13:42:03 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-11 13:42:03 -0800
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2014-11-11 13:42:03 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-11 13:42:03 -0800
+
+
+Started GET "/assets/enablers.js?body=1" for 127.0.0.1 at 2014-11-11 13:42:03 -0800
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2014-11-11 13:42:03 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-11 13:42:03 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-11 13:42:03 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-11 13:42:03 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-11 13:42:03 -0800
+
+
+Started GET "/login" for 127.0.0.1 at 2014-11-11 13:42:48 -0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 68ms (Views: 67.6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-11 13:42:49 -0800
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2014-11-11 13:42:49 -0800
+
+
+Started GET "/assets/enablers.css?body=1" for 127.0.0.1 at 2014-11-11 13:42:49 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-11 13:42:49 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-11 13:42:49 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-11 13:42:49 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-11 13:42:49 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-11 13:42:49 -0800
+
+
+Started GET "/assets/enablers.js?body=1" for 127.0.0.1 at 2014-11-11 13:42:49 -0800
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2014-11-11 13:42:49 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-11 13:42:49 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-11 13:42:49 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-11 13:42:49 -0800
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-11-11 13:43:20 -0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Oq06ioG0qy3QYIqbXw325Jl8AxDUGUdbdobxj6OJH3I=", "username"=>"hmh5", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.4740ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"$query"=>{"username"=>"hmh5"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 6.1060ms
+Redirected to http://localhost:3000/
+Completed 302 Found in 101ms
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-11 13:43:20 -0800
+Processing by OrganizationsController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>BSON::ObjectId('546105564d617213dc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6030ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=organizations selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6260ms
+  Rendered organizations/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 64ms (Views: 61.8ms)
+
+
+Started GET "/assets/enablers.css?body=1" for 127.0.0.1 at 2014-11-11 13:43:20 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-11 13:43:20 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-11 13:43:20 -0800
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2014-11-11 13:43:20 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-11 13:43:20 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-11 13:43:20 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-11 13:43:20 -0800
+
+
+Started GET "/assets/enablers.js?body=1" for 127.0.0.1 at 2014-11-11 13:43:20 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-11 13:43:20 -0800
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2014-11-11 13:43:20 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-11 13:43:20 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-11 13:43:20 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-11 13:43:20 -0800
+
+
+Started GET "/assets/enablers.css?body=1" for 127.0.0.1 at 2014-11-11 13:44:33 -0800
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2014-11-11 13:44:33 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-11 13:44:33 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-11 13:44:33 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-11 13:44:33 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-11 13:47:12 -0800
+Processing by OrganizationsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 6.5070ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>BSON::ObjectId('546105564d617213dc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 3.9140ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=organizations selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 3.0810ms
+  Rendered organizations/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 106ms (Views: 93.0ms)
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2014-11-11 13:47:12 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-11 13:47:12 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-11 13:47:12 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-11 13:47:12 -0800
+
+
+Started GET "/assets/enablers.css?body=1" for 127.0.0.1 at 2014-11-11 13:47:12 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-11 13:47:12 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-11 13:47:12 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-11 13:47:12 -0800
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2014-11-11 13:47:12 -0800
+
+
+Started GET "/assets/enablers.js?body=1" for 127.0.0.1 at 2014-11-11 13:47:12 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-11 13:47:12 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-11 13:47:12 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-11 13:47:12 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-11 13:48:07 -0800
+Processing by OrganizationsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.4550ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>BSON::ObjectId('546105564d617213dc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7390ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=organizations selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 15.2920ms
+  Rendered organizations/index.html.erb within layouts/application (16.7ms)
+Completed 200 OK in 86ms (Views: 82.7ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-11 13:48:07 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-11 13:48:07 -0800
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2014-11-11 13:48:07 -0800
+
+
+Started GET "/assets/enablers.css?body=1" for 127.0.0.1 at 2014-11-11 13:48:07 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-11 13:48:07 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-11 13:48:07 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-11 13:48:07 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-11 13:48:07 -0800
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2014-11-11 13:48:07 -0800
+
+
+Started GET "/assets/enablers.js?body=1" for 127.0.0.1 at 2014-11-11 13:48:07 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-11 13:48:07 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-11 13:48:07 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-11 13:48:07 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-11 13:53:14 -0800
+Processing by OrganizationsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.3640ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>BSON::ObjectId('546105564d617213dc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.3090ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=organizations selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.5180ms
+  Rendered organizations/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 223ms (Views: 215.1ms)
+
+
+Started GET "/assets/enablers.css?body=1" for 127.0.0.1 at 2014-11-11 13:53:15 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-11 13:53:15 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-11 13:53:15 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-11 13:53:15 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-11 13:53:15 -0800
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2014-11-11 13:53:15 -0800
+
+
+Started GET "/assets/enablers.js?body=1" for 127.0.0.1 at 2014-11-11 13:53:15 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-11 13:53:15 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-11 13:53:15 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-11 13:53:15 -0800
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2014-11-11 13:53:15 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-11 13:53:15 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-11 13:53:15 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-11 13:53:50 -0800
+Processing by OrganizationsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 2.6250ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>BSON::ObjectId('546105564d617213dc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 2.3300ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=organizations selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.5270ms
+  Rendered organizations/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 254ms (Views: 241.9ms)
+
+
+Started GET "/assets/enablers.css?body=1" for 127.0.0.1 at 2014-11-11 13:53:50 -0800
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2014-11-11 13:53:50 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-11 13:53:50 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-11 13:53:50 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-11 13:53:50 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-11 13:53:50 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-11 13:53:50 -0800
+
+
+Started GET "/assets/enablers.js?body=1" for 127.0.0.1 at 2014-11-11 13:53:50 -0800
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2014-11-11 13:53:50 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-11 13:53:50 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-11 13:53:50 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-11 13:53:50 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-11 13:53:50 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-11 13:54:38 -0800
+Processing by OrganizationsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.0650ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>BSON::ObjectId('546105564d617213dc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.6870ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=organizations selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.2390ms
+  Rendered organizations/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 242ms (Views: 232.0ms)
+
+
+Started GET "/assets/enablers.css?body=1" for 127.0.0.1 at 2014-11-11 13:54:38 -0800
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2014-11-11 13:54:38 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-11 13:54:38 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-11 13:54:38 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-11 13:54:38 -0800
+
+
+Started GET "/assets/enablers.js?body=1" for 127.0.0.1 at 2014-11-11 13:54:38 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-11 13:54:38 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-11 13:54:38 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-11 13:54:38 -0800
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2014-11-11 13:54:38 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-11 13:54:38 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-11 13:54:39 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-11 13:54:39 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-11 13:55:03 -0800
+Processing by OrganizationsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.0030ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>BSON::ObjectId('546105564d617213dc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.1180ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=organizations selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.2810ms
+  Rendered organizations/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 204ms (Views: 195.7ms)
+
+
+Started GET "/assets/enablers.css?body=1" for 127.0.0.1 at 2014-11-11 13:55:04 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-11 13:55:04 -0800
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2014-11-11 13:55:04 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-11 13:55:04 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-11 13:55:04 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-11 13:55:04 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-11 13:55:04 -0800
+
+
+Started GET "/assets/enablers.js?body=1" for 127.0.0.1 at 2014-11-11 13:55:04 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-11 13:55:04 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-11 13:55:04 -0800
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2014-11-11 13:55:04 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-11 13:55:04 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-11 13:55:04 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-11 13:56:55 -0800
+Processing by OrganizationsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.2360ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>BSON::ObjectId('546105564d617213dc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.4260ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=organizations selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.9150ms
+  Rendered organizations/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 232ms (Views: 223.8ms)
+
+
+Started GET "/assets/enablers.css?body=1" for 127.0.0.1 at 2014-11-11 13:56:55 -0800
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2014-11-11 13:56:55 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-11 13:56:55 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-11 13:56:55 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-11 13:56:55 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-11 13:56:55 -0800
+
+
+Started GET "/assets/enablers.js?body=1" for 127.0.0.1 at 2014-11-11 13:56:55 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-11 13:56:55 -0800
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2014-11-11 13:56:55 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-11 13:56:55 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-11 13:56:55 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-11 13:56:55 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-11 13:56:55 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-11 13:57:28 -0800
+Processing by OrganizationsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.1940ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>BSON::ObjectId('546105564d617213dc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.3270ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=organizations selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 2.2450ms
+  Rendered organizations/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 246ms (Views: 238.3ms)
+
+
+Started GET "/assets/enablers.css?body=1" for 127.0.0.1 at 2014-11-11 13:57:28 -0800
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2014-11-11 13:57:28 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-11 13:57:28 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-11 13:57:28 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-11 13:57:28 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-11 13:57:28 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-11 13:57:28 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-11 13:57:28 -0800
+
+
+Started GET "/assets/enablers.js?body=1" for 127.0.0.1 at 2014-11-11 13:57:28 -0800
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2014-11-11 13:57:28 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-11 13:57:28 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-11 13:57:28 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-11 13:57:28 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-11 14:00:26 -0800
+Processing by OrganizationsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.1070ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>BSON::ObjectId('546105564d617213dc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.6900ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=organizations selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 2.2730ms
+  Rendered organizations/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 243ms (Views: 234.8ms)
+
+
+Started GET "/assets/enablers.css?body=1" for 127.0.0.1 at 2014-11-11 14:00:27 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-11 14:00:27 -0800
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2014-11-11 14:00:27 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-11 14:00:27 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-11 14:00:27 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-11 14:00:27 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-11 14:00:27 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-11 14:00:27 -0800
+
+
+Started GET "/assets/enablers.js?body=1" for 127.0.0.1 at 2014-11-11 14:00:27 -0800
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2014-11-11 14:00:27 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-11 14:00:27 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-11 14:00:27 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-11 14:00:27 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-11 14:01:55 -0800
+Processing by OrganizationsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.1300ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>BSON::ObjectId('546105564d617213dc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.4710ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=organizations selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.2460ms
+  Rendered organizations/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 225ms (Views: 216.9ms)
+
+
+Started GET "/assets/enablers.css?body=1" for 127.0.0.1 at 2014-11-11 14:01:56 -0800
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2014-11-11 14:01:56 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-11 14:01:56 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-11 14:01:56 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-11 14:01:56 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-11 14:01:56 -0800
+
+
+Started GET "/assets/enablers.js?body=1" for 127.0.0.1 at 2014-11-11 14:01:56 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-11 14:01:56 -0800
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2014-11-11 14:01:56 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-11 14:01:56 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-11 14:01:56 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-11 14:01:56 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-11 14:01:56 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-11 14:02:30 -0800
+Processing by OrganizationsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.1090ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>BSON::ObjectId('546105564d617213dc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.2550ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=organizations selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.8720ms
+  Rendered organizations/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 224ms (Views: 216.0ms)
+
+
+Started GET "/assets/enablers.css?body=1" for 127.0.0.1 at 2014-11-11 14:02:30 -0800
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2014-11-11 14:02:30 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-11 14:02:30 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-11 14:02:30 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-11 14:02:30 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-11 14:02:30 -0800
+
+
+Started GET "/assets/enablers.js?body=1" for 127.0.0.1 at 2014-11-11 14:02:30 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-11 14:02:30 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-11 14:02:30 -0800
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2014-11-11 14:02:30 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-11 14:02:30 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-11 14:02:30 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-11 14:02:30 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-11 14:02:52 -0800
+Processing by OrganizationsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.2420ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>BSON::ObjectId('546105564d617213dc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.9450ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=organizations selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 2.0890ms
+  Rendered organizations/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 256ms (Views: 245.6ms)
+
+
+Started GET "/assets/enablers.css?body=1" for 127.0.0.1 at 2014-11-11 14:02:53 -0800
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2014-11-11 14:02:53 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-11 14:02:53 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-11 14:02:53 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-11 14:02:53 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-11 14:02:53 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-11 14:02:53 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-11 14:02:53 -0800
+
+
+Started GET "/assets/enablers.js?body=1" for 127.0.0.1 at 2014-11-11 14:02:53 -0800
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2014-11-11 14:02:53 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-11 14:02:53 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-11 14:02:53 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-11 14:02:53 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-11 14:03:40 -0800
+Processing by OrganizationsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.9800ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>BSON::ObjectId('546105564d617213dc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.3390ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=organizations selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.2680ms
+  Rendered organizations/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 230ms (Views: 222.5ms)
+
+
+Started GET "/assets/enablers.css?body=1" for 127.0.0.1 at 2014-11-11 14:03:41 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-11 14:03:41 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-11 14:03:41 -0800
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2014-11-11 14:03:41 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-11 14:03:41 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-11 14:03:41 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-11 14:03:41 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-11 14:03:41 -0800
+
+
+Started GET "/assets/enablers.js?body=1" for 127.0.0.1 at 2014-11-11 14:03:41 -0800
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2014-11-11 14:03:41 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-11 14:03:41 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-11 14:03:41 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-11 14:03:41 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-11 14:04:51 -0800
+Processing by OrganizationsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 2.5680ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>BSON::ObjectId('546105564d617213dc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 2.0130ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=organizations selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.4090ms
+  Rendered organizations/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 256ms (Views: 245.6ms)
+
+
+Started GET "/assets/enablers.css?body=1" for 127.0.0.1 at 2014-11-11 14:04:52 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-11 14:04:52 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-11 14:04:52 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-11 14:04:52 -0800
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2014-11-11 14:04:52 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-11 14:04:52 -0800
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2014-11-11 14:04:52 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-11 14:04:52 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-11 14:04:52 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-11 14:04:52 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-11 14:04:52 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-11 14:04:52 -0800
+
+
+Started GET "/assets/enablers.js?body=1" for 127.0.0.1 at 2014-11-11 14:04:52 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-11 14:05:55 -0800
+Processing by OrganizationsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.4970ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>BSON::ObjectId('546105564d617213dc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 3.0390ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=organizations selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 2.4850ms
+  Rendered organizations/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 254ms (Views: 234.8ms)
+
+
+Started GET "/assets/enablers.css?body=1" for 127.0.0.1 at 2014-11-11 14:05:55 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-11 14:05:55 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-11 14:05:55 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-11 14:05:55 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-11 14:05:56 -0800
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2014-11-11 14:05:56 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-11 14:05:56 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-11 14:05:56 -0800
+
+
+Started GET "/assets/enablers.js?body=1" for 127.0.0.1 at 2014-11-11 14:05:56 -0800
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2014-11-11 14:05:56 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-11 14:05:56 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-11 14:05:56 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-11 14:05:56 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-11 14:06:13 -0800
+Processing by OrganizationsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.0060ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>BSON::ObjectId('546105564d617213dc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 2.3130ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=organizations selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 2.2580ms
+  Rendered organizations/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 304ms (Views: 295.3ms)
+
+
+Started GET "/assets/enablers.css?body=1" for 127.0.0.1 at 2014-11-11 14:06:14 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-11 14:06:14 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-11 14:06:14 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-11 14:06:14 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-11 14:06:14 -0800
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2014-11-11 14:06:14 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-11 14:06:14 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-11 14:06:14 -0800
+
+
+Started GET "/assets/enablers.js?body=1" for 127.0.0.1 at 2014-11-11 14:06:14 -0800
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2014-11-11 14:06:14 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-11 14:06:14 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-11 14:06:14 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-11 14:06:14 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-11 14:07:51 -0800
+Processing by OrganizationsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.0040ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>BSON::ObjectId('546105564d617213dc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.6890ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=organizations selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.5350ms
+  Rendered organizations/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 247ms (Views: 239.2ms)
+
+
+Started GET "/assets/enablers.css?body=1" for 127.0.0.1 at 2014-11-11 14:07:52 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-11 14:07:52 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-11 14:07:52 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-11 14:07:52 -0800
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2014-11-11 14:07:52 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-11 14:07:52 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-11 14:07:52 -0800
+
+
+Started GET "/assets/enablers.js?body=1" for 127.0.0.1 at 2014-11-11 14:07:52 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-11 14:07:52 -0800
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2014-11-11 14:07:52 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-11 14:07:52 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-11 14:07:52 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-11 14:07:52 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-11 14:08:47 -0800
+Processing by OrganizationsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.2600ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>BSON::ObjectId('546105564d617213dc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.3820ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=organizations selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.3970ms
+  Rendered organizations/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 251ms (Views: 241.4ms)
+
+
+Started GET "/assets/enablers.css?body=1" for 127.0.0.1 at 2014-11-11 14:08:47 -0800
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2014-11-11 14:08:47 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-11 14:08:47 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-11 14:08:47 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-11 14:08:47 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-11 14:08:47 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-11 14:08:47 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-11 14:08:47 -0800
+
+
+Started GET "/assets/enablers.js?body=1" for 127.0.0.1 at 2014-11-11 14:08:47 -0800
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2014-11-11 14:08:47 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-11 14:08:47 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-11 14:08:47 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-11 14:08:47 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-11 14:09:00 -0800
+Processing by OrganizationsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.3780ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>BSON::ObjectId('546105564d617213dc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.7170ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=organizations selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 2.1300ms
+  Rendered organizations/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 241ms (Views: 232.8ms)
+
+
+Started GET "/assets/enablers.css?body=1" for 127.0.0.1 at 2014-11-11 14:09:00 -0800
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2014-11-11 14:09:01 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-11 14:09:01 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-11 14:09:01 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-11 14:09:01 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-11 14:09:01 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-11 14:09:01 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-11 14:09:01 -0800
+
+
+Started GET "/assets/enablers.js?body=1" for 127.0.0.1 at 2014-11-11 14:09:01 -0800
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2014-11-11 14:09:01 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-11 14:09:01 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-11 14:09:01 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-11 14:09:01 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-11 14:09:32 -0800
+Processing by OrganizationsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.0130ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>BSON::ObjectId('546105564d617213dc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.3760ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=organizations selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.5770ms
+  Rendered organizations/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 235ms (Views: 227.9ms)
+
+
+Started GET "/assets/enablers.css?body=1" for 127.0.0.1 at 2014-11-11 14:09:32 -0800
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-11 14:09:32 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-11 14:09:32 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-11 14:09:32 -0800
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2014-11-11 14:09:32 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-11 14:09:32 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-11 14:09:32 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-11 14:09:32 -0800
+
+
+Started GET "/assets/enablers.js?body=1" for 127.0.0.1 at 2014-11-11 14:09:32 -0800
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2014-11-11 14:09:32 -0800
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-11 14:09:32 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-11 14:09:32 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-11 14:09:32 -0800
+
+
+Started GET "/organizations/new" for 127.0.0.1 at 2014-11-11 14:24:48 -0800
+Processing by OrganizationsController#new as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 3.1210ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=users selector={"_id"=>BSON::ObjectId('546105564d617213dc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 3.1250ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=enablers selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 2.3060ms
+  MOPED: 127.0.0.1:27017 QUERY        database=crosstechplayers_development collection=org_ena_join_tables selector={"organization_id"=>BSON::ObjectId('54628cb04d6172663c000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 7.7090ms
+  Rendered organizations/_form_new_edit.html.erb (161.6ms)
+  Rendered organizations/new.html.erb within layouts/application (201.1ms)
+Completed 200 OK in 350ms (Views: 322.2ms)
