@@ -2,8 +2,8 @@ class User
   include Mongoid::Document
   
   include ActiveModel::SecurePassword
-  #include ZeroOidFix
   
+  #include ZeroOidFix
 
   field :username, type: String
   field :password_digest, type: String
